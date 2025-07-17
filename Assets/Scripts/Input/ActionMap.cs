@@ -20,7 +20,28 @@ namespace Input
         }
     }
 
+    public class UIActionMap : ActionMap
+    {
+        private InputButton _questLog;
+        public InputButton QuestLog => _questLog;
+        public override bool HasPollable => false;
+        public UIActionMap(InputActions action) : base(action)
+        {
+            _questLog = new InputButton(action.UI.QuestLog);
+        }
+        public override void OnEnter()
+        {
+            InputActions.UI.Enable();
+        }
 
+        public override void OnExit()
+        {
+            InputActions.UI.Disable();
+        }
+        public override void OnUpdate()
+        {
+        }
+    }
     
     public class PlayerActionMap : ActionMap
     {
@@ -28,10 +49,12 @@ namespace Input
         private InputButton _attack;
         private InputButton _jump;
         private InputButton _interact;
+        private InputButton _questLog;
         public InputButton Attack => _attack;
         public InputValue<Vector2> Movement => _movement;
         public InputButton Jump => _jump;
         public InputButton Interact => _interact;
+        public InputButton QuestLog => _questLog;
         public override bool HasPollable => true;
 
         public PlayerActionMap(InputActions action) : base(action)
@@ -40,6 +63,7 @@ namespace Input
             _attack = new InputButton(action.Player.Attack);
             _jump = new InputButton(action.Player.Jump);
             _interact = new InputButton(action.Player.Interact);
+            _questLog = new InputButton(action.Player.QuestLog);
         }
 
 

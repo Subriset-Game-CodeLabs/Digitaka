@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: VisitPlaceQuest
   m_EditorClassIdentifier: 
   <id>k__BackingField: VisitPlaceQuest
-  <displayName>k__BackingField: 
+  <displayName>k__BackingField: Visit The Place
   <questPrerequisites>k__BackingField: []
-  <questStepPrefabs>k__BackingField: []
-  <goldReward>k__BackingField: 0
-  <experienceReward>k__BackingField: 0
+  <questStepPrefabs>k__BackingField:
+  - {fileID: 8363259529134139613, guid: 9b8f766c96c6c8b488bd33a25df6fccb, type: 3}
+  - {fileID: 1829618907288379365, guid: 0dc7a626e09569a4d9e13d8d58e84df2, type: 3}
+  - {fileID: 6470794732952367869, guid: a331c4a14e89b254ebe3ed04f83c209a, type: 3}
+  <goldReward>k__BackingField: 30
+  <experienceReward>k__BackingField: 50

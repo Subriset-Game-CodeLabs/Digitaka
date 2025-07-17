@@ -26,9 +26,9 @@ namespace QuestSystem
                 Destroy(gameObject);
             }
         }
-        protected void ChangeState(string newState)
+        protected void ChangeState(string newState, string newStatus)
         {
-            GameEventsManager.Instance.QuestEvents.QuestStepStateChange(_questId, _stepIndex, new QuestStepState(newState));
+            GameEventsManager.Instance.QuestEvents.QuestStepStateChange(_questId, _stepIndex, new QuestStepState(newState, newStatus));
         }
 
         protected abstract void SetQuestStepState(string state);

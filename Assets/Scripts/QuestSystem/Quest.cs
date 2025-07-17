@@ -83,12 +83,48 @@ namespace QuestSystem
             if (stepIndex < _questStepStates.Length)
             {
                 _questStepStates[stepIndex].State = questStepState.State;
+                _questStepStates[stepIndex].Status = questStepState.Status;
             }
             else 
             {
                 Debug.LogWarning("Tried to access quest step data, but stepIndex was out of range: "
                                  + "Quest Id = " + info.id + ", Step Index = " + stepIndex);
             }
+        }
+        public string GetFullStatusText()
+        {
+            string fullStatus = "";
+            if(state == QuestState.RequirementsNotMet)
+            {
+                fullStatus = "Requirements not met";
+            }
+            else if (state == QuestState.CanStart)
+            {
+                fullStatus = "Can start";
+            }
+            else
+            {
+                for (var i = 0; i < _currentQuestStepIndex; i++)
+                {
+                    fullStatus += "<s>" + _questStepStates[i].Status +"</s>\n";
+                }
+
+                if (CurrentStepExists())
+                {
+                    fullStatus +=  _questStepStates[_currentQuestStepIndex].Status;
+                }
+
+                if (state == QuestState.CanFinish)
+                {
+                    fullStatus += "Quest finished! Collect your reward!";
+                }
+                else if(state == QuestState.Finished)
+                {
+                    fullStatus +="The Quest Has Been Completed!";
+                }
+            }
+           
+            return fullStatus;
         }
 
     }

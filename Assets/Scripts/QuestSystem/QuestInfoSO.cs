@@ -9,13 +9,13 @@ namespace QuestSystem
         [field:SerializeField] public string id { get; private set; }
         
         [Header("General")]
-        [field:SerializeField] public string displayName { get; private set; }
+        [field:SerializeField] public string displayName { get; private  set; }
 
         [Header("Requirements")]
         [field:SerializeField] public QuestInfoSO[] questPrerequisites { get; private set; }
 
         [Header("Steps")]
-        [field:SerializeField] public GameObject[] questStepPrefabs { get; private set; }
+        [field:SerializeField] public GameObject[] questStepPrefabs { get; private  set; }
 
         [Header("Rewards")]
         [field:SerializeField] public int goldReward { get; private set; }
