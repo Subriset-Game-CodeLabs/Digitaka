@@ -26,15 +26,20 @@ namespace Input
     {
         private InputValue<Vector2> _movement;
         private InputButton _attack;
+        private InputButton _jump;
+        private InputButton _interact;
         public InputButton Attack => _attack;
         public InputValue<Vector2> Movement => _movement;
-
+        public InputButton Jump => _jump;
+        public InputButton Interact => _interact;
         public override bool HasPollable => true;
 
         public PlayerActionMap(InputActions action) : base(action)
         {
             _movement = new InputValue<Vector2>(action.Player.Move);
             _attack = new InputButton(action.Player.Attack);
+            _jump = new InputButton(action.Player.Jump);
+            _interact = new InputButton(action.Player.Interact);
         }
 
 

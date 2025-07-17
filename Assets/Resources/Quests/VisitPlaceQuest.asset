@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4dd41723fe4af9ae59a57c240199cd, type: 3}
+  m_Name: VisitPlaceQuest
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: VisitPlaceQuest
+  <DisplayName>k__BackingField: Visit the place
+  <QuestPrerequisites>k__BackingField: []
+  <QuestStepPrefabs>k__BackingField:
+  - {fileID: 8363259529134139613, guid: 9b8f766c96c6c8b488bd33a25df6fccb, type: 3}
+  - {fileID: 1829618907288379365, guid: 0dc7a626e09569a4d9e13d8d58e84df2, type: 3}
+  - {fileID: 6470794732952367869, guid: a331c4a14e89b254ebe3ed04f83c209a, type: 3}
+  <GoldReward>k__BackingField: 20
+  <ExperienceReward>k__BackingField: 30
