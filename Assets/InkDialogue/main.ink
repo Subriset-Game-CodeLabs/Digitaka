@@ -2,6 +2,7 @@
 EXTERNAL StartQuest(questId)
 EXTERNAL AdvanceQuest(questId)
 EXTERNAL FinishQuest(questId)
+EXTERNAL OpenShop()
 
 // quest ids (questid + "Id" for variable name)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"
@@ -11,6 +12,7 @@ VAR VisitPlaceQuestState = "REQUIREMENTS_NOT_MET"
 
 INCLUDE visit_place_quest_npc.ink
 
+INCLUDE merchant_npt.ink
 
 === testspeaker ===
 Hi my name is aji saka #speaker:Aji Saka #portrait:ajisaka

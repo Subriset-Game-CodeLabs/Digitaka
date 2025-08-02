@@ -8,6 +8,8 @@ public class InkExternalFunctions
         story.BindExternalFunction("StartQuest", (string questId) => StartQuest(questId));
         story.BindExternalFunction("AdvanceQuest", (string questId) => AdvanceQuest(questId));
         story.BindExternalFunction("FinishQuest", (string questId) => FinishQuest(questId));
+
+        story.BindExternalFunction("OpenShop", () => OpenShop());
     }
 
     public void Unbind(Story story)
@@ -15,12 +17,12 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("StartQuest");
         story.UnbindExternalFunction("AdvanceQuest");
         story.UnbindExternalFunction("FinishQuest");
+        story.UnbindExternalFunction("OpenShop");
     }
 
 
     private void StartQuest(string questId)
     {
-        Debug.Log("Start Quest");
         GameEventsManager.Instance.QuestEvents.StartQuest(questId);
     }
 
@@ -32,5 +34,10 @@ public class InkExternalFunctions
     private void FinishQuest(string questId)
     {
         GameEventsManager.Instance.QuestEvents.FinishQuest(questId);
+    }
+
+    private void OpenShop()
+    {
+        GameEventsManager.Instance.ShopEvents.ShopOpen();
     }
 }
