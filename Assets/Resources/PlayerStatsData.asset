@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <characterName>k__BackingField: Aji Saka
   <maxHealth>k__BackingField: 3
-  <health>k__BackingField: 3
+  <health>k__BackingField: 1
   <damage>k__BackingField: 1
   <maxMana>k__BackingField: 3
-  <mana>k__BackingField: 3
+  <mana>k__BackingField: 0
+  <healPotion>k__BackingField: 5
+  <manaPotion>k__BackingField: 2
+  <coin>k__BackingField: 5
+  UltimateDamage: 2
+  UltimateManaCost: 1

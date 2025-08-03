@@ -65,12 +65,14 @@ namespace UIController
                 Time.timeScale = 1;
                 _pauseMenu.SetActive(false);
                 isPaused = false;
+                InputManager.Instance.UIMode();
             }
             else
             {
                 Time.timeScale = 0;
                 _pauseMenu.SetActive(true);
                 isPaused = true;
+                InputManager.Instance.PlayerMode();
             }
         }
     }

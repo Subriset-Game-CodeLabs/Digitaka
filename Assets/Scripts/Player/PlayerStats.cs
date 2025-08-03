@@ -55,7 +55,23 @@ namespace TwoDotFiveDimension
             get => _playerData.manaPotion;
             private set => _playerData.manaPotion = value;
         }
+        public int coin
+        {
+            get => _playerData.coin;
+            private set => _playerData.coin = value;
+        }
+        public int ultimateDamage
+        {
+            get => _playerData.UltimateDamage;
+            private set => _playerData.UltimateDamage = value;
+        }
+        public int ultimateCost
+        {
+            get => _playerData.UltimateManaCost;
+            private set => _playerData.UltimateManaCost = value;
+        }
         public bool IsAlive => currentHealth > 0 ;
+        public bool CanUltimate => currentMana >= ultimateCost;
         public int damage
         {
             get => _playerData.damage;

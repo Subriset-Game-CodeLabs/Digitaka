@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa25cd8e8f4f4071a8367a78ee125b9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _qtyHealthPotion: {fileID: 0}
-  _qtyManaPotion: {fileID: 0}
+  _qtyHealthPotion: {fileID: 2378996136549761195}
+  _qtyManaPotion: {fileID: 4131069169653341503}
 --- !u!1 &1859230531894700323
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,8 +21,6 @@ namespace TwoDotFiveDimension
        
         [Header("Ultimate Settings")]
         [SerializeField] private float _ultimateCooldown = 5f;
-        [SerializeField] private int _ultimateDamage = 50;
-        [SerializeField] private int _ultimateManaCost = 20;
         
         [Header("Potion Settings")]
         [SerializeField] private float _healthPotionCooldown = 2f;
@@ -148,13 +146,13 @@ namespace TwoDotFiveDimension
         private void UltimateAbility()
         {
             if (Time.time < _lastUltimateTime + _ultimateCooldown) return;
-            if (_playerStats.currentMana < _ultimateManaCost) return;
-
+            if (!_playerStats.CanUltimate || Movement != Vector2.zero) return;
+            Debug.Log(Movement);
             _lastUltimateTime = Time.time;
-            _playerStats.UseMana(_ultimateManaCost);
+            _playerStats.UseMana(_playerStats.ultimateCost);
             _comboCharacter.Ultimate();
             _uiManager.StartCooldownUltimate(_ultimateCooldown);
-            Debug.Log("Ultimate used! Damage: " + _ultimateDamage);
+            Debug.Log("Ultimate used! Damage: " + _playerStats.ultimateDamage);
         }
         
         

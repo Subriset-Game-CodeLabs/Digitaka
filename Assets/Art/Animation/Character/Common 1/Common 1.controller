@@ -9,6 +9,14 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: f2a8c661e72579f4389f330a1daf0b40, type: 2}
+    m_Threshold: -2
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: Weapon.Active
+    m_Mirror: 0
+  - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: b9952382d80564a4fbe372d9c16f6ad6, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -18,7 +26,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 9a5a9d8be58fe1c4d9e55827f1318db0, type: 2}
-    m_Threshold: 1
+    m_Threshold: 3
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -26,9 +34,9 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: SpeedMagnitude
   m_BlendParameterY: Weapon.Active
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 1
+  m_MinThreshold: -2
+  m_MaxThreshold: 3
+  m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
 --- !u!1101 &-6619275681519226373
