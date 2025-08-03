@@ -27,7 +27,11 @@ namespace QuestSystem
             _questIcon = GetComponentInChildren<QuestIcon>();
         }
 
- 
+        private void Start()
+        {
+            QuestManager.Instance.InitializeQuest();
+        }
+
         private void OnEnable()
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStateChange += QuestStateChange;

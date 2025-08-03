@@ -26,11 +26,6 @@ namespace UIController
             }
         }
 
-        private void Start()
-        {
-            if(!_pauseMenu.activeSelf) GameManager.Instance.StartGame();
-        }
-
         public void StartCooldownUltimate(float duration)
         {
             if (_ultimateCooldownUI != null)
