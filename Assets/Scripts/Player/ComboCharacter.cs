@@ -62,5 +62,16 @@ namespace TwoDotFiveDimension
                 FiniteStateMachine.ChangeState(new GroundEntryState(this));
             }
         }
+
+        public void Ultimate()
+        {
+            if (FiniteStateMachine.GetCurrentState == IdleCombatState && 
+                _playerMovement.IsGrounded && 
+                _playerMovement.Movement == Vector2.zero
+               )
+            {
+                FiniteStateMachine.ChangeState(new GroundUltimateState(this));
+            }
+        }
     }
 }

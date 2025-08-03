@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using Audio;
-using DefaultNamespace.UIController;
+using UIController;
 using Input;
 using UnityEngine;
 
@@ -28,7 +28,6 @@ namespace TwoDotFiveDimension
         [SerializeField] private float _healthPotionCooldown = 2f;
         [SerializeField] private float _manaPotionCooldown = 2f;
         
-        private InputManager _inputManager;
         private Vector2 _movement;
         private Rigidbody _rigidbody;
         private ComboCharacter _comboCharacter;
@@ -49,6 +48,7 @@ namespace TwoDotFiveDimension
         private Sensor   _wallSensorL2;
         private PlayerStats _playerStats;
         private UIManager _uiManager;
+        private AudioManager _audioManager;
         
         private static readonly int AnimState = Animator.StringToHash("AnimState");
         private static readonly int GroundedState = Animator.StringToHash("Grounded");
@@ -62,6 +62,8 @@ namespace TwoDotFiveDimension
             _rigidbody = GetComponent<Rigidbody>();
             _playerStats = PlayerStats.Instance;
             _uiManager = UIManager.Instance;
+            _audioManager = AudioManager.Instance;
+            
             InitializeSensor();
         }
 
@@ -75,32 +77,32 @@ namespace TwoDotFiveDimension
         }
         private void Update()
         {
-            _movement = _inputManager.PlayerInput.Movement.Get();
+            _movement = InputManager.Instance.PlayerInput.Movement.Get();
             Move();
         }
 
         private void OnEnable()
         {
-            _inputManager = InputManager.Instance;
-            _inputManager.PlayerInput.Jump.OnDown += Dash;
-            _inputManager.PlayerInput.Ultimate.OnDown += UltimateAbility;
-            _inputManager.PlayerInput.ManaPotion.OnDown += UseManaPotion;
-            _inputManager.PlayerInput.HealthPotion.OnDown += UseHealthPotion;
+
+            InputManager.Instance.PlayerInput.Jump.OnDown += Dash;
+            InputManager.Instance.PlayerInput.Ultimate.OnDown += UltimateAbility;
+            InputManager.Instance.PlayerInput.ManaPotion.OnDown += UseManaPotion;
+            InputManager.Instance.PlayerInput.HealthPotion.OnDown += UseHealthPotion;
         }
 
         private void OnDisable()
         {
-            _inputManager.PlayerInput.Jump.OnDown -= Dash;
-            _inputManager.PlayerInput.Ultimate.OnDown -= UltimateAbility;
-            _inputManager.PlayerInput.ManaPotion.OnDown -= UseManaPotion;
-            _inputManager.PlayerInput.HealthPotion.OnDown -= UseHealthPotion;
+            InputManager.Instance.PlayerInput.Jump.OnDown -= Dash;
+            InputManager.Instance.PlayerInput.Ultimate.OnDown -= UltimateAbility;
+            InputManager.Instance.PlayerInput.ManaPotion.OnDown -= UseManaPotion;
+            InputManager.Instance.PlayerInput.HealthPotion.OnDown -= UseHealthPotion;
         }
         
         private void Dash()
         {
             if (_isDashing || Time.time < _lastDashTime + _dashCooldown) return;
             if (_comboCharacter.IsAttacking) return;
-            AudioManager.Instance.PlaySound(SoundType.SFX_Dash);
+            _audioManager.PlaySound(SoundType.SFX_Dash);
             _isDashing = true;
             _dashTime = _dashDuration;
             _lastDashTime = Time.time;
@@ -123,8 +125,8 @@ namespace TwoDotFiveDimension
         {
             if (Time.time < _lastHealthPotionTime + _healthPotionCooldown) return;
             if (_playerStats.healPotion <= 0) return;
-        
-            AudioManager.Instance.PlaySound(SoundType.SFX_HealPotion);
+            Debug.Log(_audioManager);
+            _audioManager.PlaySound(SoundType.SFX_HealPotion);
             _lastHealthPotionTime = Time.time;
             _playerStats.UseHealthPotion(1);
             _uiManager.StartCooldownHealthPotion(_healthPotionCooldown);
@@ -136,7 +138,7 @@ namespace TwoDotFiveDimension
             if (Time.time < _lastManaPotionTime + _manaPotionCooldown) return;
             if (_playerStats.manaPotion <= 0) return;
             
-            AudioManager.Instance.PlaySound(SoundType.SFX_ManaPotion);
+            _audioManager.PlaySound(SoundType.SFX_ManaPotion);
             _lastManaPotionTime = Time.time;
             _playerStats.UseManaPotion(1);
             _uiManager.StartCooldownManaPotion(_manaPotionCooldown);
@@ -149,10 +151,12 @@ namespace TwoDotFiveDimension
 
             _lastUltimateTime = Time.time;
             _playerStats.UseMana(_ultimateManaCost);
-            _animator.SetTrigger("Attack3");
+            _comboCharacter.Ultimate();
             _uiManager.StartCooldownUltimate(_ultimateCooldown);
             Debug.Log("Ultimate used! Damage: " + _ultimateDamage);
         }
+        
+        
 
         private void Move()
         {
