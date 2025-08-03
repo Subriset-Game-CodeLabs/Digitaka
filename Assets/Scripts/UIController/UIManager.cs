@@ -1,16 +1,18 @@
+using Input;
 using UIController.Stats;
 using UnityEngine;
 
 namespace DefaultNamespace.UIController
 {
-    public class UIManager: MonoBehaviour
+    public class UIManager : MonoBehaviour
     {
-        public static  UIManager Instance { get; private set; }
+        public static UIManager Instance { get; private set; }
         [SerializeField] private CooldownUI _dashCooldownUI;
         [SerializeField] private CooldownUI _ultimateCooldownUI;
         [SerializeField] private CooldownUI _healthPotionCooldownUI;
         [SerializeField] private CooldownUI _manaPotionCooldownUI;
         [SerializeField] private GameObject _pauseMenu;
+        private bool isPaused = false;
         private void Awake()
         {
             if (Instance == null)
@@ -48,6 +50,27 @@ namespace DefaultNamespace.UIController
             if (_dashCooldownUI != null)
             {
                 _dashCooldownUI.StartCooldown(duration);
+            }
+        }
+
+        void OnEnable()
+        {
+            InputManager.Instance.PlayerInput.Pause.OnDown += Pause;
+        }
+
+        public void Pause()
+        {
+            if (isPaused)
+            {
+                Time.timeScale = 1;
+                _pauseMenu.SetActive(false);
+                isPaused = false;
+            }
+            else
+            {
+                Time.timeScale = 0;
+                _pauseMenu.SetActive(true);
+                isPaused = true;
             }
         }
     }

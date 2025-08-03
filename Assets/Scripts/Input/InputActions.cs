@@ -143,6 +143,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Pause"",
+                    ""type"": ""Button"",
+                    ""id"": ""46b4d532-a0d8-45f7-ad01-5104c78517f4"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -572,6 +581,17 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""HealthPotion"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""eee6ec5a-73bd-4b03-9009-19d3c574b8af"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Pause"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1192,6 +1212,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Player_Ultimate = m_Player.FindAction("Ultimate", throwIfNotFound: true);
         m_Player_ManaPotion = m_Player.FindAction("ManaPotion", throwIfNotFound: true);
         m_Player_HealthPotion = m_Player.FindAction("HealthPotion", throwIfNotFound: true);
+        m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1285,6 +1306,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Ultimate;
     private readonly InputAction m_Player_ManaPotion;
     private readonly InputAction m_Player_HealthPotion;
+    private readonly InputAction m_Player_Pause;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1302,6 +1324,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         public InputAction @Ultimate => m_Wrapper.m_Player_Ultimate;
         public InputAction @ManaPotion => m_Wrapper.m_Player_ManaPotion;
         public InputAction @HealthPotion => m_Wrapper.m_Player_HealthPotion;
+        public InputAction @Pause => m_Wrapper.m_Player_Pause;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1350,6 +1373,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @HealthPotion.started += instance.OnHealthPotion;
             @HealthPotion.performed += instance.OnHealthPotion;
             @HealthPotion.canceled += instance.OnHealthPotion;
+            @Pause.started += instance.OnPause;
+            @Pause.performed += instance.OnPause;
+            @Pause.canceled += instance.OnPause;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1393,6 +1419,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @HealthPotion.started -= instance.OnHealthPotion;
             @HealthPotion.performed -= instance.OnHealthPotion;
             @HealthPotion.canceled -= instance.OnHealthPotion;
+            @Pause.started -= instance.OnPause;
+            @Pause.performed -= instance.OnPause;
+            @Pause.canceled -= instance.OnPause;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1596,6 +1625,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         void OnUltimate(InputAction.CallbackContext context);
         void OnManaPotion(InputAction.CallbackContext context);
         void OnHealthPotion(InputAction.CallbackContext context);
+        void OnPause(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
