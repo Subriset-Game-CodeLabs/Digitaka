@@ -78,7 +78,7 @@ namespace Input
             _healthPotion = new InputButton(action.Player.HealthPotion);
             _ultimate = new InputButton(action.Player.Ultimate);
             _pause = new InputButton(action.Player.Pause);
-            _openMap = new InputButton(action.Player.OpenMap);
+            // _openMap = new InputButton(action.Player.OpenMap);
         }
 
 
