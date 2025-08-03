@@ -70,10 +70,10 @@ namespace TwoDotFiveDimension
         private void InitializeSensor()
         {
             _groundSensor = transform.Find("GroundSensor").GetComponent<Sensor>();
-            _wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor>();
-            _wallSensorR2 = transform.Find("WallSensor_R2").GetComponent<Sensor>();
-            _wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor>();
-            _wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor>();
+            // _wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor>();
+            // _wallSensorR2 = transform.Find("WallSensor_R2").GetComponent<Sensor>();
+            // _wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor>();
+            // _wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor>();
         }
         private void Update()
         {
@@ -108,6 +108,7 @@ namespace TwoDotFiveDimension
             _lastDashTime = Time.time;
             
             _groundSensor.Disable(_dashDuration); 
+            _animator.SetTrigger( "Dash"); 
             _animator.SetInteger(AnimState, 2); 
             _uiManager.StartCooldownDash(_dashCooldown);
         }

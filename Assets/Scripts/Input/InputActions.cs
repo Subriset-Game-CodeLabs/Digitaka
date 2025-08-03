@@ -152,6 +152,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenMap"",
+                    ""type"": ""Button"",
+                    ""id"": ""5bdb207a-689f-44fd-be26-7d3a5c842d5c"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -590,8 +599,19 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/escape"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""Pause"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9fa59062-da68-49e0-b9cc-d07fa113a4ec"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""OpenMap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1213,6 +1233,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Player_ManaPotion = m_Player.FindAction("ManaPotion", throwIfNotFound: true);
         m_Player_HealthPotion = m_Player.FindAction("HealthPotion", throwIfNotFound: true);
         m_Player_Pause = m_Player.FindAction("Pause", throwIfNotFound: true);
+        m_Player_OpenMap = m_Player.FindAction("OpenMap", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1307,6 +1328,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_ManaPotion;
     private readonly InputAction m_Player_HealthPotion;
     private readonly InputAction m_Player_Pause;
+    private readonly InputAction m_Player_OpenMap;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1325,6 +1347,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         public InputAction @ManaPotion => m_Wrapper.m_Player_ManaPotion;
         public InputAction @HealthPotion => m_Wrapper.m_Player_HealthPotion;
         public InputAction @Pause => m_Wrapper.m_Player_Pause;
+        public InputAction @OpenMap => m_Wrapper.m_Player_OpenMap;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1376,6 +1399,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Pause.started += instance.OnPause;
             @Pause.performed += instance.OnPause;
             @Pause.canceled += instance.OnPause;
+            @OpenMap.started += instance.OnOpenMap;
+            @OpenMap.performed += instance.OnOpenMap;
+            @OpenMap.canceled += instance.OnOpenMap;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1422,6 +1448,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @Pause.started -= instance.OnPause;
             @Pause.performed -= instance.OnPause;
             @Pause.canceled -= instance.OnPause;
+            @OpenMap.started -= instance.OnOpenMap;
+            @OpenMap.performed -= instance.OnOpenMap;
+            @OpenMap.canceled -= instance.OnOpenMap;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1626,6 +1655,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         void OnManaPotion(InputAction.CallbackContext context);
         void OnHealthPotion(InputAction.CallbackContext context);
         void OnPause(InputAction.CallbackContext context);
+        void OnOpenMap(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

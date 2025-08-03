@@ -5,29 +5,30 @@ namespace Enemy
 {
     public class EnemyStats:MonoBehaviour
     {
-        [SerializeField] private EnemyData _enemyData;
-
+        [SerializeField] private EnemyData _enemyBaseData;
+        private int _currentHealth ;
         private void Awake()
         {
-            _enemyData.ResetStats();
+            _enemyBaseData.ResetStats();
+            _currentHealth = _enemyBaseData.maxHealth;
         }
 
         public int maxHealth
         {
-            get => _enemyData.maxHealth;
-            private set => _enemyData.maxHealth = value;
+            get => _enemyBaseData.maxHealth;
+            private set => _enemyBaseData.maxHealth = value;
         }
 
         public int currentHealth
         {
-            get => _enemyData.health;
-            private set => _enemyData.health = value;
+            get => _currentHealth;
+            private set => _currentHealth = value;
         }
 
         public int damage
         {
-            get => _enemyData.damage;
-            private set => _enemyData.damage = value;
+            get => _enemyBaseData.damage;
+            private set => _enemyBaseData.damage = value;
         }
         public bool IsAlive => currentHealth > 0;
         public int TakeDamage(int damage)

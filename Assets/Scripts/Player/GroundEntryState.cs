@@ -21,6 +21,7 @@ namespace TwoDotFiveDimension
             base.OnUpdate();
             if (fixedtime > Duration)
             {
+                Debug.Log(ShouldCombo);
                 if (ShouldCombo)
                 {
                     ComboCharacter.FiniteStateMachine.ChangeState(ComboCharacter.GroundComboState);
