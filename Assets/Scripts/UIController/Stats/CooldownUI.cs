@@ -23,7 +23,10 @@ namespace UIController.Stats
             _cooldownOverlay.enabled = true;
 
             if (_cooldownText != null)
+            {
                 _cooldownText.enabled = true;
+                _cooldownText.text = Mathf.CeilToInt(duration).ToString();
+            }
         }
 
         private void Update()
@@ -31,6 +34,7 @@ namespace UIController.Stats
             if (!_isCoolingDown) return;
 
             float timeLeft = _cooldownEndTime - Time.time;
+
             if (timeLeft <= 0f)
             {
                 _isCoolingDown = false;
@@ -46,7 +50,7 @@ namespace UIController.Stats
             _cooldownOverlay.fillAmount = timeLeft / _cooldownDuration;
 
             if (_cooldownText != null)
-                _cooldownText.text = Mathf.CeilToInt(timeLeft).ToString();
+                _cooldownText.text = timeLeft.ToString("F1") + "s";
         }
     }
 }

@@ -19,6 +19,7 @@ namespace TwoDotFiveDimension
         private GameObject _hitEffectPrefab;
         private float _attackPressedTimer;
         private CameraShake _cameraShake;
+        protected int _attackDamage;
 
         public MeleeBaseState(ComboCharacter comboCharacter)
         {
@@ -34,6 +35,7 @@ namespace TwoDotFiveDimension
             _cameraShake = CameraShake.Instance;
             HitCollider = ComboCharacter.Hitbox;
             _hitEffectPrefab = ComboCharacter.Hiteffect;
+            _attackDamage = PlayerStats.Instance.damage;
             InputManager.Instance.PlayerInput.Attack.OnDown += OnShouldCombo;
         }
         private void OnShouldCombo()
@@ -80,11 +82,11 @@ namespace TwoDotFiveDimension
                             ComboCharacter.PrefabDamagePopup.transform,
                             hitEnemy.gameObject.transform.position, 
                             attackDir,
-                            PlayerStats.Instance.damage, 
-                            PlayerStats.Instance.damage>5);
+                            _attackDamage, 
+                            PlayerStats.Instance.damage>1);
                         Object.Instantiate(_hitEffectPrefab, collider.transform);
                         AudioManager.Instance.PlaySound(SoundType.SFX_PlayerGetHit);
-                        hitEnemy.TakeDamage(PlayerStats.Instance.damage);
+                        hitEnemy.TakeDamage(_attackDamage);
                         Debug.Log("Enemy Has Taken:" + AttackIndex + "Damage");
                         _collidersDamaged.Add(collider);
                     }

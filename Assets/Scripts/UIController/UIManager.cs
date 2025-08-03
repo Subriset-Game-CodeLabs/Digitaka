@@ -2,7 +2,7 @@ using Input;
 using UIController.Stats;
 using UnityEngine;
 
-namespace DefaultNamespace.UIController
+namespace UIController
 {
     public class UIManager : MonoBehaviour
     {
