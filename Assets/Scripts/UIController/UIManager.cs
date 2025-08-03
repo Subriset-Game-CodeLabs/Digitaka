@@ -1,3 +1,4 @@
+using System;
 using Input;
 using UIController.Stats;
 using UnityEngine;
@@ -24,6 +25,12 @@ namespace UIController
                 Destroy(gameObject);
             }
         }
+
+        private void Start()
+        {
+            if(!_pauseMenu.activeSelf) GameManager.Instance.StartGame();
+        }
+
         public void StartCooldownUltimate(float duration)
         {
             if (_ultimateCooldownUI != null)

@@ -16,4 +16,4 @@ MonoBehaviour:
   - key: ajisaka
     sprite: {fileID: 21300000, guid: 4deaf03b8e92f2f4ba20b6180d30f0a7, type: 3}
   - key: npc
-    sprite: {fileID: -3503810719290072720, guid: 859d6346e6c9d3542ab8349e46b786fd, type: 3}
+    sprite: {fileID: -1814955430, guid: 8ca65b061e7e5fe44bc49869b584f030, type: 3}

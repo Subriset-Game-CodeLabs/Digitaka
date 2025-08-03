@@ -11,6 +11,8 @@ namespace QuestSystem
 
         private Dictionary<string, Quest> _questMap;
         private bool _alreadyInitialized = false;
+
+
         public void InitializeQuest()
         {
             if(_alreadyInitialized) return;

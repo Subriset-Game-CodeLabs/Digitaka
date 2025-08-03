@@ -1,6 +1,6 @@
-=== SideQuest1 ===
+=== MissingBrotherStart ===
 
-{ SideQuest1State :
+{ MissingBrotherState :
     - "RequirementsNotMet": -> requirementsNotMet
     - "CanStart": -> canStart
     - "InProgress": -> inProgress
@@ -22,6 +22,7 @@ aku mencoba mengecoh mereka tapi akhirnya malah diriku yang terkepung
 Jadi Raka masih tersesat dan dikepung oleh penjahat tadi? #speaker: Aji Saka
 Ya tuan... aku khawatir dia dalam bahaya, bisakah anda mencari saudara saya? #speaker: Jaka
 Hanya dia keluarga yang saat ini saya punya 
+~ StartQuest("MissingBrother")
 * [Aku akan bantu kalian?]
     Tentu saja, saya akan membantu mu Jaka. tetaplah di sini dan bersembunyi. #speaker: Aji Saka
     Saya akan memberitahu Raka kalau dirimu menunggu di sini. 
@@ -30,7 +31,6 @@ Hanya dia keluarga yang saat ini saya punya
     Semua ada harganya, jika aku menolong nya, apa yang kalian bisa berikan padaku? #speaker: Aji Saka
     Misi pencarian dan penyelamatan itu tidak murah 
     Tolong tuan, saya mungkin hanya seorang yang jelata. Tapi saat ini semua barang bawaan kami ada di Raka. #speaker: Jaka
-~ StartQuest("SideQuest1")
 - -> END
 
 = inProgress

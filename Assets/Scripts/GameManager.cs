@@ -1,12 +1,16 @@
+using System;
 using Input;
+using QuestSystem;
 
-namespace DefaultNamespace
+public class GameManager: PersistentSingleton<GameManager>
 {
-    public class GameManager: PersistentSingleton<GameManager>
+    private void Start()
     {
-        public void StartGame()
-        {
-            InputManager.Instance.PlayerMode();
-        }
+        QuestManager.Instance.InitializeQuest();
+    }
+
+    public void StartGame()
+    {
+        InputManager.Instance.PlayerMode();
     }
 }

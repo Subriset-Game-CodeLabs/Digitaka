@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using DefaultNamespace;
 using Ink.Runtime;
 using Input;
 using QuestSystem;
@@ -106,7 +105,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         }
 
         dialougePlaying = true;
-
+        InputManager.Instance.PlayerMode();
         GameEventsManager.Instance.DialogueEvents.DialogueStarted();
 
         if (!knotName.Equals(""))
@@ -191,6 +190,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         dialougePlaying = false;
 
         GameEventsManager.Instance.DialogueEvents.DialogueFinsihed();
+        // InputManager.Instance.PlayerMode();
 
         inkDialogueVariables.StopListening(story);
 

@@ -6,12 +6,12 @@ EXTERNAL OpenShop()
 
 // quest ids (questid + "Id" for variable name)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"
-VAR SideQuest1Id = "SideQuest1"
+VAR MissingBrotherId = "MissingBrother"
 VAR SideQuest2Id = "SideQuest2"
 
 // quest states (questid + "State" for variable name)
 VAR VisitPlaceQuestState = "REQUIREMENTS_NOT_MET"
-VAR SideQuest1State = "REQUIREMENTS_NOT_MET"
+VAR MissingBrotherState = "REQUIREMENTS_NOT_MET"
 
 INCLUDE visit_place_quest_npc.ink
 
