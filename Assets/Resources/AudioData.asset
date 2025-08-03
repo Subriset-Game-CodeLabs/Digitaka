@@ -99,3 +99,8 @@ MonoBehaviour:
     mixer: {fileID: 3792715802179463148, guid: a07d0982df1e3b04a827145aac2e0f8a, type: 2}
     sounds:
     - {fileID: 8300000, guid: 62a2aa0372d1b4a45ad6f020b2e656e3, type: 3}
+  - name: SFX_Ultimate
+    volume: 1
+    mixer: {fileID: 3792715802179463148, guid: a07d0982df1e3b04a827145aac2e0f8a, type: 2}
+    sounds:
+    - {fileID: 8300000, guid: 4c70728289ffecc408845e483272a1d0, type: 3}

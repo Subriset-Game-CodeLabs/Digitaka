@@ -13,7 +13,7 @@ namespace TwoDotFiveDimension
             Duration = 0.5f;
             _attackDamage = 2;
             Animator.SetTrigger("Ultimate");
-            AudioManager.Instance.PlaySound(SoundType.SFX_Attack3);
+            AudioManager.Instance.PlaySound(SoundType.SFX_Ultimate);
             Debug.Log("Ultimate Fired");
         }
         public override void OnUpdate()

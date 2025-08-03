@@ -24,18 +24,18 @@ public class MapManager : PersistentSingleton<MapManager>
     void OnEnable()
     {
         InputManager.Instance.PlayerInput.OpenMap.OnDown += MapPressed;
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void OnDisable()
     {
         InputManager.Instance.PlayerInput.OpenMap.OnDown -= MapPressed;
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void Changescene(String scenename)
     {
-        SceneManager.LoadScene(scenename);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(scenename);
     }
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -45,7 +45,7 @@ public class MapManager : PersistentSingleton<MapManager>
 
     public void MapPressed()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenu")
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
             return;
 
         if (_mapPanel == null)
@@ -74,7 +74,7 @@ public class MapManager : PersistentSingleton<MapManager>
                 MapTile mapTile = item.gameObject.GetComponent<MapTile>();
                 // Debug.Log("checking map name : "  + mapTile.MapName);
                 // Debug.Log("Current Scene : " + SceneManager.GetActiveScene().name);
-                if (mapTile.MapName == SceneManager.GetActiveScene().name)
+                if (mapTile.MapName == UnityEngine.SceneManagement.SceneManager.GetActiveScene().name)
                 {
                     mapTile.ActivePointer();
                 }

@@ -11,8 +11,9 @@ namespace Audio
         private AudioSO _audioSo;
         private AudioSource _audioSource;
 
-        private void Start()
+        protected override void Awake()
         {
+            base.Awake();   
             _audioSo = Resources.Load<AudioSO>("AudioData");
             _audioSource = gameObject.GetComponent<AudioSource>();
         }

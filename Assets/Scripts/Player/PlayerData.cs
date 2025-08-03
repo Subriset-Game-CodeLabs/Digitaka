@@ -11,15 +11,15 @@ namespace TwoDotFiveDimension
         [field:SerializeField] public int healPotion { get; set; }
         [field:SerializeField] public int manaPotion { get; set; } = 1;
         [field:SerializeField] public int coin { get; set; } = 1;
+        [field:SerializeField] public int UltimateDamage = 2;
+        [field:SerializeField] public int UltimateManaCost = 2;
         public override void ResetStats()
         {
-            maxHealth = 3;
-            health = 3;
-            maxMana = 3;
-            mana = 3;
-            healPotion = 1;
-            manaPotion = 1;
-            coin = 0;
+            health = maxHealth;
+            mana = maxMana;
+            healPotion = 5;
+            manaPotion = 5;
+            coin = 5;
         }
     }
 }

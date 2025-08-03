@@ -17,5 +17,6 @@ namespace Audio
         SFX_Dash,
         SFX_Win,
         SFX_Lose,
+        SFX_Ultimate,
     }
 }

@@ -19,6 +19,7 @@ namespace TwoDotFiveDimension
 
         public bool IsAttacking { get; set; }
         private PlayerMovement _playerMovement;
+        private PlayerStats _playerStats;
         void Start()
         {
             IdleCombatState = new IdleCombatState();
@@ -27,8 +28,8 @@ namespace TwoDotFiveDimension
             GroundFinisher = new GroundFinisherState(this);
             FiniteStateMachine = new FiniteStateMachine<IStateCombat>(IdleCombatState);
             _playerMovement = GetComponent<PlayerMovement>();
+            _playerStats = PlayerStats.Instance;
             
-            InputManager.Instance.PlayerMode();
             InputManager.Instance.PlayerInput.Attack.OnDown += Attack;
         }
 
@@ -65,11 +66,11 @@ namespace TwoDotFiveDimension
 
         public void Ultimate()
         {
-            if (FiniteStateMachine.GetCurrentState == IdleCombatState && 
-                _playerMovement.IsGrounded && 
-                _playerMovement.Movement == Vector2.zero
+            if (FiniteStateMachine.GetCurrentState == IdleCombatState 
                )
             {
+                _playerStats.UseMana(_playerStats.ultimateCost);
+                Debug.Log("Ultimate Fired");
                 FiniteStateMachine.ChangeState(new GroundUltimateState(this));
             }
         }
