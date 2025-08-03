@@ -3698,7 +3698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a52b89263ab0745bc5643318eed349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dialogueKnotName: SideQuest2
+  _dialogueKnotName: test
   _questInfoForPoint: {fileID: 11400000, guid: 082927dc11add5743b2e777ffa759996, type: 2}
   _startPoint: 1
   _finishPoint: 1
