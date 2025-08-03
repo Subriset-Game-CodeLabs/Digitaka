@@ -6,13 +6,21 @@ EXTERNAL OpenShop()
 
 // quest ids (questid + "Id" for variable name)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"
+VAR SideQuest1Id = "SideQuest1"
+VAR SideQuest2Id = "SideQuest2"
 
 // quest states (questid + "State" for variable name)
 VAR VisitPlaceQuestState = "REQUIREMENTS_NOT_MET"
+VAR SideQuest1State = "REQUIREMENTS_NOT_MET"
 
 INCLUDE visit_place_quest_npc.ink
 
 INCLUDE merchant_npt.ink
+
+// side quest
+INCLUDE side_quest1.ink
+INCLUDE side_quest2.ink
+
 
 === testspeaker ===
 Hi my name is aji saka #speaker:Aji Saka #portrait:ajisaka
