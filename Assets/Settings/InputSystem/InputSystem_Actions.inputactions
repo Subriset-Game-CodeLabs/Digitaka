@@ -94,6 +94,33 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Ultimate",
+                    "type": "Button",
+                    "id": "ff55fc3c-9b89-449e-b833-cffc75167b8b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ManaPotion",
+                    "type": "Button",
+                    "id": "269e7aba-1eaa-45dc-9280-c8d335e4e447",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "HealthPotion",
+                    "type": "Button",
+                    "id": "d65ba05b-e6d7-4cf4-a429-09dcc76422d5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -490,6 +517,39 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "QuestLog",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7ec79577-bb60-40eb-91bb-95663082a9ba",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Ultimate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d1fc0a4-81db-4f2e-ab34-092b89268fb4",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ManaPotion",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3eb9a8c7-9024-4a87-9b29-2eb7aae4b607",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "HealthPotion",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -50,11 +50,17 @@ namespace Input
         private InputButton _jump;
         private InputButton _interact;
         private InputButton _questLog;
+        private InputButton _manaPotion;
+        private InputButton _healthPotion;
+        private InputButton _ultimate;
         public InputButton Attack => _attack;
         public InputValue<Vector2> Movement => _movement;
         public InputButton Jump => _jump;
         public InputButton Interact => _interact;
         public InputButton QuestLog => _questLog;
+        public InputButton ManaPotion => _manaPotion;
+        public InputButton HealthPotion => _healthPotion;
+        public InputButton Ultimate => _ultimate;
         public override bool HasPollable => true;
 
         public PlayerActionMap(InputActions action) : base(action)
@@ -64,6 +70,9 @@ namespace Input
             _jump = new InputButton(action.Player.Jump);
             _interact = new InputButton(action.Player.Interact);
             _questLog = new InputButton(action.Player.QuestLog);
+            _manaPotion = new InputButton(action.Player.ManaPotion);
+            _healthPotion = new InputButton(action.Player.HealthPotion);
+            _ultimate = new InputButton(action.Player.Ultimate);
         }
 
 

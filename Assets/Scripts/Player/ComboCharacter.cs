@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using Input;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ namespace TwoDotFiveDimension
         [field: SerializeField] public GameObject Hiteffect { get; private set; }
         [field:SerializeField] public GameObject PrefabDamagePopup { get; private set; }
 
+        public bool IsAttacking { get; set; }
         private PlayerMovement _playerMovement;
         void Start()
         {
@@ -49,10 +51,13 @@ namespace TwoDotFiveDimension
         {
             FiniteStateMachine.OnFixedUpdate();
         }
-
+    
         void Attack()
         {
-            if (FiniteStateMachine.GetCurrentState == IdleCombatState && _playerMovement.IsGrounded)
+            if (FiniteStateMachine.GetCurrentState == IdleCombatState && 
+                _playerMovement.IsGrounded && 
+                _playerMovement.Movement == Vector2.zero
+                )
             {
                 FiniteStateMachine.ChangeState(new GroundEntryState(this));
             }

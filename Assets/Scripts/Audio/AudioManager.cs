@@ -8,11 +8,12 @@ namespace Audio
     [RequireComponent(typeof(AudioSource))]
     public class AudioManager:PersistentSingleton<AudioManager>
     {
-        [SerializeField] private AudioSO _audioSo;
+        private AudioSO _audioSo;
         private AudioSource _audioSource;
 
         private void Start()
         {
+            _audioSo = Resources.Load<AudioSO>("AudioData");
             _audioSource = gameObject.GetComponent<AudioSource>();
         }
 

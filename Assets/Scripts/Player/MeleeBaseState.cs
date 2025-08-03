@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using Audio;
+using Enemy;
 using Input;
 using UnityEngine;
 
@@ -24,14 +26,14 @@ namespace TwoDotFiveDimension
         }
         public override void OnEnter()
         {
-            // reset semua
             time = fixedtime = latetime = 0f;
             ShouldCombo = false;
+            ComboCharacter.IsAttacking = true;
             Animator = ComboCharacter.Animator;
             _collidersDamaged = new List<Collider>();
             _cameraShake = CameraShake.Instance;
             HitCollider = ComboCharacter.Hitbox;
-            // _hitEffectPrefab = ComboCharacter.Hiteffect;
+            _hitEffectPrefab = ComboCharacter.Hiteffect;
             InputManager.Instance.PlayerInput.Attack.OnDown += OnShouldCombo;
         }
         private void OnShouldCombo()
@@ -63,31 +65,26 @@ namespace TwoDotFiveDimension
                 ~0, // All layers
                 QueryTriggerInteraction.Collide
             );
-
-            // Collider[] collidersToDamage = new Collider[10];
-            // ContactFilter2D filter = new ContactFilter2D();
-            // filter.useTriggers = true;
-            // int colliderCount = Physics.OverlapBox(HitCollider, filter, collidersToDamage);
             foreach  (Collider collider in collidersToDamage)
             {
-
                 if (!_collidersDamaged.Contains(collider))
                 {
-                    TeamComponent hitTeamComponent = collider.GetComponentInChildren<TeamComponent>();
+                    EnemyStats hitEnemy = collider.GetComponentInChildren<EnemyStats>();
 
                     // Only check colliders with a valid Team Componnent attached
-                    if (hitTeamComponent && hitTeamComponent.TeamIndex == TeamIndex.Enemy)
+                    if (hitEnemy && hitEnemy.IsAlive)
                     {
                         _cameraShake.Shake(0.2f, 0.05f);
-                        int damageAmount = Random.Range(1, 50);
-                        Vector3 attackDir = (hitTeamComponent.transform.position - ComboCharacter.transform.position);
+                        Vector3  attackDir = (hitEnemy.transform.position - ComboCharacter.transform.position);
                         DamagePopup.Create(
                             ComboCharacter.PrefabDamagePopup.transform,
-                            hitTeamComponent.gameObject.transform.position, 
+                            hitEnemy.gameObject.transform.position, 
                             attackDir,
-                            damageAmount, 
-                            damageAmount>30);
-                        // Object.Instantiate(_hitEffectPrefab, collidersToDamage[i].transform);
+                            PlayerStats.Instance.damage, 
+                            PlayerStats.Instance.damage>5);
+                        Object.Instantiate(_hitEffectPrefab, collider.transform);
+                        AudioManager.Instance.PlaySound(SoundType.SFX_PlayerGetHit);
+                        hitEnemy.TakeDamage(PlayerStats.Instance.damage);
                         Debug.Log("Enemy Has Taken:" + AttackIndex + "Damage");
                         _collidersDamaged.Add(collider);
                     }
@@ -98,6 +95,7 @@ namespace TwoDotFiveDimension
         public override void OnExit()
         {
             InputManager.Instance.PlayerInput.Attack.OnDown -= OnShouldCombo;
+            ComboCharacter.IsAttacking = false;
         }
 
     }

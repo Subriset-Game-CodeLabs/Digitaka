@@ -1,3 +1,4 @@
+using Audio;
 using UnityEngine;
 
 namespace TwoDotFiveDimension
@@ -12,6 +13,7 @@ namespace TwoDotFiveDimension
             AttackIndex = 2;
             Duration = 0.5f;
             Animator.SetTrigger("Attack" + AttackIndex);
+            AudioManager.Instance.PlaySound(SoundType.SFX_Attack2);
             Debug.Log("Player Attack " + AttackIndex+" Fired");
         }
         public override void OnUpdate()

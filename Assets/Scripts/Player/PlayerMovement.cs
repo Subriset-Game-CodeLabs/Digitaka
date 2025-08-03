@@ -1,4 +1,7 @@
 using System;
+using System.Collections;
+using Audio;
+using DefaultNamespace.UIController;
 using Input;
 using UnityEngine;
 
@@ -10,57 +13,102 @@ namespace TwoDotFiveDimension
         [SerializeField] private SpriteRenderer _spriteRenderer;
         [SerializeField] private int _playerSpeed;
         [SerializeField] private int _jumpForce;
-        [SerializeField] private LayerMask _terrainLayer;
+        
+        [Header("Dash Settings")]
+        [SerializeField] private float _dashDuration ;
+        [SerializeField] private int _dashSpeed ;
+        [SerializeField] private float _dashCooldown = 1f;
+       
+        [Header("Ultimate Settings")]
+        [SerializeField] private float _ultimateCooldown = 5f;
+        [SerializeField] private int _ultimateDamage = 50;
+        [SerializeField] private int _ultimateManaCost = 20;
+        
+        [Header("Potion Settings")]
+        [SerializeField] private float _healthPotionCooldown = 2f;
+        [SerializeField] private float _manaPotionCooldown = 2f;
+        
         private InputManager _inputManager;
         private Vector2 _movement;
         private Rigidbody _rigidbody;
+        private ComboCharacter _comboCharacter;
 
+        private bool _isDashing;
+        private float _dashTime;
+        private float _lastDashTime = -999f;
+        private float _lastUltimateTime = -999f;
+        private float _lastHealthPotionTime = -999f;
+        private float _lastManaPotionTime = -999f;
         private bool _isRolling;
         private bool _isGrounded;
         private int _facingDirection = 1;
-        private Sensor_HeroKnight   _groundSensor;
-        private Sensor_HeroKnight   _wallSensorR1;
-        private Sensor_HeroKnight   _wallSensorR2;
-        private Sensor_HeroKnight   _wallSensorL1;
-        private Sensor_HeroKnight   _wallSensorL2;
+        private Sensor   _groundSensor;
+        private Sensor   _wallSensorR1;
+        private Sensor   _wallSensorR2;
+        private Sensor   _wallSensorL1;
+        private Sensor   _wallSensorL2;
+        private PlayerStats _playerStats;
+        private UIManager _uiManager;
         
         private static readonly int AnimState = Animator.StringToHash("AnimState");
         private static readonly int GroundedState = Animator.StringToHash("Grounded");
         private static readonly int JumpState = Animator.StringToHash("Jump");
 
         public bool IsGrounded => _isGrounded;
+        public Vector2 Movement => _movement;
         private void Start()
         {
+            _comboCharacter = GetComponent<ComboCharacter>();
             _rigidbody = GetComponent<Rigidbody>();
+            _playerStats = PlayerStats.Instance;
+            _uiManager = UIManager.Instance;
             InitializeSensor();
         }
 
         private void InitializeSensor()
         {
-            _groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
-            _wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor_HeroKnight>();
-            _wallSensorR2 = transform.Find("WallSensor_R2").GetComponent<Sensor_HeroKnight>();
-            _wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor_HeroKnight>();
-            _wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor_HeroKnight>();
+            _groundSensor = transform.Find("GroundSensor").GetComponent<Sensor>();
+            _wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor>();
+            _wallSensorR2 = transform.Find("WallSensor_R2").GetComponent<Sensor>();
+            _wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor>();
+            _wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor>();
         }
         private void Update()
         {
             _movement = _inputManager.PlayerInput.Movement.Get();
-            
             Move();
         }
 
         private void OnEnable()
         {
             _inputManager = InputManager.Instance;
-            _inputManager.PlayerInput.Jump.OnDown += Jump;
+            _inputManager.PlayerInput.Jump.OnDown += Dash;
+            _inputManager.PlayerInput.Ultimate.OnDown += UltimateAbility;
+            _inputManager.PlayerInput.ManaPotion.OnDown += UseManaPotion;
+            _inputManager.PlayerInput.HealthPotion.OnDown += UseHealthPotion;
         }
 
         private void OnDisable()
         {
-            _inputManager.PlayerInput.Jump.OnDown -= Jump;
+            _inputManager.PlayerInput.Jump.OnDown -= Dash;
+            _inputManager.PlayerInput.Ultimate.OnDown -= UltimateAbility;
+            _inputManager.PlayerInput.ManaPotion.OnDown -= UseManaPotion;
+            _inputManager.PlayerInput.HealthPotion.OnDown -= UseHealthPotion;
         }
-
+        
+        private void Dash()
+        {
+            if (_isDashing || Time.time < _lastDashTime + _dashCooldown) return;
+            if (_comboCharacter.IsAttacking) return;
+            AudioManager.Instance.PlaySound(SoundType.SFX_Dash);
+            _isDashing = true;
+            _dashTime = _dashDuration;
+            _lastDashTime = Time.time;
+            
+            _groundSensor.Disable(_dashDuration); 
+            _animator.SetInteger(AnimState, 2); 
+            _uiManager.StartCooldownDash(_dashCooldown);
+        }
         private void Jump()
         {
             if(!_isGrounded) return;
@@ -70,9 +118,45 @@ namespace TwoDotFiveDimension
             _rigidbody.linearVelocity = new Vector2(_rigidbody.linearVelocity.x, _jumpForce);
             _groundSensor.Disable(0.2f);
         }
+        
+        private void UseHealthPotion()
+        {
+            if (Time.time < _lastHealthPotionTime + _healthPotionCooldown) return;
+            if (_playerStats.healPotion <= 0) return;
+        
+            AudioManager.Instance.PlaySound(SoundType.SFX_HealPotion);
+            _lastHealthPotionTime = Time.time;
+            _playerStats.UseHealthPotion(1);
+            _uiManager.StartCooldownHealthPotion(_healthPotionCooldown);
+            Debug.Log("Used Health Potion");
+           
+        }
+        private void UseManaPotion()
+        {
+            if (Time.time < _lastManaPotionTime + _manaPotionCooldown) return;
+            if (_playerStats.manaPotion <= 0) return;
+            
+            AudioManager.Instance.PlaySound(SoundType.SFX_ManaPotion);
+            _lastManaPotionTime = Time.time;
+            _playerStats.UseManaPotion(1);
+            _uiManager.StartCooldownManaPotion(_manaPotionCooldown);
+            Debug.Log("Used Mana Potion");
+        }
+        private void UltimateAbility()
+        {
+            if (Time.time < _lastUltimateTime + _ultimateCooldown) return;
+            if (_playerStats.currentMana < _ultimateManaCost) return;
+
+            _lastUltimateTime = Time.time;
+            _playerStats.UseMana(_ultimateManaCost);
+            _animator.SetTrigger("Attack3");
+            _uiManager.StartCooldownUltimate(_ultimateCooldown);
+            Debug.Log("Ultimate used! Damage: " + _ultimateDamage);
+        }
 
         private void Move()
         {
+            if(_comboCharacter.IsAttacking) return;
             if (_movement.x > 0)
             {
                 _facingDirection = 1;
@@ -90,7 +174,18 @@ namespace TwoDotFiveDimension
                 _rigidbody.linearVelocity = moveDirection; 
 
             }
-            
+            if (_isDashing)
+            {
+                _dashTime -= Time.deltaTime;
+                _rigidbody.linearVelocity = new Vector3(_facingDirection * _dashSpeed, 0, 0);
+
+                if (_dashTime <= 0)
+                {
+                    _isDashing = false;
+                }
+
+                return; // abaikan pergerakan lain selama dash
+            }
             //Check if character just landed on the ground
             if (!_isGrounded && _groundSensor.State())
             {

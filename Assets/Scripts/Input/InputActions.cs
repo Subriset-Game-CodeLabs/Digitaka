@@ -116,6 +116,33 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Ultimate"",
+                    ""type"": ""Button"",
+                    ""id"": ""ff55fc3c-9b89-449e-b833-cffc75167b8b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ManaPotion"",
+                    ""type"": ""Button"",
+                    ""id"": ""269e7aba-1eaa-45dc-9280-c8d335e4e447"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""HealthPotion"",
+                    ""type"": ""Button"",
+                    ""id"": ""d65ba05b-e6d7-4cf4-a429-09dcc76422d5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -512,6 +539,39 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""QuestLog"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ec79577-bb60-40eb-91bb-95663082a9ba"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Ultimate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3d1fc0a4-81db-4f2e-ab34-092b89268fb4"",
+                    ""path"": ""<Keyboard>/2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""ManaPotion"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3eb9a8c7-9024-4a87-9b29-2eb7aae4b607"",
+                    ""path"": ""<Keyboard>/1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""HealthPotion"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1129,6 +1189,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_QuestLog = m_Player.FindAction("QuestLog", throwIfNotFound: true);
+        m_Player_Ultimate = m_Player.FindAction("Ultimate", throwIfNotFound: true);
+        m_Player_ManaPotion = m_Player.FindAction("ManaPotion", throwIfNotFound: true);
+        m_Player_HealthPotion = m_Player.FindAction("HealthPotion", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1219,6 +1282,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Next;
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_QuestLog;
+    private readonly InputAction m_Player_Ultimate;
+    private readonly InputAction m_Player_ManaPotion;
+    private readonly InputAction m_Player_HealthPotion;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1233,6 +1299,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         public InputAction @Next => m_Wrapper.m_Player_Next;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @QuestLog => m_Wrapper.m_Player_QuestLog;
+        public InputAction @Ultimate => m_Wrapper.m_Player_Ultimate;
+        public InputAction @ManaPotion => m_Wrapper.m_Player_ManaPotion;
+        public InputAction @HealthPotion => m_Wrapper.m_Player_HealthPotion;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1272,6 +1341,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @QuestLog.started += instance.OnQuestLog;
             @QuestLog.performed += instance.OnQuestLog;
             @QuestLog.canceled += instance.OnQuestLog;
+            @Ultimate.started += instance.OnUltimate;
+            @Ultimate.performed += instance.OnUltimate;
+            @Ultimate.canceled += instance.OnUltimate;
+            @ManaPotion.started += instance.OnManaPotion;
+            @ManaPotion.performed += instance.OnManaPotion;
+            @ManaPotion.canceled += instance.OnManaPotion;
+            @HealthPotion.started += instance.OnHealthPotion;
+            @HealthPotion.performed += instance.OnHealthPotion;
+            @HealthPotion.canceled += instance.OnHealthPotion;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1306,6 +1384,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @QuestLog.started -= instance.OnQuestLog;
             @QuestLog.performed -= instance.OnQuestLog;
             @QuestLog.canceled -= instance.OnQuestLog;
+            @Ultimate.started -= instance.OnUltimate;
+            @Ultimate.performed -= instance.OnUltimate;
+            @Ultimate.canceled -= instance.OnUltimate;
+            @ManaPotion.started -= instance.OnManaPotion;
+            @ManaPotion.performed -= instance.OnManaPotion;
+            @ManaPotion.canceled -= instance.OnManaPotion;
+            @HealthPotion.started -= instance.OnHealthPotion;
+            @HealthPotion.performed -= instance.OnHealthPotion;
+            @HealthPotion.canceled -= instance.OnHealthPotion;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1506,6 +1593,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         void OnNext(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnQuestLog(InputAction.CallbackContext context);
+        void OnUltimate(InputAction.CallbackContext context);
+        void OnManaPotion(InputAction.CallbackContext context);
+        void OnHealthPotion(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

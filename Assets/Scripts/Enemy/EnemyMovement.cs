@@ -34,7 +34,5 @@ namespace Enemy
             }
             _previousX = currentX;  
         }
-            
-     
     }
 }
