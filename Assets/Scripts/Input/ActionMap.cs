@@ -50,11 +50,13 @@ namespace Input
         private InputButton _jump;
         private InputButton _interact;
         private InputButton _questLog;
+        private InputButton _openMap;
         public InputButton Attack => _attack;
         public InputValue<Vector2> Movement => _movement;
         public InputButton Jump => _jump;
         public InputButton Interact => _interact;
         public InputButton QuestLog => _questLog;
+        public InputButton OpenMap => _openMap;
         public override bool HasPollable => true;
 
         public PlayerActionMap(InputActions action) : base(action)
@@ -64,6 +66,7 @@ namespace Input
             _jump = new InputButton(action.Player.Jump);
             _interact = new InputButton(action.Player.Interact);
             _questLog = new InputButton(action.Player.QuestLog);
+            _openMap = new InputButton(action.Player.OpenMap);
         }
 
 

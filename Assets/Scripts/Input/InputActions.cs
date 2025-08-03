@@ -67,7 +67,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""name"": ""Crouch"",
                     ""type"": ""Button"",
                     ""id"": ""27c5f898-bc57-4ee1-8800-db469aca5fe3"",
-                    ""expectedControlType"": ""Button"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
@@ -112,6 +112,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""name"": ""QuestLog"",
                     ""type"": ""Button"",
                     ""id"": ""28a1a612-3be0-4fbb-9fe5-96769fde962d"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""OpenMap"",
+                    ""type"": ""Button"",
+                    ""id"": ""82c483c7-f913-472c-b262-3f75ad5d671c"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -512,6 +521,17 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""QuestLog"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5353a3d7-2494-401a-a631-cb05df985328"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""OpenMap"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1129,6 +1149,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_Player_Next = m_Player.FindAction("Next", throwIfNotFound: true);
         m_Player_Sprint = m_Player.FindAction("Sprint", throwIfNotFound: true);
         m_Player_QuestLog = m_Player.FindAction("QuestLog", throwIfNotFound: true);
+        m_Player_OpenMap = m_Player.FindAction("OpenMap", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1219,6 +1240,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Next;
     private readonly InputAction m_Player_Sprint;
     private readonly InputAction m_Player_QuestLog;
+    private readonly InputAction m_Player_OpenMap;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -1233,6 +1255,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         public InputAction @Next => m_Wrapper.m_Player_Next;
         public InputAction @Sprint => m_Wrapper.m_Player_Sprint;
         public InputAction @QuestLog => m_Wrapper.m_Player_QuestLog;
+        public InputAction @OpenMap => m_Wrapper.m_Player_OpenMap;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1272,6 +1295,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @QuestLog.started += instance.OnQuestLog;
             @QuestLog.performed += instance.OnQuestLog;
             @QuestLog.canceled += instance.OnQuestLog;
+            @OpenMap.started += instance.OnOpenMap;
+            @OpenMap.performed += instance.OnOpenMap;
+            @OpenMap.canceled += instance.OnOpenMap;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -1306,6 +1332,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @QuestLog.started -= instance.OnQuestLog;
             @QuestLog.performed -= instance.OnQuestLog;
             @QuestLog.canceled -= instance.OnQuestLog;
+            @OpenMap.started -= instance.OnOpenMap;
+            @OpenMap.performed -= instance.OnOpenMap;
+            @OpenMap.canceled -= instance.OnOpenMap;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -1506,6 +1535,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         void OnNext(InputAction.CallbackContext context);
         void OnSprint(InputAction.CallbackContext context);
         void OnQuestLog(InputAction.CallbackContext context);
+        void OnOpenMap(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {
