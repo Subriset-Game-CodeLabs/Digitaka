@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4484e603883ee3944b93cb4287b0f5d4, type: 3}
+  m_Name: SmallHealthPotion
+  m_EditorClassIdentifier: 
+  ItemName: Small Health Potion
+  ItemSprite: {fileID: 0}
+  itemType: 0
+  ItemPrice: 10
+  ItemDiscountPrice: 7
+  ItemDescription: "A faintly glowing vial containing a diluted healing brew. Heals
+    1 Heart of the player\u2019s health"
+  statEffect: 0
+  amount: 1

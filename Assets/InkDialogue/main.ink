@@ -1,0 +1,25 @@
+// External Functions
+EXTERNAL StartQuest(questId)
+EXTERNAL AdvanceQuest(questId)
+EXTERNAL FinishQuest(questId)
+EXTERNAL OpenShop()
+
+// quest ids (questid + "Id" for variable name)
+VAR VisitPlaceQuestId = "VisitPlaceQuest"
+
+// quest states (questid + "State" for variable name)
+VAR VisitPlaceQuestState = "REQUIREMENTS_NOT_MET"
+
+INCLUDE visit_place_quest_npc.ink
+
+INCLUDE merchant_npt.ink
+
+=== testspeaker ===
+Hi my name is aji saka #speaker:Aji Saka #portrait:ajisaka
+I'm a traveler from a far 
+What happend to this village?
+My village is being controlled by the evil king #speaker:NPC  #portrait:npc
+he demand sacrifice everyday 
+WHAT!!! #speaker:Aji Saka #portrait:ajisaka
+
+- -> END
