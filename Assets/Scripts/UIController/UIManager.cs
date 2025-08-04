@@ -13,7 +13,12 @@ namespace UIController
         [SerializeField] private CooldownUI _healthPotionCooldownUI;
         [SerializeField] private CooldownUI _manaPotionCooldownUI;
         [SerializeField] private GameObject _pauseMenu;
-        private bool isPaused = false;
+        [SerializeField] private bool isPaused = false;
+
+        public void SetPause(bool value)
+        {
+            isPaused = value;
+        }
         private void Awake()
         {
             if (Instance == null)
@@ -24,6 +29,11 @@ namespace UIController
             {
                 Destroy(gameObject);
             }
+        }
+
+        private void Start()
+        {
+            if(!isPaused) GameManager.Instance.StartGame();
         }
 
         public void StartCooldownUltimate(float duration)

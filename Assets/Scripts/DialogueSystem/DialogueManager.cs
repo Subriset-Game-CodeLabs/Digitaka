@@ -106,7 +106,6 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
         dialougePlaying = true;
         GameEventsManager.Instance.DialogueEvents.DialogueStarted();
-
         if (!knotName.Equals(""))
         {
             story.ChoosePathString(knotName);
