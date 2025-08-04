@@ -33,6 +33,7 @@ namespace UIController
 
         private void Start()
         {
+            Debug.Log(isPaused);
             if(!isPaused) GameManager.Instance.StartGame();
         }
 
