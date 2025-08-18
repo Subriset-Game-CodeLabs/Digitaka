@@ -14,18 +14,6 @@ namespace TwoDotFiveDimension
         [SerializeField] private int _playerSpeed;
         [SerializeField] private int _jumpForce;
         
-        [Header("Dash Settings")]
-        [SerializeField] private float _dashDuration ;
-        [SerializeField] private int _dashSpeed ;
-        [SerializeField] private float _dashCooldown = 1f;
-       
-        [Header("Ultimate Settings")]
-        [SerializeField] private float _ultimateCooldown = 5f;
-        
-        [Header("Potion Settings")]
-        [SerializeField] private float _healthPotionCooldown = 2f;
-        [SerializeField] private float _manaPotionCooldown = 2f;
-        
         private Vector2 _movement;
         private Rigidbody _rigidbody;
         private ComboCharacter _comboCharacter;
@@ -40,10 +28,6 @@ namespace TwoDotFiveDimension
         private bool _isGrounded;
         private int _facingDirection = 1;
         private Sensor   _groundSensor;
-        private Sensor   _wallSensorR1;
-        private Sensor   _wallSensorR2;
-        private Sensor   _wallSensorL1;
-        private Sensor   _wallSensorL2;
         private PlayerStats _playerStats;
         private UIManager _uiManager;
         private AudioManager _audioManager;
@@ -68,10 +52,6 @@ namespace TwoDotFiveDimension
         private void InitializeSensor()
         {
             _groundSensor = transform.Find("GroundSensor").GetComponent<Sensor>();
-            // _wallSensorR1 = transform.Find("WallSensor_R1").GetComponent<Sensor>();
-            // _wallSensorR2 = transform.Find("WallSensor_R2").GetComponent<Sensor>();
-            // _wallSensorL1 = transform.Find("WallSensor_L1").GetComponent<Sensor>();
-            // _wallSensorL2 = transform.Find("WallSensor_L2").GetComponent<Sensor>();
         }
         private void Update()
         {
@@ -98,17 +78,17 @@ namespace TwoDotFiveDimension
         
         private void Dash()
         {
-            if (_isDashing || Time.time < _lastDashTime + _dashCooldown) return;
+            if (_isDashing || Time.time < _lastDashTime + _playerStats.dashCooldown) return;
             if (_comboCharacter.IsAttacking) return;
             _audioManager.PlaySound(SoundType.SFX_Dash);
             _isDashing = true;
-            _dashTime = _dashDuration;
+            _dashTime = _playerStats.dashDuration;
             _lastDashTime = Time.time;
             
-            _groundSensor.Disable(_dashDuration); 
+            _groundSensor.Disable(_playerStats.dashDuration); 
             _animator.SetTrigger( "Dash"); 
             _animator.SetInteger(AnimState, 2); 
-            _uiManager.StartCooldownDash(_dashCooldown);
+            GameEventsManager.Instance.PlayerActionsEvents.DashPerformed();
         }
         private void Jump()
         {
@@ -122,36 +102,36 @@ namespace TwoDotFiveDimension
         
         private void UseHealthPotion()
         {
-            if (Time.time < _lastHealthPotionTime + _healthPotionCooldown) return;
+            if (Time.time < _lastHealthPotionTime + _playerStats.healthPotionCooldown) return;
             if (_playerStats.healPotion <= 0) return;
             Debug.Log(_audioManager);
             _audioManager.PlaySound(SoundType.SFX_HealPotion);
             _lastHealthPotionTime = Time.time;
             _playerStats.UseHealthPotion(1);
-            _uiManager.StartCooldownHealthPotion(_healthPotionCooldown);
+            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
             Debug.Log("Used Health Potion");
            
         }
         private void UseManaPotion()
         {
-            if (Time.time < _lastManaPotionTime + _manaPotionCooldown) return;
+            if (Time.time < _lastManaPotionTime + _playerStats.manaPotionCooldown) return;
             if (_playerStats.manaPotion <= 0) return;
             
             _audioManager.PlaySound(SoundType.SFX_ManaPotion);
             _lastManaPotionTime = Time.time;
             _playerStats.UseManaPotion(1);
-            _uiManager.StartCooldownManaPotion(_manaPotionCooldown);
+            GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
             Debug.Log("Used Mana Potion");
         }
         private void UltimateAbility()
         {
-            if (Time.time < _lastUltimateTime + _ultimateCooldown) return;
+            if (Time.time < _lastUltimateTime + _playerStats.ultimateCooldown) return;
             if (!_playerStats.CanUltimate || Movement != Vector2.zero) return;
             Debug.Log(Movement);
             _lastUltimateTime = Time.time;
             _playerStats.UseMana(_playerStats.ultimateCost);
             _comboCharacter.Ultimate();
-            _uiManager.StartCooldownUltimate(_ultimateCooldown);
+            GameEventsManager.Instance.PlayerActionsEvents.UltimatePerformed();
             Debug.Log("Ultimate used! Damage: " + _playerStats.ultimateDamage);
         }
         
@@ -180,7 +160,7 @@ namespace TwoDotFiveDimension
             if (_isDashing)
             {
                 _dashTime -= Time.deltaTime;
-                _rigidbody.linearVelocity = new Vector3(_facingDirection * _dashSpeed, 0, 0);
+                _rigidbody.linearVelocity = new Vector3(_facingDirection * _playerStats.dashSpeed, 0, 0);
 
                 if (_dashTime <= 0)
                 {
@@ -203,7 +183,7 @@ namespace TwoDotFiveDimension
                 _animator.SetBool(GroundedState, _isGrounded);
             }
             
-            if (Mathf.Abs(_movement.x) > Mathf.Epsilon)
+            if (Mathf.Abs(_movement.x) > Mathf.Epsilon || Mathf.Abs(_movement.y) > Mathf.Epsilon)
             {
                 // Reset timer
                 _animator.SetInteger(AnimState, 1);

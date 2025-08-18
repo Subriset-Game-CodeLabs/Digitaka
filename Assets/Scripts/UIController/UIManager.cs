@@ -1,5 +1,6 @@
 using System;
 using Input;
+using TwoDotFiveDimension;
 using UIController.Stats;
 using UnityEngine;
 
@@ -14,7 +15,7 @@ namespace UIController
         [SerializeField] private CooldownUI _manaPotionCooldownUI;
         [SerializeField] private GameObject _pauseMenu;
         [SerializeField] private bool isPaused = false;
-
+        private PlayerStats _playerStats;
         public void SetPause(bool value)
         {
             isPaused = value;
@@ -30,47 +31,59 @@ namespace UIController
                 Destroy(gameObject);
             }
         }
-
         private void Start()
         {
-            Debug.Log(isPaused);
-            if(!isPaused) GameManager.Instance.StartGame();
-        }
-
-        public void StartCooldownUltimate(float duration)
-        {
-            if (_ultimateCooldownUI != null)
-            {
-                _ultimateCooldownUI.StartCooldown(duration);
-            }
-        }
-        public void StartCooldownHealthPotion(float duration)
-        {
-            if (_healthPotionCooldownUI != null)
-            {
-                _healthPotionCooldownUI.StartCooldown(duration);
-            }
-        }
-        public void StartCooldownManaPotion(float duration)
-        {
-            if (_manaPotionCooldownUI != null)
-            {
-                _manaPotionCooldownUI.StartCooldown(duration);
-            }
-        }
-        public void StartCooldownDash(float duration)
-        {
-            if (_dashCooldownUI != null)
-            {
-                _dashCooldownUI.StartCooldown(duration);
-            }
+            _playerStats = PlayerStats.Instance;
         }
 
         void OnEnable()
         {
             InputManager.Instance.PlayerInput.Pause.OnDown += Pause;
+            GameEventsManager.Instance.PlayerActionsEvents.OnHealthPotionUsed += StartCooldownHealthPotion;
+            GameEventsManager.Instance.PlayerActionsEvents.OnManaPotionUsed += StartCooldownManaPotion;
+            GameEventsManager.Instance.PlayerActionsEvents.OnDashPerformed += StartCooldownDash;
+            GameEventsManager.Instance.PlayerActionsEvents.OnUltimatePerformed += StartCooldownUltimate;
+        }
+        void OnDisable()
+        {
+            InputManager.Instance.PlayerInput.Pause.OnDown -= Pause;
+            GameEventsManager.Instance.PlayerActionsEvents.OnHealthPotionUsed -= StartCooldownHealthPotion;
+            GameEventsManager.Instance.PlayerActionsEvents.OnManaPotionUsed -= StartCooldownManaPotion;
+            GameEventsManager.Instance.PlayerActionsEvents.OnDashPerformed -= StartCooldownDash;
+            GameEventsManager.Instance.PlayerActionsEvents.OnUltimatePerformed -= StartCooldownUltimate;
+        }
+  
+        public void StartCooldownUltimate()
+        {
+            if (_ultimateCooldownUI != null)
+            {
+                _ultimateCooldownUI.StartCooldown(_playerStats.ultimateCooldown);
+            }
+        }
+        public void StartCooldownHealthPotion()
+        {
+            if (_healthPotionCooldownUI != null)
+            {
+                _healthPotionCooldownUI.StartCooldown(_playerStats.healthPotionCooldown);
+            }
+        }
+        public void StartCooldownManaPotion()
+        {
+            if (_manaPotionCooldownUI != null)
+            {
+                _manaPotionCooldownUI.StartCooldown(_playerStats.manaPotionCooldown);
+            }
+        }
+        public void StartCooldownDash()
+        {
+            if (_dashCooldownUI != null)
+            {
+                _dashCooldownUI.StartCooldown(_playerStats.dashCooldown);
+                Debug.Log("Dash cooldown started: " + _playerStats.dashCooldown);
+            }
         }
 
+    
         public void Pause()
         {
             if (isPaused)

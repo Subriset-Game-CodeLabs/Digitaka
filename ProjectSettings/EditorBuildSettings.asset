@@ -41,6 +41,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FixScene/A11.unity
     guid: d291b5d5c57379e4497271d50e02d052
+  - enabled: 1
+    path: Assets/Scenes/FixScene/GameLoop/GameLoop1.unity
+    guid: cae701ad746b55c409a5d7b8893bad86
+  - enabled: 1
+    path: Assets/Scenes/FixScene/GameLoop/GameLoop2.unity
+    guid: 3c142769d707d4a4193ecda3252e9399
+  - enabled: 1
+    path: Assets/Scenes/FixScene/GameLoop/GameLoop3.unity
+    guid: dc41aba44edadf04f9d55117af1d3b87
+  - enabled: 1
+    path: Assets/Scenes/FixScene/GameLoop/GameLoop4.unity
+    guid: ace0b0f80ad4d924cb5c8d6148c75ab1
+  - enabled: 1
+    path: Assets/Scenes/FixScene/MainCanvas.unity
+    guid: 53ceada4fe80db84a8e5ca0aa39ba29d
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

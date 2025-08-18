@@ -23,11 +23,17 @@ namespace Input
     public class UIActionMap : ActionMap
     {
         private InputButton _questLog;
+        private InputButton _interact;
+
         public InputButton QuestLog => _questLog;
+        public InputButton Interact => _interact;
+
         public override bool HasPollable => false;
         public UIActionMap(InputActions action) : base(action)
         {
             _questLog = new InputButton(action.UI.QuestLog);
+            _interact = new InputButton(action.UI.Interact);
+
         }
         public override void OnEnter()
         {

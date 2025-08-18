@@ -27,7 +27,7 @@ namespace UIController.Pause
         private void OnExitButton()
         {
             _pauseMenu.SetActive(false);
-            SceneManager.Instance.QuitGame();
+            GameManager.Instance.QuitGame();
         }
     }
 }

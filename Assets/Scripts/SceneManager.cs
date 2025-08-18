@@ -26,12 +26,13 @@ public class SceneManager: PersistentSingleton<SceneManager>
 
         UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
     }
-    public void QuitGame()
+    public void LoadSceneAdditive(string scene)
     {
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #else
-          Application.Quit();
-        #endif
+        var activeScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        Debug.Log(activeScene);
+        if (!activeScene.Equals(scene))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(scene, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        }
     }
 }

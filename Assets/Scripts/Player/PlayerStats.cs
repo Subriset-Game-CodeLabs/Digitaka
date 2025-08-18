@@ -69,6 +69,38 @@ namespace TwoDotFiveDimension
             get => _playerData.UltimateManaCost;
             private set => _playerData.UltimateManaCost = value;
         }
+        public float dashDuration
+        {
+            get => _playerData.DashDuration;
+            private set => _playerData.DashDuration = value;
+        }
+        public int dashSpeed
+        {
+            get => _playerData.DashSpeed;
+            private set => _playerData.DashSpeed = value;
+        }
+        public float dashCooldown
+        {
+            get => _playerData.DashCooldown;
+            private set => _playerData.DashCooldown = value;
+        }
+        
+        public float ultimateCooldown
+        {
+            get => _playerData.UltimateCooldown;
+            private set => _playerData.UltimateCooldown = value;
+        }
+        public float healthPotionCooldown
+        {
+            get => _playerData.HealthPotionCooldown;
+            private set => _playerData.HealthPotionCooldown = value;
+        }
+        public float manaPotionCooldown
+        {
+            get => _playerData.ManaPotionCooldown;
+            private set => _playerData.ManaPotionCooldown = value;
+        }
+        
         public bool IsAlive => currentHealth > 0 ;
         public bool CanUltimate => currentMana >= ultimateCost;
         public int damage

@@ -18,7 +18,7 @@ public class MapManager : PersistentSingleton<MapManager>
     protected override void Awake()
     {
         base.Awake();
-        _canvas = FindObjectOfType<Canvas>();
+        _canvas = FindFirstObjectByType<Canvas>();
     }
 
     void OnEnable()
@@ -40,7 +40,7 @@ public class MapManager : PersistentSingleton<MapManager>
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        _canvas = FindObjectOfType<Canvas>();
+        _canvas = FindFirstObjectByType<Canvas>();
     }
 
     public void MapPressed()

@@ -35,7 +35,7 @@ public class DialoguePanelUI : MonoBehaviour
         GameEventsManager.Instance.DialogueEvents.onDisplayDialogue += DisplayDialogue;
         GameEventsManager.Instance.DialogueEvents.onSpeakerChanged += SpeakerChanged;
         GameEventsManager.Instance.DialogueEvents.onPotraitChanged += PortraitChanged;
-        InputManager.Instance.PlayerInput.Interact.OnDown += SubmitPressed;
+        InputManager.Instance.UIInput.Interact.OnDown += SubmitPressed;
     }
 
     void OnDisable()
@@ -45,7 +45,7 @@ public class DialoguePanelUI : MonoBehaviour
         GameEventsManager.Instance.DialogueEvents.onDisplayDialogue -= DisplayDialogue;
         GameEventsManager.Instance.DialogueEvents.onSpeakerChanged -= SpeakerChanged;
         GameEventsManager.Instance.DialogueEvents.onPotraitChanged -= PortraitChanged;
-        InputManager.Instance.PlayerInput.Interact.OnDown -= SubmitPressed;
+        InputManager.Instance.UIInput.Interact.OnDown -= SubmitPressed;
     }
 
     private void SpeakerChanged(string speaker)

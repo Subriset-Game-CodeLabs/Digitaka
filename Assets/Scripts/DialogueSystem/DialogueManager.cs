@@ -24,8 +24,10 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
 
-    void Awake()
+
+    protected override void Awake()
     {
+        base.Awake();
         story = new Story(inkJson.text);
         inkExternalFunctions = new InkExternalFunctions();
         inkExternalFunctions.Bind(story);
@@ -44,7 +46,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         GameEventsManager.Instance.DialogueEvents.onEnterDialogue += EnterDialogue;
         GameEventsManager.Instance.DialogueEvents.onUpdateChoiceIndex += UpdateChoiceIndex;
         GameEventsManager.Instance.DialogueEvents.onUpdateInkDialogueVariables += UpdateInkDialogueVariable;
-        InputManager.Instance.PlayerInput.Interact.OnDown += SubmitPressed;
+        InputManager.Instance.UIInput.Interact.OnDown += SubmitPressed;
         GameEventsManager.Instance.QuestEvents.OnQuestStateChange += QuestStateChange;
         GameEventsManager.Instance.DialogueEvents.onLineTypingAnimation += LineTypeAnimation;
     }
@@ -54,7 +56,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         GameEventsManager.Instance.DialogueEvents.onEnterDialogue -= EnterDialogue;
         GameEventsManager.Instance.DialogueEvents.onUpdateChoiceIndex -= UpdateChoiceIndex;
         GameEventsManager.Instance.DialogueEvents.onUpdateInkDialogueVariables -= UpdateInkDialogueVariable;
-        InputManager.Instance.PlayerInput.Interact.OnDown -= SubmitPressed;
+        InputManager.Instance.UIInput.Interact.OnDown -= SubmitPressed;
         GameEventsManager.Instance.QuestEvents.OnQuestStateChange -= QuestStateChange;
         GameEventsManager.Instance.DialogueEvents.onLineTypingAnimation -= LineTypeAnimation;
     }
@@ -106,6 +108,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
         dialougePlaying = true;
         GameEventsManager.Instance.DialogueEvents.DialogueStarted();
+        InputManager.Instance.UIMode();
         if (!knotName.Equals(""))
         {
             story.ChoosePathString(knotName);
@@ -188,6 +191,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         dialougePlaying = false;
 
         GameEventsManager.Instance.DialogueEvents.DialogueFinsihed();
+        InputManager.Instance.PlayerMode();
 
         inkDialogueVariables.StopListening(story);
 

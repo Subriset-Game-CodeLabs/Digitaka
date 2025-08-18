@@ -719,6 +719,15 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""56ec026f-2e7b-4f04-95ab-e0e9c6a5c267"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1150,6 +1159,17 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
                     ""action"": ""QuestLog"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a1d00d21-d9ff-48bc-adc0-5321fe1201bf"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1247,6 +1267,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_UI_QuestLog = m_UI.FindAction("QuestLog", throwIfNotFound: true);
+        m_UI_Interact = m_UI.FindAction("Interact", throwIfNotFound: true);
     }
 
     ~@InputActions()
@@ -1483,6 +1504,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_TrackedDevicePosition;
     private readonly InputAction m_UI_TrackedDeviceOrientation;
     private readonly InputAction m_UI_QuestLog;
+    private readonly InputAction m_UI_Interact;
     public struct UIActions
     {
         private @InputActions m_Wrapper;
@@ -1498,6 +1520,7 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         public InputAction @TrackedDevicePosition => m_Wrapper.m_UI_TrackedDevicePosition;
         public InputAction @TrackedDeviceOrientation => m_Wrapper.m_UI_TrackedDeviceOrientation;
         public InputAction @QuestLog => m_Wrapper.m_UI_QuestLog;
+        public InputAction @Interact => m_Wrapper.m_UI_Interact;
         public InputActionMap Get() { return m_Wrapper.m_UI; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1540,6 +1563,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @QuestLog.started += instance.OnQuestLog;
             @QuestLog.performed += instance.OnQuestLog;
             @QuestLog.canceled += instance.OnQuestLog;
+            @Interact.started += instance.OnInteract;
+            @Interact.performed += instance.OnInteract;
+            @Interact.canceled += instance.OnInteract;
         }
 
         private void UnregisterCallbacks(IUIActions instance)
@@ -1577,6 +1603,9 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
             @QuestLog.started -= instance.OnQuestLog;
             @QuestLog.performed -= instance.OnQuestLog;
             @QuestLog.canceled -= instance.OnQuestLog;
+            @Interact.started -= instance.OnInteract;
+            @Interact.performed -= instance.OnInteract;
+            @Interact.canceled -= instance.OnInteract;
         }
 
         public void RemoveCallbacks(IUIActions instance)
@@ -1670,5 +1699,6 @@ public partial class @InputActions: IInputActionCollection2, IDisposable
         void OnTrackedDevicePosition(InputAction.CallbackContext context);
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
         void OnQuestLog(InputAction.CallbackContext context);
+        void OnInteract(InputAction.CallbackContext context);
     }
 }
