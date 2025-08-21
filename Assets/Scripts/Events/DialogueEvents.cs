@@ -10,7 +10,7 @@ public class DialogueEvents
     public event Action onDialogueFinishied;
     public event Action<string> onSpeakerChanged;
     public event Action<Sprite> onPotraitChanged;
-    public event Action<string, List<Choice>> onDisplayDialogue;
+    public event Action<string, List<Choice>, bool> onDisplayDialogue;
     public event Action<int> onUpdateChoiceIndex;
     public event Action<string, Ink.Runtime.Object> onUpdateInkDialogueVariables;
     public event Action<bool> onLineTypingAnimation;
@@ -30,9 +30,9 @@ public class DialogueEvents
         onDialogueFinishied?.Invoke();
     }
 
-    public void DisplayDialogue(string dialogueLine, List<Choice> dialogueChoices)
+    public void DisplayDialogue(string dialogueLine, List<Choice> dialogueChoices, bool instant = false)
     {
-        onDisplayDialogue?.Invoke(dialogueLine, dialogueChoices);
+        onDisplayDialogue?.Invoke(dialogueLine, dialogueChoices, instant);
     }
 
     public void UpdateChoiceIndex(int choiceIndex)

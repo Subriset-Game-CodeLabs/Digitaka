@@ -17,10 +17,10 @@ MonoBehaviour:
   <health>k__BackingField: 3
   <damage>k__BackingField: 1
   <maxMana>k__BackingField: 3
-  <mana>k__BackingField: 0
-  <healPotion>k__BackingField: 1
-  <manaPotion>k__BackingField: 3
-  <coin>k__BackingField: 5
+  <mana>k__BackingField: 3
+  <healPotion>k__BackingField: 7
+  <manaPotion>k__BackingField: 6
+  <coin>k__BackingField: 3
   UltimateDamage: 2
   UltimateManaCost: 1
   <DashDuration>k__BackingField: 0.2

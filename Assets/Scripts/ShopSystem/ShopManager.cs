@@ -1,17 +1,15 @@
 using System;
 using System.Collections.Generic;
+using TwoDotFiveDimension;
 using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-
     [SerializeField]
     private List<ItemBaseSO> shopItems;
 
     [SerializeField] int _moneyPlaceholder;
     [SerializeField] private int _moralePlaceholder;
-    [SerializeField] private int _healthPotionPlaceholder;
-    [SerializeField] private int _manaPotionPlaceholder;
 
     void OnEnable()
     {
@@ -34,7 +32,6 @@ public class ShopManager : MonoBehaviour
     {
         Debug.Log(item.ItemName + " Buyed");
         // check for money
-        bool hasMoney = false;
         int itemPrice;
         if (item.ItemPrice != item.ItemDiscountPrice)
         {
@@ -45,22 +42,22 @@ public class ShopManager : MonoBehaviour
             itemPrice = item.ItemPrice;
         }
 
-        hasMoney = HasMoney(itemPrice);
+        bool hasMoney = HasMoney(itemPrice);
 
         if (hasMoney)
         {
             GameEventsManager.Instance.ShopEvents.BuyItemSuccess(item);
-            _moneyPlaceholder -= itemPrice;
+            PlayerStats.Instance.UseCoin(itemPrice);
             if (item.itemType == ItemType.Consumable)
             {
                 ItemConsumableSO itemConsumable = (ItemConsumableSO)item;
                 switch (itemConsumable.statEffect)
                 {
                     case StatEffect.Health:
-                        _healthPotionPlaceholder += 1;
+                        PlayerStats.Instance.AddHealthPotion(1);
                         break;
                     case StatEffect.Mana:
-                        _manaPotionPlaceholder += 1;
+                        PlayerStats.Instance.AddManaPotion(1);
                         break;
                 }
             }
@@ -73,7 +70,7 @@ public class ShopManager : MonoBehaviour
 
     private bool HasMoney(int ItemPrice)
     {
-        return ItemPrice <= _moneyPlaceholder;
+        return ItemPrice <= PlayerStats.Instance.coin;
     }
 
     public List<ItemBaseSO> CalculatePriceFromMoral()

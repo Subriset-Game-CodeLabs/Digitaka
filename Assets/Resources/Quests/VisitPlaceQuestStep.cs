@@ -18,6 +18,7 @@ public class VisitPlaceQuestStep : QuestStep
         if (otherCollider.CompareTag("Player"))
         {
             string status = "Visited the " + _pillarNumberString + " Pillar";
+            Debug.Log(status);
             ChangeState("", status);
             FinishQuestStep();
         }

@@ -20,6 +20,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private InkDialogueVariables inkDialogueVariables;
 
     private bool _isPlayingTypingAnimation;
+    private string _currentText;
 
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
@@ -64,6 +65,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private void LineTypeAnimation(bool value)
     {
         _isPlayingTypingAnimation = value;
+    
     }
 
     private void QuestStateChange(Quest quest)
@@ -76,14 +78,14 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     private void SubmitPressed()
     {
-        if (!dialougePlaying )
+        if (!dialougePlaying)
         {
             return;
         }
 
         if (_isPlayingTypingAnimation)
         {
-            return;
+            // return;
         }
 
         ContinueOrExitStory();
@@ -134,6 +136,17 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
         if (story.canContinue)
         {
+            if (_isPlayingTypingAnimation)
+            {
+                HandleTags(story.currentTags);
+                GameEventsManager.Instance.DialogueEvents.DisplayDialogue(
+            story.currentText,
+            story.currentChoices,
+            true
+            );
+                return;
+            }
+
             string dialogueLine = story.Continue();
 
             while (IsLineBlank(dialogueLine) && story.canContinue)
@@ -180,7 +193,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
                 default:
                     break;
             }
-            
+
         }
     }
 

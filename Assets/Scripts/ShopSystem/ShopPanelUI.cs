@@ -33,6 +33,16 @@ public class ShopPanelUI : MonoBehaviour
     private Button _closeButton;
 
     [SerializeField]
+    private Button _informationCloseButton;
+
+    [SerializeField]
+    private GameObject _informationPanel;
+    [SerializeField]
+    private TextMeshProUGUI _informationTextTitle;
+    [SerializeField]
+    private TextMeshProUGUI _informationTextDesc;
+
+    [SerializeField]
     private GameObject _discountEffect;
 
     private ItemBaseSO _selectedItem;
@@ -49,20 +59,30 @@ public class ShopPanelUI : MonoBehaviour
             contentParent.SetActive(false);
         });
 
+        _informationCloseButton.onClick.AddListener(() =>
+        {
+            _informationPanel.SetActive(false);
+        });
+
         _discountEffect.SetActive(false);
         _itemPriceText.gameObject.SetActive(false);
+        _informationPanel.SetActive(false);
     }
 
     void OnEnable()
     {
         GameEventsManager.Instance.ShopEvents.OnUpdateChoiceItem += UpdateChoiceItem;
         GameEventsManager.Instance.ShopEvents.OnInitializeShop += InitializeShop;
+        GameEventsManager.Instance.ShopEvents.OnBuyItemFailed += BuyItemFailed;
+        GameEventsManager.Instance.ShopEvents.OnBuyItemSuccess += BuyitemSucces;
     }
 
     void OnDisable()
     {
         GameEventsManager.Instance.ShopEvents.OnUpdateChoiceItem -= UpdateChoiceItem;
         GameEventsManager.Instance.ShopEvents.OnInitializeShop -= InitializeShop;
+        GameEventsManager.Instance.ShopEvents.OnBuyItemFailed -= BuyItemFailed;
+        GameEventsManager.Instance.ShopEvents.OnBuyItemSuccess -= BuyitemSucces;
     }
 
     public void UpdateChoiceItem(ItemBaseSO selectedItem)
@@ -101,6 +121,20 @@ public class ShopPanelUI : MonoBehaviour
                 first = false;
             }
         }
+    }
+
+    public void BuyItemFailed(ItemBaseSO item)
+    {
+        _informationPanel.SetActive(true);
+        _informationTextTitle.text = "FAILED";
+        _informationTextDesc.text = "You Dont Have Enough Money";
+    }
+
+    public void BuyitemSucces(ItemBaseSO item)
+    {
+        _informationPanel.SetActive(true);
+        _informationTextTitle.text = "SUCCESS";
+        _informationTextDesc.text = "+1 " + item.ItemName;
     }
 
     private void ClearParent()

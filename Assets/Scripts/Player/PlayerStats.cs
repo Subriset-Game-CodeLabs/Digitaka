@@ -160,6 +160,24 @@ namespace TwoDotFiveDimension
             healPotion -= amount;
             Heal(amount);
         }
+
+        public void AddManaPotion(int amount)
+        {
+            manaPotion += amount;
+            GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
+        }
+
+        public void AddHealthPotion(int amount)
+        {
+            healPotion += amount;
+            GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
+        }
+
+        public void UseCoin(int amount)
+        {
+            coin -= amount;
+        }
+
         public void ResetStats()
         {
             _playerData.ResetStats();

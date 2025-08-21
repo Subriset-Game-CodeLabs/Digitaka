@@ -20,7 +20,6 @@ public class DialoguePanelUI : MonoBehaviour
     private DialogueChoiceButton[] choiceButtons;
 
     private Coroutine displayLineCoroutine;
-    private bool _canContinueToNextLine = false;
 
     private void Awake()
     {
@@ -72,16 +71,27 @@ public class DialoguePanelUI : MonoBehaviour
 
     private void SubmitPressed()
     {
-        
+
     }
 
-    private void DisplayDialogue(string dialogueLine, List<Choice> dialogueChoices)
+    private void DisplayDialogue(string dialogueLine, List<Choice> dialogueChoices, bool instant)
     {
         if (displayLineCoroutine != null)
         {
             StopCoroutine(displayLineCoroutine);
+            displayLineCoroutine = null;
+            GameEventsManager.Instance.DialogueEvents.LineTypingAnimation(false);
+
         }
-        displayLineCoroutine = StartCoroutine(DisplayLine(dialogueLine));
+        Debug.Log(instant);
+        if (!instant)
+        {
+            displayLineCoroutine = StartCoroutine(DisplayLine(dialogueLine));
+        }
+        else
+        {
+            dialogueText.text = dialogueLine;
+        }
 
         if (dialogueChoices.Count > choiceButtons.Length)
         {

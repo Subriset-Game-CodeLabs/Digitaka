@@ -4690,7 +4690,8 @@ MonoBehaviour:
   _ultimateCooldownUI: {fileID: 1160309950}
   _healthPotionCooldownUI: {fileID: 1160309949}
   _manaPotionCooldownUI: {fileID: 1160309948}
-  _pauseMenu: {fileID: 1160309952}
+  _pauseMenu: {fileID: 0}
+  isPaused: 0
 --- !u!4 &1011186223
 Transform:
   m_ObjectHideFlags: 0
@@ -5301,11 +5302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b8ba35631b4514b45492931c5a095a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1160309952 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5424487580872340584, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-  m_PrefabInstance: {fileID: 1160309947}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1204318589
 PrefabInstance:
   m_ObjectHideFlags: 0
