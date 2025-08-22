@@ -3,6 +3,7 @@ EXTERNAL StartQuest(questId)
 EXTERNAL AdvanceQuest(questId)
 EXTERNAL FinishQuest(questId)
 EXTERNAL OpenShop()
+EXTERNAL ChangeMorale(amount)
 
 // quest ids (questid + "Id" for variable name)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"

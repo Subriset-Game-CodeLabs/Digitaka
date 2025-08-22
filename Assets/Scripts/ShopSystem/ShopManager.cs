@@ -9,7 +9,6 @@ public class ShopManager : MonoBehaviour
     private List<ItemBaseSO> shopItems;
 
     [SerializeField] int _moneyPlaceholder;
-    [SerializeField] private int _moralePlaceholder;
 
     void OnEnable()
     {
@@ -78,11 +77,11 @@ public class ShopManager : MonoBehaviour
         int newPrice;
         for (var i = 0; i < shopItems.Count; i++)
         {
-            if (_moralePlaceholder == 0)
+            if (PlayerStats.Instance.moralePoint == 0)
             {
                 newPrice = shopItems[i].ItemPrice;
             }
-            else if (_moralePlaceholder > 30)
+            else if (PlayerStats.Instance.moralePoint > 30)
             {
                 newPrice = (int)Math.Round(shopItems[i].ItemPrice * 0.7);
             }
