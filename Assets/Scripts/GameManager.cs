@@ -6,15 +6,33 @@ using UnityEngine;
 
 public class GameManager: PersistentSingleton<GameManager>
 {
+    
+    [SerializeField] private GameObject _mainCharacterPrefab;
+    public string CurrentMap { get; private set; }
+    public bool TutorialCompleted { get; private set; } = false;
+    public bool IsGamePaused { get; private set; } = false;
+    private UIManager _uiManager;
+   
+
     private void Start()
     {
-        StartGame();
+        StartGame();   
     }
-
+    public void CompleteTutorial()
+    {
+        TutorialCompleted = true;
+        UIManager.Instance.HideTutorialPanel();
+    }
     public void StartGame()
     {
-        InputManager.Instance.PlayerMode();
-        SceneManager.Instance.LoadSceneAdditive("MainCanvas");
+        if(!TutorialCompleted) 
+        {
+            UIManager.Instance.ShowTutorialPanel();
+        }
+        else
+        {
+            UIManager.Instance.HideTutorialPanel();
+        }
     }
     public void QuitGame()
     {
@@ -24,4 +42,16 @@ public class GameManager: PersistentSingleton<GameManager>
                   Application.Quit();
         #endif
     }
+
+    public GameObject SpawnMainCharacter(Transform position)
+    {
+        if (_mainCharacterPrefab == null)
+        {
+            Debug.LogError("Main Character Prefab is not assigned in GameManager.");
+            return null;
+        }
+        GameObject mainCharacter = Instantiate(_mainCharacterPrefab, position.position, position.rotation);
+        return mainCharacter;
+    }
+
 }

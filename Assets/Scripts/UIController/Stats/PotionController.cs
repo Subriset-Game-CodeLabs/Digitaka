@@ -15,6 +15,8 @@ namespace UIController.Stats
         private void Start()
         {
             _playerStats = PlayerStats.Instance;
+            UpdateHealthPotion();
+            UpdateManaPotion();
         }
 
         private void OnEnable()

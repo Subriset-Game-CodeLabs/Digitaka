@@ -1,35 +1,28 @@
 using System;
+using Audio;
 using Input;
+using TMPro;
 using TwoDotFiveDimension;
 using UIController.Stats;
 using UnityEngine;
 
 namespace UIController
 {
-    public class UIManager : MonoBehaviour
+    public class UIManager : PersistentSingleton<UIManager>
     {
-        public static UIManager Instance { get; private set; }
         [SerializeField] private CooldownUI _dashCooldownUI;
         [SerializeField] private CooldownUI _ultimateCooldownUI;
         [SerializeField] private CooldownUI _healthPotionCooldownUI;
         [SerializeField] private CooldownUI _manaPotionCooldownUI;
         [SerializeField] private GameObject _pauseMenu;
+        [SerializeField] private GameObject _tutorialPanel;
+        [SerializeField] private GameObject _defeatedPanel;
+        [SerializeField] private GameObject _completeQuestPanel;
         [SerializeField] private bool isPaused = false;
         private PlayerStats _playerStats;
         public void SetPause(bool value)
         {
             isPaused = value;
-        }
-        private void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
         }
         private void Start()
         {
@@ -43,6 +36,7 @@ namespace UIController
             GameEventsManager.Instance.PlayerActionsEvents.OnManaPotionUsed += StartCooldownManaPotion;
             GameEventsManager.Instance.PlayerActionsEvents.OnDashPerformed += StartCooldownDash;
             GameEventsManager.Instance.PlayerActionsEvents.OnUltimatePerformed += StartCooldownUltimate;
+            GameEventsManager.Instance.StatsEvents.OnPlayerDeath += ShowDefeatedPanel;
         }
         void OnDisable()
         {
@@ -51,6 +45,7 @@ namespace UIController
             GameEventsManager.Instance.PlayerActionsEvents.OnManaPotionUsed -= StartCooldownManaPotion;
             GameEventsManager.Instance.PlayerActionsEvents.OnDashPerformed -= StartCooldownDash;
             GameEventsManager.Instance.PlayerActionsEvents.OnUltimatePerformed -= StartCooldownUltimate;
+            GameEventsManager.Instance.StatsEvents.OnPlayerDeath -= ShowDefeatedPanel;
         }
   
         public void StartCooldownUltimate()
@@ -82,7 +77,32 @@ namespace UIController
                 Debug.Log("Dash cooldown started: " + _playerStats.dashCooldown);
             }
         }
-
+        public void ShowTutorialPanel()
+        {
+            if (_tutorialPanel != null)
+            {
+                _tutorialPanel.SetActive(true);
+                InputManager.Instance.UIMode();
+            }
+        }
+        
+        public void HideTutorialPanel()
+        {
+            if (_tutorialPanel != null)
+            {
+                _tutorialPanel.SetActive(false);
+                InputManager.Instance.PlayerMode();
+            }
+        }
+        public void ShowDefeatedPanel()
+        {
+            if (_defeatedPanel != null)
+            {
+                AudioManager.Instance.PlaySound(SoundType.SFX_Lose);
+                _defeatedPanel.SetActive(true);
+                InputManager.Instance.UIMode();
+            }
+        } 
     
         public void Pause()
         {
@@ -91,14 +111,14 @@ namespace UIController
                 Time.timeScale = 1;
                 _pauseMenu.SetActive(false);
                 isPaused = false;
-                InputManager.Instance.UIMode();
+                InputManager.Instance.PlayerMode();
             }
             else
             {
                 Time.timeScale = 0;
                 _pauseMenu.SetActive(true);
                 isPaused = true;
-                InputManager.Instance.PlayerMode();
+                InputManager.Instance.UIMode();
             }
         }
     }

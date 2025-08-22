@@ -1,13 +1,46 @@
-using Input;
 using UnityEngine;
 
 namespace UIController.Pause
 {
     public class TutorialController:MonoBehaviour
     {
-        void Start()
+        [SerializeField] private GameObject[] _tutorialPanels;
+        private int _currentPanelIndex = 0;
+        private void Start()
         {
-            InputManager.Instance.UIMode();
-       }
+            ShowCurrentPanel();
+        }
+        private void ShowCurrentPanel()
+        {
+            for (int i = 0; i < _tutorialPanels.Length; i++)
+            {
+                _tutorialPanels[i].SetActive(i == _currentPanelIndex);
+            }
+        }
+        public void NextPanel()
+        {
+            if (_currentPanelIndex < _tutorialPanels.Length - 1)
+            {
+                _currentPanelIndex++;
+                ShowCurrentPanel();
+            }
+            else
+            {
+                GameManager.Instance.CompleteTutorial();
+            }
+        }
+        public void PreviousPanel()
+        {
+            if (_currentPanelIndex > 0)
+            {
+                _currentPanelIndex--;
+                ShowCurrentPanel();
+            }
+        }
+        public void CloseTutorial()
+        {
+            gameObject.SetActive(false); // Close the tutorial panel
+        }
+        
     }
 }

@@ -16,8 +16,15 @@ namespace QuestSystem
                 SetQuestStepState(questStepState);
             }
         }
-
         protected void FinishQuestStep()
+        {
+            if (!_isFinished)
+            {
+                _isFinished = true;
+                GameEventsManager.Instance.QuestEvents.AdvanceQuest(_questId);
+            }
+        }
+        protected void FinishQuestStepAndDestroy()
         {
             if (!_isFinished)
             {

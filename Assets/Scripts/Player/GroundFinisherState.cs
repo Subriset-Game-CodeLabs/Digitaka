@@ -14,6 +14,7 @@ namespace TwoDotFiveDimension
             Animator.SetTrigger("Attack" + AttackIndex);
             AudioManager.Instance.PlaySound(SoundType.SFX_Attack3);
             Debug.Log("Player Attack " + AttackIndex+" Fired");
+            CinemachineShake.Instance.ShakeCamera(1,0.3f);
         }
         public override void OnUpdate()
         {

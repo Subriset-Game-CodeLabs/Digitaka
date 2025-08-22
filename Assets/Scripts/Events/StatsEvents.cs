@@ -22,6 +22,16 @@ namespace Events
         {
             OnChangeManaPlayer?.Invoke();
         }
-        
+        public event Action OnPlayerDeath;
+        public void PlayerDeath()
+        {
+            OnPlayerDeath?.Invoke();
+        }
+
+        public event Action OnChangePlayerCoin;
+        public void ChangePlayerCoin()
+        {
+            OnChangePlayerCoin?.Invoke();
+        }
     }
 }

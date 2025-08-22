@@ -13,7 +13,6 @@ namespace Audio
         
         private void Start()
         {
-            Debug.Log(PlayerPrefs.HasKey("musicVolume"));
             if (PlayerPrefs.HasKey("musicVolume"))
             {
                 LoadVolume();

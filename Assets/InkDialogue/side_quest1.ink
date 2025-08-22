@@ -13,14 +13,14 @@
 
 = canStart
 Hah... terima kasih tuan, kalau kau tak datang tepat waktu, mungkin diriku telah dihajar habis-habisan #speaker: Jaka
-Sama sama tuan. Apakah kau baik-baik saja? Apa yang sebenarnya terjadi? #speaker: Aji Saka
-Jadi begini tuan, pertama-tama nama Saya Jaka. #speaker: Jaka
+Sama sama tuan. Apakah kau baik-baik saja? Apa yang sebenarnya terjadi? #speaker: Aji Saka #portrait:ajisaka
+Jadi begini tuan, pertama-tama nama Saya Jaka. #speaker: Jaka #portrait:jaka
 Aku dan saudaraku, Raka, sedang mencari kayu bakar dan juga tanaman herbal. 
 Tapi tiba-tiba kami disergap oleh penjahat. 
 Kami pun mencoba untuk kabur, tapi kami terpisah... 
 aku mencoba mengecoh mereka tapi akhirnya malah diriku yang terkepung
-Jadi Raka masih tersesat dan dikepung oleh penjahat tadi? #speaker: Aji Saka
-Ya tuan... aku khawatir dia dalam bahaya, bisakah anda mencari saudara saya? #speaker: Jaka
+Jadi Raka masih tersesat dan dikepung oleh penjahat tadi? #speaker: Aji Saka #portrait:ajisaka
+Ya tuan... aku khawatir dia dalam bahaya, bisakah anda mencari saudara saya? #speaker: Jaka #portrait:jaka
 Hanya dia keluarga yang saat ini saya punya 
 ~ StartQuest("MissingBrother")
 * [Aku akan bantu kalian?]

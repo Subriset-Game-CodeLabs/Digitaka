@@ -1,9 +1,11 @@
+using Input;
 using QuestSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MissingBrotherQuestStep : QuestStep
 {
+    [SerializeField] private string _dialogueKnotName;
     [SerializeField]
     private string _sceneName;
 
@@ -36,18 +38,20 @@ public class MissingBrotherQuestStep : QuestStep
             Disable();
     }
 
-    private void OnTriggerEnter(Collider otherCollider)
+        
+    private void SubmitPressed()
     {
-        if (otherCollider.CompareTag("Player"))
-        {
-            string status = "You found the missing brother!";
-            ChangeState("", status);
-            FinishQuestStep();
-        }
+        
+        string status = "You found the missing brother!";
+        ChangeState("", status);
+        FinishQuestStep();
+        GameEventsManager.Instance.DialogueEvents.EnterDialogue(_dialogueKnotName);
+        Destroy(gameObject);
     }
 
     private void Disable()
     {
+        InputManager.Instance.PlayerInput.Interact.OnDown -= SubmitPressed;
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(false);
@@ -58,6 +62,7 @@ public class MissingBrotherQuestStep : QuestStep
 
     private void Enable()
     {
+        InputManager.Instance.PlayerInput.Interact.OnDown += SubmitPressed;
         foreach (Transform child in transform)
         {
             child.gameObject.SetActive(true);

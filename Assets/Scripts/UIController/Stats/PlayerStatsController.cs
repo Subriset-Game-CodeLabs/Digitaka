@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using TwoDotFiveDimension;
 using UnityEngine;
 
@@ -6,6 +7,7 @@ namespace UIController.Stats
 {
     public class PlayerStatsController:MonoBehaviour
     {
+        [SerializeField] private TMP_Text _coinText;
         [SerializeField] private StatsItem[] _healthItems;
         [SerializeField] private StatsItem[] _manaItems;
         private PlayerStats _playerStats;
@@ -14,20 +16,33 @@ namespace UIController.Stats
             _playerStats = PlayerStats.Instance;
             UpdateHealthStats();
             UpdateManaStats();
+            UpdateCoinText();
         }
 
         public void OnEnable()
         {
             GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer += UpdateHealthStats;
             GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer += UpdateManaStats;
+            GameEventsManager.Instance.StatsEvents.OnChangePlayerCoin += UpdateCoinText;
         }
         public void OnDisable()
         {
             GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer -= UpdateHealthStats;
             GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer -= UpdateManaStats;
+            GameEventsManager.Instance.StatsEvents.OnChangePlayerCoin -= UpdateCoinText;
         }
         
-        
+        public void UpdateCoinText()
+        {
+            if (_coinText != null)
+            {
+                _coinText.text = _playerStats.coin.ToString();
+            }
+            else
+            {
+                Debug.LogWarning("Coin Text is not assigned in PlayerStatsController.");
+            }
+        }
 
         public void UpdateHealthStats()
         {

@@ -1,4 +1,5 @@
 using System;
+using Audio;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -112,10 +113,12 @@ namespace TwoDotFiveDimension
         public int TakeDamage(int damage)
         {
             currentHealth -= damage;
-            if (currentHealth < 0)
+            if (!IsAlive)
             {
+                Debug.Log("Player has died");
                 currentHealth = 0;
-                _playerAnimator.SetTrigger("Die");
+                GameEventsManager.Instance.StatsEvents.PlayerDeath();
+                // _playerAnimator.SetTrigger("Die");
             }
             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
             return currentHealth;
@@ -172,9 +175,15 @@ namespace TwoDotFiveDimension
             healPotion += amount;
             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
         }
-
+        public void AddCoin(int amount)
+        {
+            coin += amount;
+            AudioManager.Instance.PlaySound(SoundType.SFX_Reward);
+            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
+        }
         public void UseCoin(int amount)
         {
+            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
             coin -= amount;
         }
 

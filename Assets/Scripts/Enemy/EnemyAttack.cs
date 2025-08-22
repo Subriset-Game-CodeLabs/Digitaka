@@ -58,7 +58,6 @@ namespace Enemy
                         Instantiate(hitEffect, collider.transform);
                         AudioManager.Instance.PlaySound(SoundType.SFX_PlayerGetHit);
                         hitPlayer.TakeDamage(_enemyStats.damage);
-                        Debug.Log("Player Damaged");
                         _collidersDamaged.Add(collider);
                     }
                   

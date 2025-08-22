@@ -1,4 +1,6 @@
 using System;
+using Audio;
+using TwoDotFiveDimension;
 using UnityEngine;
 
 namespace Enemy
@@ -34,10 +36,13 @@ namespace Enemy
         public int TakeDamage(int damage)
         {
             currentHealth -= damage;
-            if (currentHealth < 0)
+            if (currentHealth <= 0)
             {
                 currentHealth = 0;
                 Debug.Log("Enemy has been defeated!");
+                PlayerStats.Instance.AddCoin(_enemyBaseData.dropCoin);
+                // AudioManager.Instance.PlaySound();
+                
             }
             GameEventsManager.Instance.StatsEvents.ChangeHealthEnemy(this);
             return currentHealth;

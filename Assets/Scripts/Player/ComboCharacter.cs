@@ -29,7 +29,10 @@ namespace TwoDotFiveDimension
             FiniteStateMachine = new FiniteStateMachine<IStateCombat>(IdleCombatState);
             _playerMovement = GetComponent<PlayerMovement>();
             _playerStats = PlayerStats.Instance;
-            
+        }
+
+        private void OnEnable()
+        {
             InputManager.Instance.PlayerInput.Attack.OnDown += Attack;
         }
 
@@ -55,6 +58,7 @@ namespace TwoDotFiveDimension
     
         void Attack()
         {
+            Debug.Log("Attack Fired");
             if (FiniteStateMachine.GetCurrentState == IdleCombatState && 
                 _playerMovement.IsGrounded && 
                 _playerMovement.Movement == Vector2.zero
@@ -72,6 +76,7 @@ namespace TwoDotFiveDimension
                 _playerStats.UseMana(_playerStats.ultimateCost);
                 Debug.Log("Ultimate Fired");
                 FiniteStateMachine.ChangeState(new GroundUltimateState(this));
+                CinemachineShake.Instance.ShakeCamera(2,0.5f);
             }
         }
     }
