@@ -22,15 +22,19 @@ aku mencoba mengecoh mereka tapi akhirnya malah diriku yang terkepung
 Jadi Raka masih tersesat dan dikepung oleh penjahat tadi? #speaker: Aji Saka #portrait:ajisaka
 Ya tuan... aku khawatir dia dalam bahaya, bisakah anda mencari saudara saya? #speaker: Jaka #portrait:jaka
 Hanya dia keluarga yang saat ini saya punya 
-~ StartQuest("MissingBrother")
+
 * [Aku akan bantu kalian?]
+    ~ ChangeMorale(20)
     Tentu saja, saya akan membantu mu Jaka. tetaplah di sini dan bersembunyi. #speaker: Aji Saka
     Saya akan memberitahu Raka kalau dirimu menunggu di sini. 
     Terima kasih banyak tuan yang baik hati, saya akan menunggu di sini dan bersembunyi #speaker: Jaka
-* [Apa yang akan kalian berikan padaku?] 
+    ~ StartQuest("MissingBrother")
+* [Apa yang akan kalian berikan padaku?]
+    ~ ChangeMorale(-20)
     Semua ada harganya, jika aku menolong nya, apa yang kalian bisa berikan padaku? #speaker: Aji Saka
     Misi pencarian dan penyelamatan itu tidak murah 
     Tolong tuan, saya mungkin hanya seorang yang jelata. Tapi saat ini semua barang bawaan kami ada di Raka. #speaker: Jaka
+    ~ StartQuest("MissingBrother")
 - -> END
 
 = inProgress

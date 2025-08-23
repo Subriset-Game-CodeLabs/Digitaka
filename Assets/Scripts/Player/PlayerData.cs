@@ -12,6 +12,7 @@ namespace TwoDotFiveDimension
         [field:SerializeField] public int coin { get; set; } = 1;
         [field:SerializeField] public int UltimateDamage = 2;
         [field:SerializeField] public int UltimateManaCost = 2;
+        [field: SerializeField] public int moralePoint = 0;
         
         [Header("Dash Settings")]
         [field:SerializeField] public float DashDuration  { get; set; }

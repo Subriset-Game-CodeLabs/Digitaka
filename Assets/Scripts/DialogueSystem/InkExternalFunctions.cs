@@ -1,4 +1,5 @@
 using Ink.Runtime;
+using TwoDotFiveDimension;
 using UnityEngine;
 
 public class InkExternalFunctions
@@ -10,6 +11,7 @@ public class InkExternalFunctions
         story.BindExternalFunction("FinishQuest", (string questId) => FinishQuest(questId));
 
         story.BindExternalFunction("OpenShop", () => OpenShop());
+        story.BindExternalFunction("ChangeMorale", (int amount) => ChangeMorale(amount));
     }
 
     public void Unbind(Story story)
@@ -18,6 +20,7 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("AdvanceQuest");
         story.UnbindExternalFunction("FinishQuest");
         story.UnbindExternalFunction("OpenShop");
+        story.UnbindExternalFunction("ChangeMorale");
     }
 
 
@@ -39,5 +42,10 @@ public class InkExternalFunctions
     private void OpenShop()
     {
         GameEventsManager.Instance.ShopEvents.ShopOpen();
+    }
+
+    private void ChangeMorale(int amount)
+    {
+        PlayerStats.Instance.ChangeMoralePoint(amount);
     }
 }

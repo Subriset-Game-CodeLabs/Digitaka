@@ -102,7 +102,13 @@ namespace TwoDotFiveDimension
             private set => _playerData.ManaPotionCooldown = value;
         }
         
-        public bool IsAlive => currentHealth > 0 ;
+        public int moralePoint
+        {
+            get => _playerData.moralePoint;
+            private set => _playerData.moralePoint = value;
+        }
+        
+        public bool IsAlive => currentHealth > 0;
         public bool CanUltimate => currentMana >= ultimateCost;
         public int damage
         {
@@ -185,6 +191,11 @@ namespace TwoDotFiveDimension
         {
             GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
             coin -= amount;
+        }
+
+        public void ChangeMoralePoint(int amount)
+        {
+            moralePoint += amount;
         }
 
         public void ResetStats()
