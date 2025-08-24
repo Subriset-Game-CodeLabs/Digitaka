@@ -16,7 +16,11 @@ namespace Events
         {
             OnChangeHealthEnemy?.Invoke(stats);
         }
-        
+        public event Action<EnemyStats> OnEnemyDeath;
+        public void EnemyDeath(EnemyStats stats)
+        {
+            OnEnemyDeath?.Invoke(stats);
+        }
         public event Action OnChangeManaPlayer;
         public void ChangeManaPlayer()
         {

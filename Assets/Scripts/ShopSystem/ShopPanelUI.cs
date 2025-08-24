@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Input;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,12 +52,14 @@ public class ShopPanelUI : MonoBehaviour
     {
         _buyButton.onClick.AddListener(() =>
         {
+            InputManager.Instance.UIMode();
             GameEventsManager.Instance.ShopEvents.BuyItem(_selectedItem);
         });
 
         _closeButton.onClick.AddListener(() =>
         {
             contentParent.SetActive(false);
+            InputManager.Instance.PlayerMode();
         });
 
         _informationCloseButton.onClick.AddListener(() =>
@@ -121,6 +124,7 @@ public class ShopPanelUI : MonoBehaviour
                 first = false;
             }
         }
+        InputManager.Instance.UIMode();
     }
 
     public void BuyItemFailed(ItemBaseSO item)

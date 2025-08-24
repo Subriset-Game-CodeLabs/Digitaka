@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Audio;
+using Input;
 using TwoDotFiveDimension;
 using UnityEngine;
 
@@ -46,6 +48,7 @@ public class ShopManager : MonoBehaviour
         if (hasMoney)
         {
             GameEventsManager.Instance.ShopEvents.BuyItemSuccess(item);
+            AudioManager.Instance.PlaySound(SoundType.SFX_PurchaseItem);
             PlayerStats.Instance.UseCoin(itemPrice);
             if (item.itemType == ItemType.Consumable)
             {

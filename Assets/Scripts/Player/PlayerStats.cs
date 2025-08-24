@@ -15,7 +15,6 @@ namespace TwoDotFiveDimension
             if (Instance == null)
             {
                 Instance = this;
-                _playerData.ResetStats();
             }
             else
             {
@@ -189,8 +188,8 @@ namespace TwoDotFiveDimension
         }
         public void UseCoin(int amount)
         {
-            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
             coin -= amount;
+            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
         }
 
         public void ChangeMoralePoint(int amount)

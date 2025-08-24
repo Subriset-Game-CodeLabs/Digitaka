@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TwoDotFiveDimension;
 using UnityEngine;
 
 namespace QuestSystem
@@ -117,7 +118,8 @@ namespace QuestSystem
         private void ClaimRewards(Quest quest)
         {
             Debug.Log("Rewards claimed for quest: " + quest.info.id);
-            Debug.Log($"Quest {quest.info.id} completed! Rewards: Gold - {quest.info.goldReward}, Experience - {quest.info.experienceReward}");
+            Debug.Log($"Quest {quest.info.id} completed! Rewards: Gold - {quest.info.goldReward}");
+            PlayerStats.Instance.AddCoin(quest.info.goldReward);
         }
 
         private void QuestStepStateChange(string id, int stepIndex, QuestStepState questStepState)

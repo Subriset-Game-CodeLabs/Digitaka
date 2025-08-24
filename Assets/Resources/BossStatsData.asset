@@ -16,3 +16,4 @@ MonoBehaviour:
   <maxHealth>k__BackingField: 5
   <health>k__BackingField: 5
   <damage>k__BackingField: 2
+  <dropCoin>k__BackingField: 10

@@ -9,39 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FixScene/MainMenu.unity
     guid: 1f54f1c11175cd64ca7ff395736ccfc7
   - enabled: 1
-    path: Assets/Scenes/FixScene/A1.unity
-    guid: 5526ea79c9edef64e9c7ab601aab6025
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A2.unity
-    guid: 13dedb30e0248fe408373f90fce87035
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A8.unity
-    guid: 740cc01394222af40a822edcdd011844
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A4.unity
-    guid: 10c5a42f92e368d409ef133ecfa22963
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A3.unity
-    guid: f28d78d1997c10841a68dc5ce4ee2316
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A5.unity
-    guid: 6aae42333f440774f937a473a9e34008
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A6.unity
-    guid: ab4e2e54950320942a61e547bc4b8f4f
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A7.unity
-    guid: c1c0dc6fb9eab85449fa966362f0efb7
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A9.unity
-    guid: b30f2f68398031f45a078708cf8d508a
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A10.unity
-    guid: c11501cd3089ead4a855e0ccf5e11728
-  - enabled: 1
-    path: Assets/Scenes/FixScene/A11.unity
-    guid: d291b5d5c57379e4497271d50e02d052
-  - enabled: 1
     path: Assets/Scenes/FixScene/GameLoop/GameLoop1.unity
     guid: cae701ad746b55c409a5d7b8893bad86
   - enabled: 1
@@ -56,6 +23,30 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FixScene/MainCanvas.unity
     guid: 53ceada4fe80db84a8e5ca0aa39ba29d
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A1New.unity
+    guid: 8438206655081564dab709eb590a3873
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A3New.unity
+    guid: 01bb5d8d018644b499ecc4e24ff7e5bb
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A2New.unity
+    guid: 20197f5394a304148879ef19160a12f3
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A4New.unity
+    guid: 082fc51506357ea42bf2e348687fcf29
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A5New.unity
+    guid: 3eb2afc1ded6b76438a3e043019245db
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A6New.unity
+    guid: 47317ab96e0d5514eb7c539e1f289c23
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/A7New.unity
+    guid: 6a027c5e88a986340a3688cb7168e78e
+  - enabled: 1
+    path: Assets/Scenes/FixScene/EndScene.unity
+    guid: 22be45713ff8a6248aab2f2408e0dfa2
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

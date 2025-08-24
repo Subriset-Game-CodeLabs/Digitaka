@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <characterName>k__BackingField: Base Stats
   <maxHealth>k__BackingField: 3
-  <health>k__BackingField: 0
+  <health>k__BackingField: 3
   <damage>k__BackingField: 1
+  <dropCoin>k__BackingField: 5

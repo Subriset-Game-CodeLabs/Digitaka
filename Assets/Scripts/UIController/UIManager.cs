@@ -121,5 +121,10 @@ namespace UIController
                 InputManager.Instance.UIMode();
             }
         }
+
+        public void MainMenuGame()
+        {
+            SceneManager.Instance.ChangeScene("MainMenu");
+        }
     }
 }

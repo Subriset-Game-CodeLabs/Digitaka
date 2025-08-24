@@ -1,7 +1,7 @@
 === MerchantChat ===
-Hey, What's up?
+Halo, mau beli sesuatu? #speaker:Merchant #portrait:merchant
 * [Buy Item]
     ~ OpenShop()
 * [Leave]
-    Come back any time
+    Kembali lagi kapan-kapan.
 - -> END

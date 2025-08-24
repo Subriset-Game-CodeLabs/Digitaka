@@ -1,6 +1,7 @@
 using System;
 using Input;
 using QuestSystem;
+using TwoDotFiveDimension;
 using UIController;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ public class GameManager: PersistentSingleton<GameManager>
     private void Start()
     {
         StartGame();   
+        PlayerStats.Instance.ResetStats();
     }
     public void CompleteTutorial()
     {

@@ -11,7 +11,7 @@ namespace Enemy
         private int _currentHealth ;
         private void Awake()
         {
-            _enemyBaseData.ResetStats();
+            // _enemyBaseData.ResetStats();
             _currentHealth = _enemyBaseData.maxHealth;
         }
 
@@ -41,6 +41,7 @@ namespace Enemy
                 currentHealth = 0;
                 Debug.Log("Enemy has been defeated!");
                 PlayerStats.Instance.AddCoin(_enemyBaseData.dropCoin);
+                GameEventsManager.Instance.StatsEvents.EnemyDeath(this);
                 // AudioManager.Instance.PlaySound();
                 
             }

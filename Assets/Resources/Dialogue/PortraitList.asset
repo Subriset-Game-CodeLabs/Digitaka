@@ -17,3 +17,5 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: 4deaf03b8e92f2f4ba20b6180d30f0a7, type: 3}
   - key: jaka
     sprite: {fileID: -1814955430, guid: 8ca65b061e7e5fe44bc49869b584f030, type: 3}
+  - key: merchant
+    sprite: {fileID: 1373497829, guid: c01e6a1ed8f1fca499cff7e7318350e3, type: 3}

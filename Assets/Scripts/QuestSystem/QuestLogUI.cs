@@ -53,7 +53,7 @@ namespace QuestSystem
                 _questFirstButton.Select();
             }
         }
-        private void HideUI()
+        public void HideUI()
         {
             _contentParent.SetActive(false);
             InputManager.Instance.PlayerMode();

@@ -8,7 +8,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
     [SerializeField] private GameObject _cinemachineCameraPrefab;
     private TeleportPoint[] _teleportPoints;
     private GameManager _gameManager;
-    private string _currentSceneName = "GameLoop1";
+    [SerializeField] private string _currentSceneName = "A1New";
     private CinemachineCamera _cinemachineCamera;
 
     private void Start()
@@ -36,6 +36,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
     {
         foreach (var teleportPoint in _teleportPoints)
         {
+            Debug.Log("Checking teleport point: " + teleportPoint.TargetScene + " for scene: " + _currentSceneName);
             if (teleportPoint.TargetScene == _currentSceneName)
             {
                 teleportPoint.StarterPoint = true;

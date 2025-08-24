@@ -28,7 +28,7 @@ namespace TwoDotFiveDimension
             {
                 if (other.CompareTag(_gameObjectTag))
                 {
-                    Debug.Log($"Sensor: {gameObject.name} - OnTriggerEnter: {other.tag}");
+                    // Debug.Log($"Sensor: {gameObject.name} - OnTriggerEnter: {other.tag}");
                     m_ColCount++;
                 }
             }
@@ -41,7 +41,7 @@ namespace TwoDotFiveDimension
             {
                 if (other.CompareTag(_gameObjectTag))
                 {
-                    Debug.Log($"Sensor: {gameObject.name} - OnTriggerEnter: {other.tag}");
+                    // Debug.Log($"Sensor: {gameObject.name} - OnTriggerEnter: {other.tag}");
                     m_ColCount--;
                 }
             }

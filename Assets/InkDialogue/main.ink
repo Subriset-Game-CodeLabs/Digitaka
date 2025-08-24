@@ -9,18 +9,20 @@ EXTERNAL ChangeMorale(amount)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"
 VAR MissingBrotherId = "MissingBrother"
 VAR SideQuest2Id = "SideQuest2"
+VAR KillEnemyId = "KillEnemy"
 
 // quest states (questid + "State" for variable name)
 VAR VisitPlaceQuestState = "REQUIREMENTS_NOT_MET"
 VAR MissingBrotherState = "REQUIREMENTS_NOT_MET"
+VAR KillEnemyState = "REQUIREMENTS_NOT_MET"
 
 INCLUDE visit_place_quest_npc.ink
-
 INCLUDE merchant_npt.ink
 
 // side quest
 INCLUDE side_quest1.ink
 INCLUDE side_quest2.ink
+INCLUDE side_quest3.ink
 
 
 === testspeaker ===
