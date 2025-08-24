@@ -10,24 +10,29 @@ namespace UIController.Pause
     {
         [SerializeField] private GameObject _pauseMenu;
         [SerializeField] private Button _startButton;
+        [SerializeField] private Button _settingsButton;
         [SerializeField] private Button _exitButton;
+        [SerializeField] private GameObject _settingsMenu;
 
         private void Start()
         {
             _startButton.onClick.AddListener(OnStartButton);
+            _settingsButton.onClick.AddListener(() =>
+            {
+                _settingsMenu.SetActive(true);
+            });
             _exitButton.onClick.AddListener(OnExitButton);
         }
 
         private void OnStartButton()
         {
-            InputManager.Instance.PlayerMode();
-            _pauseMenu.SetActive(false);
+            UIManager.Instance.Pause();
         }
 
         private void OnExitButton()
         {
             _pauseMenu.SetActive(false);
-            GameManager.Instance.QuitGame();
+            SceneManager.Instance.ChangeScene("MainMenu");
         }
     }
 }
