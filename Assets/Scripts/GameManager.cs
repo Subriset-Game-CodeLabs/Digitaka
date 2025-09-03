@@ -9,17 +9,25 @@ public class GameManager: PersistentSingleton<GameManager>
 {
     
     [SerializeField] private GameObject _mainCharacterPrefab;
+    [SerializeField] private GameObject _uiHUDPrefab;
     public string CurrentMap { get; private set; }
     public bool TutorialCompleted { get; private set; } = false;
     public bool IsGamePaused { get; private set; } = false;
-    private UIManager _uiManager;
-   
-
-    private void Start()
+    [SerializeField] private int _currentChapter= 2;
+    [SerializeField] private string _chapterScene;
+    
+    public int GetCurrentChapter => _currentChapter;
+    public string GetChapterScene => _chapterScene;
+    public void CompleteChapter()
     {
-        StartGame();   
-        PlayerStats.Instance.ResetStats();
+        _currentChapter++;
     }
+    
+    public void SetChapterScene(string sceneName)
+    {
+        _chapterScene = sceneName;
+    }
+
     public void CompleteTutorial()
     {
         TutorialCompleted = true;
@@ -27,14 +35,11 @@ public class GameManager: PersistentSingleton<GameManager>
     }
     public void StartGame()
     {
-        if(!TutorialCompleted) 
-        {
-            UIManager.Instance.ShowTutorialPanel();
-        }
-        else
-        {
-            UIManager.Instance.HideTutorialPanel();
-        }
+        TeleportManager.Instance.InitializeTeleport(_chapterScene);
+        var HUD = Instantiate(_uiHUDPrefab);
+        UIManager uiManager = HUD.GetComponent<UIManager>();
+        PlayerStats.Instance.ResetStats();
+        InputManager.Instance.PlayerMode();
     }
     public void QuitGame()
     {

@@ -51,6 +51,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mainCharacterPrefab: {fileID: 3448561943331764639, guid: 1803f4f673bd7ce4f82766626f5920c3, type: 3}
+  _uiHUDPrefab: {fileID: 7557274030453106260, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
+  _currentChapter: 1
 --- !u!82 &1978654946254717790
 AudioSource:
   m_ObjectHideFlags: 0
@@ -210,9 +212,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295703950372089354}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d6728f570754dc0844da3d4ddade283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _cinemachineCameraPrefab: {fileID: 1521454954624447748, guid: 2bd1f3f6665eb854cb2fd9243d469a02, type: 3}
+  _firstSceneName: A1New
+  _currentSceneName: A1New
+  _slideTransitionPrefab: {fileID: 4348750781598577700, guid: 2be77f531e19b544da67961e57e3d06d, type: 3}
+  _slideAnimationDuration: 0.5
+  _slideEaseType: 7

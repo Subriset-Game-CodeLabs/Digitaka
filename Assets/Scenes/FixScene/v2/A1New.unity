@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -232,6 +236,10 @@ PrefabInstance:
     - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun1New (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -299,6 +307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -365,6 +377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -426,6 +442,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -493,6 +513,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -559,6 +583,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -580,6 +608,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalScale.x
@@ -691,6 +723,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -712,6 +748,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -786,6 +826,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalScale.x
@@ -897,6 +941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -958,6 +1006,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1021,6 +1073,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1042,6 +1098,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1157,6 +1217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon1New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1218,6 +1282,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1281,6 +1349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1302,6 +1374,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1364,6 +1440,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1467,6 +1547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuLonjong1New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9080912959110829128, guid: 02bfe1e76544bb34da9bcbee8f827057, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1528,6 +1612,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1591,6 +1679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1652,6 +1744,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1715,6 +1811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1777,6 +1877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1798,6 +1902,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1901,6 +2009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1975,6 +2087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1996,6 +2112,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2099,6 +2219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2169,6 +2293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon4New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2190,6 +2318,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2252,6 +2384,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2355,6 +2491,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2376,6 +2516,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalScale.x
@@ -2444,18 +2588,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 795606942}
     m_Modifications:
     - target: {fileID: 1901148955239472372, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.52363205
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901148955239472372, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.52363205
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901148955239472372, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.52363205
-      objectReference: {fileID: 0}
-    - target: {fileID: 1901148955239472372, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.991951
       objectReference: {fileID: 0}
@@ -2520,6 +2652,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2631,6 +2767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon3New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6560102267281282238, guid: 40a2f3d0bbf2c2a4185610a3289e12dd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2652,6 +2792,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2755,6 +2899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2816,6 +2964,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2891,6 +3043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2953,6 +3109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2974,6 +3134,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3076,6 +3240,10 @@ PrefabInstance:
     - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
       propertyPath: m_Name
       value: AkarPohon1New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3322,6 +3490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3343,6 +3515,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3446,6 +3622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3507,6 +3687,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3582,6 +3766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3603,6 +3791,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3706,6 +3898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3767,6 +3963,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3830,6 +4030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3851,6 +4055,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3966,6 +4174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3987,6 +4199,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -4114,6 +4330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4184,6 +4404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon2New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4250,6 +4474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4311,6 +4539,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4495,6 +4727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PohonTanpaDaun1New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4556,6 +4792,10 @@ PrefabInstance:
     - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
       propertyPath: m_Name
       value: Pohon1New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4641,6 +4881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuSedang1New (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 32.371952
@@ -4702,6 +4946,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4805,6 +5053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4826,6 +5078,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4933,6 +5189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4954,6 +5214,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -5073,6 +5337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5135,6 +5403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5156,6 +5428,10 @@ PrefabInstance:
     - target: {fileID: 7393881772752403346, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
       propertyPath: m_Name
       value: TebingsedangNew (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393881772752403346, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8430297596265611244, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5279,6 +5555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5340,6 +5620,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5473,6 +5757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon2New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5535,6 +5823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5556,6 +5848,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -5671,6 +5967,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5732,6 +6032,10 @@ PrefabInstance:
     - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
       propertyPath: m_Name
       value: Pohon1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5848,6 +6152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5914,6 +6222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5976,6 +6288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5997,6 +6313,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalScale.x
@@ -6067,6 +6387,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6178,6 +6502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6199,6 +6527,10 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -6453,6 +6785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6474,6 +6810,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6630,6 +6970,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6696,6 +7040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6758,6 +7106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuLonjong2New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8120252327342548349, guid: ee8cf65b41b774a48b6b093535b090aa, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6819,6 +7171,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6910,6 +7266,10 @@ PrefabInstance:
     - target: {fileID: 1723380814475172030, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
       propertyPath: m_Name
       value: BatangPohon5New
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723380814475172030, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5004918991724792950, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
       propertyPath: m_LocalScale.x
@@ -7033,6 +7393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7095,6 +7459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7116,6 +7484,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7223,6 +7595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7285,6 +7661,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7306,6 +7686,10 @@ PrefabInstance:
     - target: {fileID: 1723380814475172030, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
       propertyPath: m_Name
       value: BatangPohon5New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723380814475172030, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5004918991724792950, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7409,6 +7793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7470,6 +7858,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7533,6 +7925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7595,6 +7991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7616,6 +8016,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7723,6 +8127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7744,6 +8152,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7806,6 +8218,10 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8218,6 +8634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8279,6 +8699,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8342,6 +8766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8403,6 +8831,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8466,6 +8898,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8527,6 +8963,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8639,6 +9079,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8700,6 +9144,10 @@ PrefabInstance:
     - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun1New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8763,6 +9211,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8824,6 +9276,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8887,6 +9343,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8949,6 +9409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8970,6 +9434,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalScale.x
@@ -9040,6 +9508,10 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -9155,6 +9627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9176,6 +9652,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9238,6 +9718,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -9353,6 +9837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9374,6 +9862,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9477,6 +9969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9538,6 +10034,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9613,6 +10113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9687,6 +10191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9749,6 +10257,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9770,6 +10282,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -9889,6 +10405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9958,6 +10478,10 @@ PrefabInstance:
     - target: {fileID: 6560102267281282238, guid: 40a2f3d0bbf2c2a4185610a3289e12dd, type: 3}
       propertyPath: m_Name
       value: BatangPohon3New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6560102267281282238, guid: 40a2f3d0bbf2c2a4185610a3289e12dd, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10033,6 +10557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10054,6 +10582,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10157,6 +10689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10231,6 +10767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10252,6 +10792,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10355,6 +10899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10416,6 +10964,10 @@ PrefabInstance:
     - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
       propertyPath: m_Name
       value: AkarPohon1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10479,6 +11031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10540,6 +11096,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10603,6 +11163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10624,6 +11188,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10739,6 +11307,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10801,6 +11373,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10862,6 +11438,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10937,6 +11517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10958,6 +11542,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11065,6 +11653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon3New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6560102267281282238, guid: 40a2f3d0bbf2c2a4185610a3289e12dd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11086,6 +11678,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11197,6 +11793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon2New
       objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11258,6 +11858,10 @@ PrefabInstance:
     - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11321,6 +11925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon1New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11383,6 +11991,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11444,6 +12056,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11519,6 +12135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11540,6 +12160,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.z
@@ -11647,6 +12271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11709,6 +12337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11770,6 +12402,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11845,6 +12481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11866,6 +12506,10 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -11985,6 +12629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rumputbesar2New
       objectReference: {fileID: 0}
+    - target: {fileID: 5850998592557289064, guid: 9ba18738345198a4990e55989027370f, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12006,6 +12654,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12117,6 +12769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12138,6 +12794,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12241,6 +12901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PohonTanpaDaun1New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12262,6 +12926,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12365,6 +13033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12435,6 +13107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12456,6 +13132,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12571,6 +13251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12592,6 +13276,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalScale.x
@@ -12715,6 +13403,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12776,6 +13468,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12851,6 +13547,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12872,6 +13572,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12975,6 +13679,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13037,6 +13745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13047,211 +13759,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3097280724955591120, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
   m_PrefabInstance: {fileID: 1348715442}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1350299224
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 277671313311272241, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 38.899902
-      objectReference: {fileID: 0}
-    - target: {fileID: 761071216129894510, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 761071216129894510, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 761071216129894510, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 761071216129894510, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164761915419684725, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 38.899902
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164761915419684725, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -137.19995
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249233497286882303, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3013100358780068905, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4377181441859245730, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_Type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4377181441859245730, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_PixelsPerUnitMultiplier
-      value: 1.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 187.19995
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -159
-      objectReference: {fileID: 0}
-    - target: {fileID: 4801507845880254298, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 136.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5107634803226705296, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418698405335584188, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 231
-      objectReference: {fileID: 0}
-    - target: {fileID: 5418698405335584188, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -98
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899295520940818724, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899295520940818724, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899295520940818724, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899295520940818724, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7557274030453106260, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_Name
-      value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015845024025198909, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015845024025198909, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8015845024025198909, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -125.8999
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
 --- !u!1001 &1362320297
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13303,6 +13810,10 @@ PrefabInstance:
     - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
       propertyPath: m_Name
       value: BatangPohon4New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13366,6 +13877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13428,6 +13943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13449,6 +13968,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalScale.x
@@ -13520,6 +14043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuSedang2New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 56.301952
@@ -13581,6 +14108,10 @@ PrefabInstance:
     - target: {fileID: 4007524285389710014, guid: e324784fc0bd8a54cae74a6f7fa4e13f, type: 3}
       propertyPath: m_Name
       value: Rumputbesar1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 4007524285389710014, guid: e324784fc0bd8a54cae74a6f7fa4e13f, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4072364563039669798, guid: e324784fc0bd8a54cae74a6f7fa4e13f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13644,6 +14175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TebingkecilNew (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.008049
@@ -13694,63 +14229,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
   m_PrefabInstance: {fileID: 1390055281}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1398112013
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1295703950372089354, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
 --- !u!1001 &1398692266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13810,6 +14288,10 @@ PrefabInstance:
     - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
       propertyPath: m_Name
       value: BatangPohon4New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13873,6 +14355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13934,6 +14420,10 @@ PrefabInstance:
     - target: {fileID: 9080912959110829128, guid: 02bfe1e76544bb34da9bcbee8f827057, type: 3}
       propertyPath: m_Name
       value: BatuLonjong1New
+      objectReference: {fileID: 0}
+    - target: {fileID: 9080912959110829128, guid: 02bfe1e76544bb34da9bcbee8f827057, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13997,6 +14487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14018,6 +14512,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalScale.x
@@ -14088,6 +14586,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14191,6 +14693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14212,6 +14718,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalScale.x
@@ -14282,6 +14792,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalScale.x
@@ -14405,6 +14919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon3New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6560102267281282238, guid: 40a2f3d0bbf2c2a4185610a3289e12dd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14475,6 +14993,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14537,6 +15059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14558,6 +15084,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14661,6 +15191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14682,6 +15216,10 @@ PrefabInstance:
     - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_Name
       value: Batubesar1New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602211196707978376, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5219384438718360792, guid: 2f46b077b8c12fb4d893312071b81ec6, type: 3}
       propertyPath: m_LocalScale.x
@@ -14801,6 +15339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14822,6 +15364,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14925,6 +15471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14946,6 +15496,10 @@ PrefabInstance:
     - target: {fileID: 7393881772752403346, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
       propertyPath: m_Name
       value: TebingsedangNew
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393881772752403346, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8430297596265611244, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15049,6 +15603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15070,6 +15628,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15173,6 +15735,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15194,6 +15760,10 @@ PrefabInstance:
     - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_Name
       value: BatuSedang1New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 417324271772764074, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2400413676795496940, guid: c69dd3d3f4dd4a346b86abb00fbf47a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15309,6 +15879,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15370,6 +15944,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15433,6 +16011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15495,6 +16077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15516,6 +16102,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15626,6 +16216,10 @@ PrefabInstance:
     - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
       propertyPath: m_Name
       value: AkarPohon2New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15815,6 +16409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15881,6 +16479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15943,6 +16545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon1New (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16004,6 +16610,10 @@ PrefabInstance:
     - target: {fileID: 8120252327342548349, guid: ee8cf65b41b774a48b6b093535b090aa, type: 3}
       propertyPath: m_Name
       value: BatuLonjong2New
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120252327342548349, guid: ee8cf65b41b774a48b6b093535b090aa, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16075,6 +16685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16136,6 +16750,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16199,6 +16817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16260,6 +16882,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16323,6 +16949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16384,6 +17014,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16447,6 +17081,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16509,6 +17147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16570,6 +17212,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16637,6 +17283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16698,6 +17348,10 @@ PrefabInstance:
     - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
       propertyPath: m_Name
       value: AkarPohon1New (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567905293778246524, guid: 1d73a1c9b13eb6444a879f897b4004a0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16761,6 +17415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon4New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16822,6 +17480,10 @@ PrefabInstance:
     - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
       propertyPath: m_Name
       value: Pohon1New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268338538834441613, guid: 38e0203583dbc6441bfc70025fd935db, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16893,6 +17555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon2New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16954,6 +17620,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17017,6 +17687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatuBesar3New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8005060210472395004, guid: eeefb752b47f0da419d3caefc1c8517c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17078,6 +17752,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17153,6 +17831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Batubesar2New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5322195619535999742, guid: 911c9164e2d298f41945e35bf13caf9d, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17214,6 +17896,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17354,6 +18040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17415,6 +18105,10 @@ PrefabInstance:
     - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
       propertyPath: m_Name
       value: JamurMerahNew (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17478,6 +18172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17499,6 +18197,10 @@ PrefabInstance:
     - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_Name
       value: BatuSedang2New (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1037239341949653111, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5549581512560699981, guid: c7994ba6bebaa44479053a5c028d2fad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17562,6 +18264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TebingbesarNew (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.02196
@@ -17623,6 +18329,10 @@ PrefabInstance:
     - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_Name
       value: TebingbesarNew (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235966474544855504, guid: da4e79c89232234468388dbf341a002c, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8219856627505266203, guid: da4e79c89232234468388dbf341a002c, type: 3}
       propertyPath: m_LocalScale.x
@@ -17738,6 +18448,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon3New
       objectReference: {fileID: 0}
+    - target: {fileID: 6560102267281282238, guid: 40a2f3d0bbf2c2a4185610a3289e12dd, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17799,6 +18513,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17870,6 +18588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon2New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17891,14 +18613,6 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.6000001
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18002,6 +18716,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18063,6 +18781,10 @@ PrefabInstance:
     - target: {fileID: 8120252327342548349, guid: ee8cf65b41b774a48b6b093535b090aa, type: 3}
       propertyPath: m_Name
       value: BatuLonjong2New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8120252327342548349, guid: ee8cf65b41b774a48b6b093535b090aa, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18126,6 +18848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18187,6 +18913,10 @@ PrefabInstance:
     - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun1New (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8905608288044920907, guid: 8b2062749a870b2459b312e8fcf3a0d9, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18262,6 +18992,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18323,6 +19057,10 @@ PrefabInstance:
     - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
       propertyPath: m_Name
       value: Pohon4New (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198279252482206608, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18390,6 +19128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18451,6 +19193,10 @@ PrefabInstance:
     - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
       propertyPath: m_Name
       value: JamurKuningNew (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18514,6 +19260,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18535,6 +19285,10 @@ PrefabInstance:
     - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_Name
       value: Pohon2New (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397804145872379513, guid: 930255253868a084c9f48f3bc9654904, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8087184055530091249, guid: 930255253868a084c9f48f3bc9654904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18638,6 +19392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurKuningNew (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3127995993574760379, guid: 2a46201f1c1bb164482cdd6a7271ef90, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18699,6 +19457,10 @@ PrefabInstance:
     - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
       propertyPath: m_Name
       value: BatangPohon4New
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463627642708674736, guid: 21c348be385cffb45863c4450601a776, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18765,6 +19527,10 @@ PrefabInstance:
     - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
       propertyPath: m_Name
       value: BatangPohon1New (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18836,6 +19602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AkarPohon2New (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7597095201872013655, guid: 2bd1d5dd841925942a4d03069fa205a8, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18857,6 +19627,10 @@ PrefabInstance:
     - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_Name
       value: TebingkecilNew (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5549108459043152201, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8469079945357459544, guid: d9f8fe1aa70e66e40aaf9c1680190912, type: 3}
       propertyPath: m_LocalScale.x
@@ -18931,6 +19705,10 @@ PrefabInstance:
     - target: {fileID: 1723380814475172030, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
       propertyPath: m_Name
       value: BatangPohon5New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723380814475172030, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5004918991724792950, guid: a2e53263cec47ba42a28b1f613152fba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19038,6 +19816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon1New (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5130006041985233393, guid: c8353581f4e3678438097b3154429bee, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19138,6 +19920,10 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -19261,6 +20047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pohon3New (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4319662698863401627, guid: 3b161eaa9dc45c949ac422e7a50982be, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19323,6 +20113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19344,6 +20138,10 @@ PrefabInstance:
     - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_Name
       value: PohonTanpaDaun2New
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569741790803018086, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6076921581561879504, guid: 16127f450bc4bba49a5a0cf550bad6cb, type: 3}
       propertyPath: m_LocalScale.x
@@ -19463,6 +20261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BatangPohon2New (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7670739757005770562, guid: 65becef449a60ae439b3457bc1a3a443, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19484,6 +20286,10 @@ PrefabInstance:
     - target: {fileID: 7393881772752403346, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
       propertyPath: m_Name
       value: TebingsedangNew (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393881772752403346, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8430297596265611244, guid: bea76d920483ef6478b3174af11d0b6d, type: 3}
       propertyPath: m_LocalScale.x
@@ -19599,6 +20405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19661,6 +20471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: JamurMerahNew (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4842698650116815763, guid: d5c655113b500774ab908af374d15dd0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19683,8 +20497,6 @@ SceneRoots:
   - {fileID: 632053518}
   - {fileID: 1874598730}
   - {fileID: 685709692}
-  - {fileID: 1398112013}
-  - {fileID: 1350299224}
   - {fileID: 656801133}
   - {fileID: 575587512}
   - {fileID: 795606942}

@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d51e2ec14572472da99d114918e4c476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinText: {fileID: 0}
   _healthItems:
   - {fileID: 6309527833293525925}
   - {fileID: 7526963132578200300}
@@ -521,10 +522,6 @@ PrefabInstance:
     - target: {fileID: 7330520203569993599, guid: 4065ca27af7777643a2ae8ec503edd6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7749348222161788689, guid: 4065ca27af7777643a2ae8ec503edd6b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

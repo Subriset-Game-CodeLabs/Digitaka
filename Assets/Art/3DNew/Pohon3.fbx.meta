@@ -3,7 +3,17 @@ guid: 0dd2206730688314b945d6f1082543c5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BatangPohon
+    second: {fileID: 2100000, guid: ae5a109eb193834459a47d5cd79fa7b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DaunPohon
+    second: {fileID: 2100000, guid: 44e22399df511504e91052f12cc59278, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

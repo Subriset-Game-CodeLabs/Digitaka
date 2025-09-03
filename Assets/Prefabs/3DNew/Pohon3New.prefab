@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 4740240163555638064}
   - component: {fileID: 5857909341815787427}
   - component: {fileID: -766052018177694152}
-  m_Layer: 0
+  - component: {fileID: 7107880072384227826}
+  m_Layer: 7
   m_Name: Pohon3New
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4319662698863401627}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.000000037748947, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.89, y: 0.25636268, z: 8.876375}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.52363205, y: 0.52363205, z: 0.52363205}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -65,8 +66,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6896863763039978275, guid: 0dd2206730688314b945d6f1082543c5, type: 3}
-  - {fileID: 2984611427038661265, guid: 0dd2206730688314b945d6f1082543c5, type: 3}
+  - {fileID: 2100000, guid: 44e22399df511504e91052f12cc59278, type: 2}
+  - {fileID: 2100000, guid: ae5a109eb193834459a47d5cd79fa7b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,3 +111,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 450888253172831510, guid: 0dd2206730688314b945d6f1082543c5, type: 3}
+--- !u!114 &7107880072384227826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319662698863401627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 327d11a6c05d49d99e2a1bc543e777cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Renderers: []
+  Position: {x: 0, y: 0, z: 0}
+  Materials: []
+  InitialAlpha: 0

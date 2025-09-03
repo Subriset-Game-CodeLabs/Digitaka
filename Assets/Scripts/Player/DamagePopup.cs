@@ -24,7 +24,7 @@ namespace TwoDotFiveDimension
         private float _timer;
         private Vector3 _velocity;
 
-        public static DamagePopup Create(Transform prefab, Vector3 position, Vector3 attackDir, int damage, bool isCritical)
+        public static DamagePopup Create(Transform prefab, Vector3 position, Vector3 attackDir, float damage, bool isCritical)
         {
             var inst = Instantiate(prefab, position, Quaternion.identity);
             var popup = inst.GetComponent<DamagePopup>();
@@ -37,7 +37,7 @@ namespace TwoDotFiveDimension
             _textMeshPro = GetComponent<TextMeshPro>();
         }
 
-        private void Initialize(int damage, bool isCritical, Vector3 attackDir)
+        private void Initialize(float damage, bool isCritical, Vector3 attackDir)
         {
             // Set text & sorting
             _textMeshPro.SetText(damage.ToString());

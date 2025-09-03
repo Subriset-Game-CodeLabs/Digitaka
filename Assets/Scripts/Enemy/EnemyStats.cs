@@ -8,32 +8,32 @@ namespace Enemy
     public class EnemyStats:MonoBehaviour
     {
         [SerializeField] private EnemyData _enemyBaseData;
-        private int _currentHealth ;
+        private float _currentHealth ;
         private void Awake()
         {
             // _enemyBaseData.ResetStats();
             _currentHealth = _enemyBaseData.maxHealth;
         }
 
-        public int maxHealth
+        public float maxHealth
         {
             get => _enemyBaseData.maxHealth;
             private set => _enemyBaseData.maxHealth = value;
         }
 
-        public int currentHealth
+        public float currentHealth
         {
             get => _currentHealth;
             private set => _currentHealth = value;
         }
 
-        public int damage
+        public float damage
         {
             get => _enemyBaseData.damage;
             private set => _enemyBaseData.damage = value;
         }
         public bool IsAlive => currentHealth > 0;
-        public int TakeDamage(int damage)
+        public float TakeDamage(float damage)
         {
             currentHealth -= damage;
             if (currentHealth <= 0)

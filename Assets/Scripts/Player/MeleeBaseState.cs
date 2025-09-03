@@ -19,7 +19,7 @@ namespace TwoDotFiveDimension
         private GameObject _hitEffectPrefab;
         private float _attackPressedTimer;
         private CameraShake _cameraShake;
-        protected int _attackDamage;
+        protected float _attackDamage;
 
         public MeleeBaseState(ComboCharacter comboCharacter)
         {

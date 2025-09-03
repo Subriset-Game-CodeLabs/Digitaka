@@ -52,8 +52,20 @@ namespace UIController
         private void Start()
         {
             _playerStats = PlayerStats.Instance;
+            InitializeTutorial();
         }
 
+        private void InitializeTutorial()
+        {
+            if(!GameManager.Instance.TutorialCompleted) 
+            {
+                ShowTutorialPanel();
+            }
+            else
+            {
+                HideTutorialPanel();
+            }
+        }
         void OnEnable()
         {
             InputManager.Instance.PlayerInput.Pause.OnDown += Pause;

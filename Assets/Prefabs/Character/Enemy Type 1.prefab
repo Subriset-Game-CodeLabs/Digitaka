@@ -105,6 +105,7 @@ MonoBehaviour:
   - {fileID: 1474453025398941960}
   - {fileID: 7045043686539768729}
   _enemyStats: {fileID: 6688565024199421003}
+  _healthPrefab: {fileID: 4542857306197799413, guid: ad8b14e5c1aff9b4ea94a1f0a33843e0, type: 3}
 --- !u!1 &6770024504102518318
 GameObject:
   m_ObjectHideFlags: 0

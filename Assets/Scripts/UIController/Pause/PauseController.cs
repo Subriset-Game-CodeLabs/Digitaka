@@ -31,9 +31,9 @@ namespace UIController.Pause
 
         private void OnExitButton()
         {
+            UIManager.Instance.Pause();
             _pauseMenu.SetActive(false);
             UIManager.Instance.MainMenuGame();
-            UIManager.Instance.Pause();
         }
     }
 }

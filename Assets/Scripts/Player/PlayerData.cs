@@ -1,18 +1,19 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace TwoDotFiveDimension
 {
     [CreateAssetMenu(fileName = "PlayerStatsData", menuName = "Data/PlayerStatsData")]
     public class PlayerData: StatsData
     {
-        [field:SerializeField] public int maxMana { get; set; } = 3;
-        [field:SerializeField] public int mana { get; set; }
+        [field:SerializeField] public float maxMana { get; set; } = 3;
+        [field:SerializeField] public float mana { get; set; }
         [field:SerializeField] public int healPotion { get; set; }
         [field:SerializeField] public int manaPotion { get; set; } = 1;
         [field:SerializeField] public int coin { get; set; } = 1;
         [field:SerializeField] public int UltimateDamage = 2;
         [field:SerializeField] public int UltimateManaCost = 2;
-        [field: SerializeField] public int moralePoint = 0;
+        [field: SerializeField] public int MoralePoint = 0;
         
         [Header("Dash Settings")]
         [field:SerializeField] public float DashDuration  { get; set; }
@@ -32,6 +33,14 @@ namespace TwoDotFiveDimension
             healPotion = 5;
             manaPotion = 5;
             coin = 5;
+            MoralePoint = 0;
+            
+            GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
+            GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
+            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
+            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
+            GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
+            
         }
     }
 }

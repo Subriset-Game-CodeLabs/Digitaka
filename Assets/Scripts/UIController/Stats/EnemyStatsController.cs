@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Enemy;
 using UnityEngine;
 
@@ -5,7 +6,7 @@ namespace UIController.Stats
 {
     public class EnemyStatsController:MonoBehaviour
     {
-        [SerializeField] private StatsItem[] _healthItems;
+        [SerializeField] private List<StatsItem> _healthItems;
         [SerializeField] private EnemyStats _enemyStats;
 
         private void Start()
@@ -24,17 +25,21 @@ namespace UIController.Stats
         {
             if (enemyStats != _enemyStats) return;
             var currentHealth = _enemyStats.currentHealth;
-            var maxHealth = _enemyStats.maxHealth;
-
-            for (int i = 0; i < _healthItems.Length; i++)
+    
+            for (int i = 0; i < _healthItems.Count; i++)
             {
-                if (i < maxHealth)
+                float heartValue = currentHealth - i;
+                if (heartValue >= 1f)
                 {
-                    _healthItems[i].SetFill(i < currentHealth);
+                    _healthItems[i].SetFill();
+                }
+                else if (heartValue >= 0.5f)
+                {
+                    _healthItems[i].SetHalfFill();
                 }
                 else
                 {
-                    _healthItems[i].SetFill(false);
+                    _healthItems[i].SetEmpty();
                 }
             }
             if(currentHealth == 0) gameObject.SetActive(false);

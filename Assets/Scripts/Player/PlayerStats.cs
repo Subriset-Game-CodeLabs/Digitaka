@@ -22,23 +22,23 @@ namespace TwoDotFiveDimension
             }
         }
 
-        public int maxHealth
+        public float maxHealth
         {
             get => _playerData.maxHealth;
             private set => _playerData.maxHealth = value;
         }
-        public int currentHealth
+        public float currentHealth
         {
             get => _playerData.health;
             private set => _playerData.health = value;
         }
-        public int maxMana
+        public float maxMana
         {
             get => _playerData.maxMana;
             private set => _playerData.maxMana = value;
         }
 
-        public int currentMana
+        public float currentMana
         {
             get => _playerData.mana;
             private set => _playerData.mana = value;
@@ -103,19 +103,19 @@ namespace TwoDotFiveDimension
         
         public int moralePoint
         {
-            get => _playerData.moralePoint;
-            private set => _playerData.moralePoint = value;
+            get => _playerData.MoralePoint;
+            private set => _playerData.MoralePoint = value;
         }
         
         public bool IsAlive => currentHealth > 0;
         public bool CanUltimate => currentMana >= ultimateCost;
-        public int damage
+        public float damage
         {
             get => _playerData.damage;
             private set => _playerData.damage = value;
         }
         
-        public int TakeDamage(int damage)
+        public float TakeDamage(float damage)
         {
             currentHealth -= damage;
             if (!IsAlive)

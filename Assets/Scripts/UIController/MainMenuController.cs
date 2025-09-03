@@ -20,20 +20,15 @@ namespace UIController
         private void StartGame()
         {
             // Load the main game scene
-            SceneManager.Instance.ChangeScene("A1New");
-            InputManager.Instance.PlayerMode();
+            SceneManager.Instance.ChangeScene("ChapterSelector");
         }
         private void ExitGame()
         {
-            // Exit the application
             Application.Quit();
         }
         private void OpenSettings()
         {
-            // Open settings menu (implementation depends on your settings menu setup)
-            Debug.Log("Settings button clicked");
             _settingsMenu.SetActive(true);
-            
         }
     }
 }
