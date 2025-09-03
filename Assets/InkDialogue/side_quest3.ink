@@ -20,7 +20,7 @@ Tolong! Ada orang yang menghadangku di depan, aku tidak bisa lewat. Bisakah kamu
     Terima kasih! Aku tahu aku bisa mengandalkanmu. Hati-hati, mereka berbahaya. #speaker: Jaka  #portrait:jaka
     Tenang saja, aku akan mengurus mereka. #speaker: Aji Saka #portrait:ajisaka
     ~ StartQuest("KillEnemy")
-* [Apa yang akan kalian berikan padaku?]
+* [Tidak Mau Bantu]
     ~ ChangeMorale(-20)
     Apa? Kamu serius?! Kalau begitu aku tidak bisa lewat… tapi kalau aku tertahan di sini, kita berdua juga tidak bisa lanjut. Jadi suka tidak suka, kamu tetap harus menyingkirkan mereka. #speaker: Jaka #portrait:jaka
     Hhh… baiklah, sepertinya aku tidak punya pilihan. #speaker: Aji Saka #portrait:ajisaka
@@ -28,7 +28,7 @@ Tolong! Ada orang yang menghadangku di depan, aku tidak bisa lewat. Bisakah kamu
 - -> END
 
 = inProgress
-Kamu harus menyingkirkan mereka! Aku tidak bisa lewat! #speaker: Jaka
+Kamu harus menyingkirkan mereka! Aku tidak bisa lewat! #speaker: Jaka #portrait:jaka
 -> END
 
 = canFinish

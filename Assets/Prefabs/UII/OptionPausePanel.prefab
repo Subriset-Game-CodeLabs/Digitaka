@@ -163,7 +163,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _pauseMenu: {fileID: 482370212631220000}
   _startButton: {fileID: 6228628268045391951}
+  _settingsButton: {fileID: 6084435704023182961}
   _exitButton: {fileID: 3032838087264344287}
+  _settingsMenu: {fileID: 8108550394975176027}
 --- !u!1 &482370212631220000
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +181,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8452871678559068109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -402,7 +404,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1318821316451114076}
+        m_TargetAssemblyTypeName: Audio.AudioSetting, Assembly-CSharp
+        m_MethodName: SetMusicVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1486824861592296935
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1754,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1318821316451114076}
+        m_TargetAssemblyTypeName: Audio.AudioSetting, Assembly-CSharp
+        m_MethodName: SetSfxVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5196486029296715111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,13 +2642,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3993941363755559162}
+  - component: {fileID: 1318821316451114076}
   m_Layer: 5
   m_Name: OptionPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3993941363755559162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2649,6 +2676,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1318821316451114076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8108550394975176027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e944152d2949d7f458aa2f731ed47b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _myMixer: {fileID: 24100000, guid: a07d0982df1e3b04a827145aac2e0f8a, type: 2}
+  _musicSlider: {fileID: 5351267074326723421}
+  _sfxSlider: {fileID: 1240059528247015896}
 --- !u!1 &8935026295289047038
 GameObject:
   m_ObjectHideFlags: 0

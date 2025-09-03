@@ -123,6 +123,7 @@ namespace TwoDotFiveDimension
                 Debug.Log("Player has died");
                 currentHealth = 0;
                 GameEventsManager.Instance.StatsEvents.PlayerDeath();
+                AudioManager.Instance.PlaySound(SoundType.SFX_Death);
                 // _playerAnimator.SetTrigger("Die");
             }
             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();

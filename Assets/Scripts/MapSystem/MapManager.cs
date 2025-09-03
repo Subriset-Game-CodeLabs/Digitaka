@@ -23,14 +23,12 @@ public class MapManager : PersistentSingleton<MapManager>
 
     void OnEnable()
     {
-        InputManager.Instance.PlayerInput.OpenMap.OnDown += MapPressed;
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        // UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void OnDisable()
     {
-        InputManager.Instance.PlayerInput.OpenMap.OnDown -= MapPressed;
-        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        // UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     public void Changescene(String scenename)

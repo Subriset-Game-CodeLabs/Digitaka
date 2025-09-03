@@ -18,5 +18,8 @@ namespace Audio
         SFX_Win,
         SFX_Lose,
         SFX_Ultimate,
+        BGM_Boss_Battle,
+        SFX_Death,
+        BGM_Village
     }
 }

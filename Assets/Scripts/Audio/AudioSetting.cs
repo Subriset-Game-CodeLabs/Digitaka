@@ -27,13 +27,13 @@ namespace Audio
         public void SetMusicVolume()
         {
             float volume = _musicSlider.value;
-            _myMixer.SetFloat("music", Mathf.Log10(volume)*20);
+            _myMixer.SetFloat("BGM", Mathf.Log10(volume)*20);
             PlayerPrefs.SetFloat("musicVolume",volume);
         }
         public void SetSfxVolume()
         {
             float volume = _sfxSlider.value;
-            _myMixer.SetFloat("sfx", Mathf.Log10(volume)*20);
+            _myMixer.SetFloat("SFX", Mathf.Log10(volume)*20);
             PlayerPrefs.SetFloat("sfxVolume",volume);
         }
 

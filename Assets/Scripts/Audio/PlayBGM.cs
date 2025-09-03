@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Audio
 {
-    [RequireComponent(typeof(AudioSource))]
+    // [RequireComponent(typeof(AudioSource))]
     public class PlayBGM:MonoBehaviour
     {
         private AudioManager _audioManager;
@@ -11,9 +11,7 @@ namespace Audio
         [SerializeField] private SoundType _soundType;
         private void Start()
         {
-            _audioManager = AudioManager.Instance;
-            _audioSource = gameObject.GetComponent<AudioSource>();
-            _audioManager.PlaySound(_soundType,_audioSource);
+            BGMManager.Instance.PlayBGM(_soundType);
         }
     }
 }

@@ -42,6 +42,7 @@ namespace Enemy
                 Debug.Log("Enemy has been defeated!");
                 PlayerStats.Instance.AddCoin(_enemyBaseData.dropCoin);
                 GameEventsManager.Instance.StatsEvents.EnemyDeath(this);
+                AudioManager.Instance.PlaySound(SoundType.SFX_Death);
                 // AudioManager.Instance.PlaySound();
                 
             }

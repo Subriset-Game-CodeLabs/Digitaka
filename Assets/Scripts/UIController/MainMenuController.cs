@@ -1,4 +1,5 @@
 using System;
+using Input;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,6 +21,7 @@ namespace UIController
         {
             // Load the main game scene
             SceneManager.Instance.ChangeScene("A1New");
+            InputManager.Instance.PlayerMode();
         }
         private void ExitGame()
         {

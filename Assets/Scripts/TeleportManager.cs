@@ -8,6 +8,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
     [SerializeField] private GameObject _cinemachineCameraPrefab;
     private TeleportPoint[] _teleportPoints;
     private GameManager _gameManager;
+    [SerializeField] private string _firstSceneName = "A1New";
     [SerializeField] private string _currentSceneName = "A1New";
     private CinemachineCamera _cinemachineCamera;
 
@@ -83,5 +84,8 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName); 
         
     }
-
+    public void ResetCheckpoint()
+    {
+        _currentSceneName = _firstSceneName;
+    }
 }
