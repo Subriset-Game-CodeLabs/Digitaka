@@ -81,7 +81,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
             Debug.Log("Checking teleport point: " + teleportPoint.TargetScene + " for scene: " + _currentSceneName);
             if (teleportPoint.TargetScene == _currentSceneName)
             {
-                teleportPoint.StarterPoint = true;
+                // teleportPoint.StarterPoint = true;
                 _currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
                 SpawnCharacterAtTeleportPoint(teleportPoint);
                 Debug.Log($"Player spawned at {teleportPoint.name}");

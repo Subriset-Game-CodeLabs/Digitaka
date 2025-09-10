@@ -22,7 +22,7 @@ public class TeleportPoint:MonoBehaviour
     private CapsuleCollider _capsuleCollider;
     private void Start()
     {
-        _capsuleCollider = GetComponent<CapsuleCollider>();
+        _capsuleCollider = GetComponentInChildren<CapsuleCollider>();
     }
     
     private void OnTriggerEnter(Collider otherCollider)

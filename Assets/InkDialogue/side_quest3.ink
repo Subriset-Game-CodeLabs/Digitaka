@@ -1,4 +1,4 @@
-﻿=== KillEnemyStart ===
+=== KillEnemyStart ===
 
 { KillEnemyState :
     - "RequirementsNotMet": -> requirementsNotMet

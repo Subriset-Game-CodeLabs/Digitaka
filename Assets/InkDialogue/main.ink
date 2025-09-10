@@ -24,6 +24,9 @@ INCLUDE side_quest1.ink
 INCLUDE side_quest2.ink
 INCLUDE side_quest3.ink
 
+// Main Story
+INCLUDE chapter1.ink
+
 
 === testspeaker ===
 Hi my name is aji saka #speaker:Aji Saka #portrait:ajisaka
