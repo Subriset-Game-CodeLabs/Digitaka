@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DialogueEvents
 {
-    public event Action<string> onEnterDialogue;
+    public event Action<string, bool> onEnterDialogue;
     public event Action onDialogueStarted;
     public event Action onDialogueFinishied;
     public event Action<string> onSpeakerChanged;
@@ -15,9 +15,9 @@ public class DialogueEvents
     public event Action<string, Ink.Runtime.Object> onUpdateInkDialogueVariables;
     public event Action<bool> onLineTypingAnimation;
 
-    public void EnterDialogue(string knotName)
+    public void EnterDialogue(string knotName, bool allowSkip = true)
     {
-        onEnterDialogue?.Invoke(knotName);
+        onEnterDialogue?.Invoke(knotName, allowSkip);
     }
 
     public void DialogueStarted()

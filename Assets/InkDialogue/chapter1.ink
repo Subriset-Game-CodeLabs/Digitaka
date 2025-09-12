@@ -1,5 +1,5 @@
 === TibaDiHutan ===
-Tuan, sebaiknya kita secepatnya mencari tempat beristirahat yang aman. #speaker : Sembada
+Tuan, sebaiknya kita secepatnya mencari tempat beristirahat yang aman. #speaker:Sembada #portrait:sembada
 -> END
 
 === SampaiDiGunung ===

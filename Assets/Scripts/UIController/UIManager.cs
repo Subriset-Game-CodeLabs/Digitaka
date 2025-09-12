@@ -21,10 +21,14 @@ namespace UIController
         [SerializeField] private GameObject _defeatedPanel;
         [SerializeField] private GameObject _completeQuestPanel;
         [SerializeField] private GameObject _mapPanel;
+        [SerializeField] private GameObject _mobileUIPanel;
+        [SerializeField] private GameObject _statsPanel;
+        [SerializeField] private GameObject _coinPanel;
         [SerializeField] private bool isPaused = false;
         private PlayerStats _playerStats;
         private bool _mapPanelActive;
         private Transform _mapTiles;
+        private bool _canvasActive = true;
         
         [Header("Mobile UI")]
         [SerializeField] private CooldownUI _dashCooldownUIMobile;
@@ -52,12 +56,30 @@ namespace UIController
         private void Start()
         {
             _playerStats = PlayerStats.Instance;
-            InitializeTutorial();
+            //InitializeTutorial();
+        }
+
+        public void HideCanvas()
+        {
+            if (_canvasActive)
+            {
+                _mobileUIPanel.SetActive(false);
+                _statsPanel.SetActive(false);
+                _coinPanel.SetActive(false);
+                _canvasActive = false;
+            }
+            else
+            {
+                _mobileUIPanel.SetActive(true);
+                _statsPanel.SetActive(true);
+                _coinPanel.SetActive(true);
+                _canvasActive = true;
+            }
         }
 
         private void InitializeTutorial()
         {
-            if(!GameManager.Instance.TutorialCompleted) 
+            if (!GameManager.Instance.TutorialCompleted)
             {
                 ShowTutorialPanel();
             }

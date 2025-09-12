@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3960756815150043208}
   - component: {fileID: 2063490211658209973}
   - component: {fileID: 3090116751719391828}
+  - component: {fileID: 5105276432699434549}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -53,6 +54,7 @@ MonoBehaviour:
   _mainCharacterPrefab: {fileID: 3448561943331764639, guid: 1803f4f673bd7ce4f82766626f5920c3, type: 3}
   _uiHUDPrefab: {fileID: 7557274030453106260, guid: 30b1055d9776b2c44b0ad107034b3baa, type: 3}
   _currentChapter: 1
+  _chapterScene: 
 --- !u!82 &1978654946254717790
 AudioSource:
   m_ObjectHideFlags: 0
@@ -223,3 +225,15 @@ MonoBehaviour:
   _slideTransitionPrefab: {fileID: 4348750781598577700, guid: 2be77f531e19b544da67961e57e3d06d, type: 3}
   _slideAnimationDuration: 0.5
   _slideEaseType: 7
+--- !u!114 &5105276432699434549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295703950372089354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e312f0411a126fe4099b0025aa49ed75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

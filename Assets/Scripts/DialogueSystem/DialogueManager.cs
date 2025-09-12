@@ -20,6 +20,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private InkDialogueVariables inkDialogueVariables;
 
     private bool _isPlayingTypingAnimation;
+    private bool _allowSkip;
     private string _currentText;
 
     private const string SPEAKER_TAG = "speaker";
@@ -83,9 +84,9 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
             return;
         }
 
-        if (_isPlayingTypingAnimation)
+        if (_isPlayingTypingAnimation && !_allowSkip)
         {
-            // return;
+            return;
         }
 
         ContinueOrExitStory();
@@ -101,14 +102,15 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         currentChoiceIndex = choiceIndex;
     }
 
-    private void EnterDialogue(string knotName)
+    private void EnterDialogue(string knotName, bool allowSkip)
     {
         if (dialougePlaying)
         {
             return;
         }
-
+        Debug.Log("Play dialogue " + knotName);
         dialougePlaying = true;
+        _allowSkip = allowSkip;
         GameEventsManager.Instance.DialogueEvents.DialogueStarted();
         InputManager.Instance.UIMode();
         if (!knotName.Equals(""))
@@ -180,7 +182,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
-
+            Debug.Log(tagKey);
             switch (tagKey)
             {
                 case SPEAKER_TAG:

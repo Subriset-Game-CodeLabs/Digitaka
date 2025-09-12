@@ -68,6 +68,7 @@ GameObject:
   - component: {fileID: 8079388278403554947}
   - component: {fileID: 1417103567133632272}
   - component: {fileID: -5532342677130512065}
+  - component: {fileID: 4112698141553983399}
   m_Layer: 3
   m_Name: MainCharacter
   m_TagString: Player
@@ -209,6 +210,28 @@ MonoBehaviour:
   TargetPositionOffset: {x: 0, y: 0.6, z: 0}
   FadeSpeed: 2
   ObjectsBlockingView: []
+--- !u!95 &4112698141553983399
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448561943331764639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6240816578694786285
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6240816578694786285}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.036, y: 0.703, z: 0}
   m_LocalScale: {x: 2.04, y: 2.04, z: 2.04}
   m_ConstrainProportionsScale: 1
