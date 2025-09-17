@@ -35,6 +35,7 @@ public class GameManager: PersistentSingleton<GameManager>
     }
     public void StartGame()
     {
+        Debug.Log("Game Start");
         TeleportManager.Instance.InitializeTeleport(_chapterScene);
         var HUD = Instantiate(_uiHUDPrefab);
         UIManager uiManager = HUD.GetComponent<UIManager>();

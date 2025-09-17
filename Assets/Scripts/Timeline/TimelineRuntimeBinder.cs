@@ -8,26 +8,12 @@ public class TimelineRuntimeBinder : MonoBehaviour
     public GameObject player;
     public CinemachineCamera cinemachineCamera;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void BindTracks()
     {
-        // Find the Player object in the scene 
         player = GameObject.FindGameObjectWithTag("Player");
-
-        if (player != null)
-        {
-            BindTracks();
+        if (cinemachineCamera)
             cinemachineCamera.Target.TrackingTarget = player.transform;
-            director.Play();
-        }
-        else
-        {
-            Debug.LogWarning("No object with tag 'Player' found in the scene!");
-        }
-    }
 
-    void BindTracks()
-    {
         foreach (var output in director.playableAsset.outputs)
         {
             // Look for the track you want to bind

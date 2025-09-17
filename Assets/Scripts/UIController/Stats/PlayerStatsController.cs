@@ -14,6 +14,7 @@ namespace UIController.Stats
         
         [SerializeField] private GameObject _healthPrefab;
         [SerializeField] private GameObject _manaPrefab;
+        [SerializeField]
         private PlayerStats _playerStats;
         private void Start()
         {

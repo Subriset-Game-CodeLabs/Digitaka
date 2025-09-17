@@ -21022,6 +21022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cutsceneId: TibaDiHutan
   _director: {fileID: 1463092677}
+  _binder: {fileID: 1463092679}
   _playOnStart: 1
 --- !u!1001 &1874598730
 PrefabInstance:

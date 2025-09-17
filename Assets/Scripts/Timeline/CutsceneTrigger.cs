@@ -10,7 +10,11 @@ public class CutsceneTrigger : MonoBehaviour
     private PlayableDirector _director;
 
     [SerializeField]
+    private TimelineRuntimeBinder _binder;
+
+    [SerializeField]
     private bool _playOnStart;
+
 
     private void Start()
     {
@@ -21,7 +25,24 @@ public class CutsceneTrigger : MonoBehaviour
                 gameObject.SetActive(false);
                 return;
             }
+            if (_binder)
+                _binder.BindTracks();
+            _director.Play();
+            CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
+        }
+    }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (CutsceneManager.Instance.HasPlayed(_cutsceneId))
+            {
+                gameObject.SetActive(false);
+                return;
+            }
+            if (_binder)
+                _binder.BindTracks();
             _director.Play();
             CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
         }
