@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using QuestSystem;
+using TMPro;
 namespace UIController
 {
     public class QuestUI:MonoBehaviour
     {
         [SerializeField] private GameObject _questItemPrefab;
         [SerializeField] private GameObject _questListParent;
+        [SerializeField] private TextMeshProUGUI _questStatusText;
         private Dictionary<string, QuestItem> _idToItemMap = new();
 
         private void OnEnable()
@@ -19,11 +21,14 @@ namespace UIController
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStateChange -= QuestStateChange;
         }
-        
+
         private void QuestStateChange(Quest quest)
         {
-            QuestItem questItem = CreateQuestIfNotExist(quest); 
-            questItem.SetState(quest.state);
+            Debug.Log(quest.info.displayName);
+            Debug.Log(quest.GetFullStatusText());
+            _questStatusText.text = quest.GetFullStatusText();
+            // QuestItem questItem = CreateQuestIfNotExist(quest); 
+            // questItem.SetState(quest.state);
         } 
         private QuestItem CreateQuestIfNotExist(Quest quest)
         {

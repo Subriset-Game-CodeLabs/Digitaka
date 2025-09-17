@@ -12,12 +12,12 @@
 -> END
 
 = canStart
-Tolong! Ada orang yang menghadangku di depan, aku tidak bisa lewat. Bisakah kamu menyingkirkan mereka? #speaker: Jaka #portrait:jaka 
+Tolong! Ada orang yang menghadangku di depan, aku tidak bisa lewat. Bisakah kamu menyingkirkan mereka? #speaker: Jaka #portrait:sembada 
 
 * [Mau Bantu]
     ~ ChangeMorale(20)
     Baik, aku akan menyingkirkan mereka untukmu. #speaker: Aji Saka #portrait:ajisaka
-    Terima kasih! Aku tahu aku bisa mengandalkanmu. Hati-hati, mereka berbahaya. #speaker: Jaka  #portrait:jaka
+    Terima kasih! Aku tahu aku bisa mengandalkanmu. Hati-hati, mereka berbahaya. #speaker: Jaka  #portrait:sembada
     Tenang saja, aku akan mengurus mereka. #speaker: Aji Saka #portrait:ajisaka
     ~ StartQuest("KillEnemy")
 * [Tidak Mau Bantu]

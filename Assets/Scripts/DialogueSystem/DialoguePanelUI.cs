@@ -131,7 +131,7 @@ public class DialoguePanelUI : MonoBehaviour
         foreach (char letter in line.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(0.04f);
+            yield return new WaitForSeconds(0.02f);
         }
         GameEventsManager.Instance.DialogueEvents.LineTypingAnimation(false);
     }

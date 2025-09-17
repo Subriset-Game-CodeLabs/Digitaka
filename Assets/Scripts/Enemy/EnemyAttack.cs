@@ -45,7 +45,8 @@ namespace Enemy
             foreach (Collider collider in collidersToDamage)
             {
                 if (!_collidersDamaged.Contains(collider)){
-                    PlayerStats hitPlayer = collider.GetComponentInChildren<PlayerStats>();
+                    // PlayerStats hitPlayer = collider.GetComponentInChildren<PlayerStats>();
+                    PlayerStats hitPlayer = PlayerStats.Instance;
                     if (hitPlayer && hitPlayer.IsAlive)
                     {
                         Vector3 attackDir = (hitPlayer.transform.position - gameObject.transform.position);
