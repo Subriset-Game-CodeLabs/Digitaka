@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: SmallManaPotion
   m_EditorClassIdentifier: 
   ItemName: Small Mana Potion
-  ItemSprite: {fileID: 21300000, guid: 1259cb12d6637e142ad93dd5420f349d, type: 3}
+  ItemSprite: {fileID: 49124928, guid: 2bc60a5d2f7390c43a7ddad98a9c1433, type: 3}
   itemType: 0
   ItemPrice: 15
-  ItemDiscountPrice: 0
+  ItemDiscountPrice: 15
   ItemDescription: "A faintly glowing vial containing a diluted healing brew. Heals
     1 Heart of the player\u2019s Mana"
+  moraleToUnlock: 0
   statEffect: 1
   amount: 1

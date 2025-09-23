@@ -11,6 +11,7 @@ public class TimelineRuntimeBinder : MonoBehaviour
     public void BindTracks()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log(player);
         if (cinemachineCamera)
             cinemachineCamera.Target.TrackingTarget = player.transform;
 

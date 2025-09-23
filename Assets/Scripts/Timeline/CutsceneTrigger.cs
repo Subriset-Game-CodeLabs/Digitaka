@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -15,36 +16,66 @@ public class CutsceneTrigger : MonoBehaviour
     [SerializeField]
     private bool _playOnStart;
 
-
+    private GameObject _player;
     private void Start()
     {
         if (_playOnStart)
         {
-            if (CutsceneManager.Instance.HasPlayed(_cutsceneId))
-            {
-                gameObject.SetActive(false);
-                return;
-            }
-            if (_binder)
-                _binder.BindTracks();
+            PlayCutscene();
+        }
+    }
+    void OnEnable()
+    {
+        GameEventsManager.Instance.CutsceneEvents.OnPlayCutscene += OnPlayCutscene;
+    }
+
+    void OnDisable()
+    {
+        GameEventsManager.Instance.CutsceneEvents.OnPlayCutscene -= OnPlayCutscene;
+    }
+
+    private void OnPlayCutscene(string cutsceneId)
+    {
+        if (_cutsceneId == cutsceneId)
+        {
+            PlayCutscene();
+        }
+    }
+
+    private void PlayCutscene()
+    {
+        if (CutsceneManager.Instance.HasPlayed(_cutsceneId))
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+        if (_binder)
+            StartCoroutine(WaitForPlayer());
+        else
+        {
             _director.Play();
             CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
         }
+    }
+
+    private IEnumerator WaitForPlayer()
+    {
+
+        while (_player == null)
+        {
+            _player = GameObject.FindWithTag("Player");
+            yield return null;
+        }
+        _binder.BindTracks();
+        _director.Play();
+        CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (CutsceneManager.Instance.HasPlayed(_cutsceneId))
-            {
-                gameObject.SetActive(false);
-                return;
-            }
-            if (_binder)
-                _binder.BindTracks();
-            _director.Play();
-            CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
+            PlayCutscene();
         }
     }
 }

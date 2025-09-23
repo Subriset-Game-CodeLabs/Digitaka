@@ -149,6 +149,7 @@ namespace TwoDotFiveDimension
         }
         public void UseMana(int amount)
         {
+            Debug.Log($"ManaUsed{amount}");
             currentMana -= amount;
             if (currentMana < 0)
             {
@@ -196,12 +197,22 @@ namespace TwoDotFiveDimension
         public void ChangeMoralePoint(int amount)
         {
             moralePoint += amount;
+            GameEventsManager.Instance.StatsEvents.ChangePlayerMorale();
+        }
+
+        public void ChangeDamage(float amount)
+        {
+            damage += amount;
+        }
+
+        public void ChangeUltimateCost(int amount)
+        {
+            ultimateCost += amount;
         }
 
         public void ResetStats()
         {
             _playerData.ResetStats();
         }
-        
     }
 }

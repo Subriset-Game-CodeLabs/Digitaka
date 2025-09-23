@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 394095195}
     m_Modifications:
+    - target: {fileID: 4464576952374719408, guid: 08df10a8a2b8dee4f905b8c92acfc323, type: 3}
+      propertyPath: _chapterScene
+      value: B1
+      objectReference: {fileID: 0}
     - target: {fileID: 5720734097668521331, guid: 08df10a8a2b8dee4f905b8c92acfc323, type: 3}
       propertyPath: m_Name
       value: Chapter2Button
@@ -1224,7 +1228,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4464576952374719408, guid: 08df10a8a2b8dee4f905b8c92acfc323, type: 3}
       propertyPath: _chapterScene
-      value: Cutscene_Prologue
+      value: A1New
       objectReference: {fileID: 0}
     - target: {fileID: 5720734097668521331, guid: 08df10a8a2b8dee4f905b8c92acfc323, type: 3}
       propertyPath: m_Name

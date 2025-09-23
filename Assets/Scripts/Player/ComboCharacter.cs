@@ -73,7 +73,6 @@ namespace TwoDotFiveDimension
             if (FiniteStateMachine.GetCurrentState == IdleCombatState 
                )
             {
-                _playerStats.UseMana(_playerStats.ultimateCost);
                 Debug.Log("Ultimate Fired");
                 FiniteStateMachine.ChangeState(new GroundUltimateState(this));
                 CinemachineShake.Instance.ShakeCamera(2,0.5f);

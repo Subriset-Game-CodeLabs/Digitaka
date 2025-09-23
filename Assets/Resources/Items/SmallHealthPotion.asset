@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: SmallHealthPotion
   m_EditorClassIdentifier: 
   ItemName: Small Health Potion
-  ItemSprite: {fileID: 21300000, guid: 91f4ca5a2552f9f4a9d7135c8f4d6760, type: 3}
+  ItemSprite: {fileID: 16849823, guid: 2bc60a5d2f7390c43a7ddad98a9c1433, type: 3}
   itemType: 0
   ItemPrice: 10
-  ItemDiscountPrice: 7
+  ItemDiscountPrice: 10
   ItemDescription: "A faintly glowing vial containing a diluted healing brew. Heals
     1 Heart of the player\u2019s health"
   statEffect: 0

@@ -7,10 +7,36 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
+    public static ShopManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     [SerializeField]
     private List<ItemBaseSO> shopItems;
 
-    [SerializeField] int _moneyPlaceholder;
+    public void ResetItem()
+    {
+        Debug.Log("Reset Item");
+        foreach (ItemBaseSO item in shopItems)
+        {
+            if (item.itemType == ItemType.Equipment)
+            {
+                ItemEquipmentSO itemEquipment = (ItemEquipmentSO)item;
+                itemEquipment.isBought = false;
+                Debug.Log("false");
+            }
+        }
+    }
 
     void OnEnable()
     {
@@ -26,12 +52,12 @@ public class ShopManager : MonoBehaviour
 
     public void OpenShop()
     {
+        InputManager.Instance.UIMode();
         GameEventsManager.Instance.ShopEvents.InitializeShop(CalculatePriceFromMoral());
     }
 
     public void BuyItem(ItemBaseSO item)
     {
-        Debug.Log(item.ItemName + " Buyed");
         // check for money
         int itemPrice;
         if (item.ItemPrice != item.ItemDiscountPrice)
@@ -47,6 +73,22 @@ public class ShopManager : MonoBehaviour
 
         if (hasMoney)
         {
+            if (item.itemType == ItemType.Equipment)
+            {
+                ItemEquipmentSO itemEquipment = (ItemEquipmentSO)item;
+                itemEquipment.isBought = true;
+                shopItems.Remove(item);
+                switch (itemEquipment.statEffect)
+                {
+                    case StatEffect.Damage:
+                        PlayerStats.Instance.ChangeDamage(itemEquipment.amount);
+                        break;
+                    case StatEffect.UltimateManaCost:
+                        PlayerStats.Instance.ChangeUltimateCost((int)itemEquipment.amount);
+                        break;
+                }
+            }
+
             GameEventsManager.Instance.ShopEvents.BuyItemSuccess(item);
             AudioManager.Instance.PlaySound(SoundType.SFX_PurchaseItem);
             PlayerStats.Instance.UseCoin(itemPrice);
@@ -80,22 +122,20 @@ public class ShopManager : MonoBehaviour
         int newPrice;
         for (var i = 0; i < shopItems.Count; i++)
         {
-            if (PlayerStats.Instance.moralePoint == 0)
+            if (PlayerStats.Instance.moralePoint > 50)
             {
-                newPrice = shopItems[i].ItemPrice;
+                newPrice = (int)Math.Round(shopItems[i].ItemPrice * 0.8);
             }
-            else if (PlayerStats.Instance.moralePoint > 30)
+            else if (PlayerStats.Instance.moralePoint < -50)
             {
-                newPrice = (int)Math.Round(shopItems[i].ItemPrice * 0.7);
+                newPrice = (int)Math.Round(shopItems[i].ItemPrice * 1.2);
             }
             else
             {
-                newPrice = (int)Math.Round(shopItems[i].ItemPrice * 1.3);
+                newPrice = shopItems[i].ItemPrice;
             }
             shopItems[i].ItemDiscountPrice = newPrice;
         }
-        Debug.Log(shopItems);
         return shopItems;
     }
-
 }

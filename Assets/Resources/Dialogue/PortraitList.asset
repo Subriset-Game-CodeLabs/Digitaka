@@ -15,9 +15,15 @@ MonoBehaviour:
   potraits:
   - key: ajisaka
     sprite: {fileID: 21300000, guid: a4090dcd093921744a1895f6bb4e418a, type: 3}
-  - key: sembada
-    sprite: {fileID: 21300000, guid: d0daecba21bc8b344a359479441e15f2, type: 3}
   - key: dora
-    sprite: {fileID: 21300000, guid: d2d188a1e0275d74a912fa55ce6b7b29, type: 3}
-  - key: merchant
-    sprite: {fileID: 1373497829, guid: c01e6a1ed8f1fca499cff7e7318350e3, type: 3}
+    sprite: {fileID: 21300000, guid: befb1c04d164bd24da8bb4c474913bde, type: 3}
+  - key: sembada
+    sprite: {fileID: 21300000, guid: 11256cb9d9374a349a88f2e715815953, type: 3}
+  - key: dewata
+    sprite: {fileID: 21300000, guid: 34a51bcf7e0943048bfd4b0bce1a27e1, type: 3}
+  - key: nyai
+    sprite: {fileID: 21300000, guid: 01516f8f08a045e4080cc1a692592a9e, type: 3}
+  - key: patih
+    sprite: {fileID: 21300000, guid: 582c87b16b84b5d41b490e1b6b1f033f, type: 3}
+  - key: npc
+    sprite: {fileID: 21300000, guid: 71b1901300312ca49964d5dc7ba14671, type: 3}

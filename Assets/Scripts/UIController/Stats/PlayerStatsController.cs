@@ -6,12 +6,13 @@ using UnityEngine;
 
 namespace UIController.Stats
 {
-    public class PlayerStatsController:MonoBehaviour
+    public class PlayerStatsController : MonoBehaviour
     {
         [SerializeField] private TMP_Text _coinText;
+        [SerializeField] private TMP_Text _moraleText;
         [SerializeField] private List<StatsItem> _healthItems;
         [SerializeField] private List<StatsItem> _manaItems;
-        
+
         [SerializeField] private GameObject _healthPrefab;
         [SerializeField] private GameObject _manaPrefab;
         [SerializeField]
@@ -22,6 +23,7 @@ namespace UIController.Stats
             UpdateHealthStats();
             UpdateManaStats();
             UpdateCoinText();
+            UpdateMoraleText();
         }
 
         public void OnEnable()
@@ -29,14 +31,16 @@ namespace UIController.Stats
             GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer += UpdateHealthStats;
             GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer += UpdateManaStats;
             GameEventsManager.Instance.StatsEvents.OnChangePlayerCoin += UpdateCoinText;
+            GameEventsManager.Instance.StatsEvents.OnChangePlayermorale += UpdateMoraleText;
         }
         public void OnDisable()
         {
             GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer -= UpdateHealthStats;
             GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer -= UpdateManaStats;
             GameEventsManager.Instance.StatsEvents.OnChangePlayerCoin -= UpdateCoinText;
+            GameEventsManager.Instance.StatsEvents.OnChangePlayermorale -= UpdateMoraleText;
         }
-        
+
         public void UpdateCoinText()
         {
             if (_coinText != null)
@@ -49,8 +53,21 @@ namespace UIController.Stats
             }
         }
 
+        public void UpdateMoraleText()
+        {
+            if (_moraleText != null)
+            {
+                _moraleText.text = _playerStats.moralePoint.ToString();
+            }
+            else
+            {
+                Debug.LogWarning("Morale Text is not assigned in PlayerStatsController.");
+            }
+        }
+
         public void UpdateHealthStats()
         {
+            Debug.Log(_playerStats);
             var currentHealth = _playerStats.currentHealth;
             var maxHealth = _playerStats.maxHealth;
             if (_healthItems.Count <= maxHealth)
@@ -94,7 +111,7 @@ namespace UIController.Stats
                     _manaItems.Add(newManaItem.GetComponent<StatsItem>());
                 }
             }
-            
+
             for (int i = 0; i < _manaItems.Count; i++)
             {
                 float manaValue = currentMana - i;

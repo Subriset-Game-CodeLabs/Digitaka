@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using Ink.Runtime;
 using Input;
 using QuestSystem;
+using UIController;
 using UnityEngine;
 
 public class DialogueManager : PersistentSingleton<DialogueManager>
@@ -23,8 +25,11 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private bool _allowSkip;
     private string _currentText;
 
+    private bool _resumeRequested = false;
+
     private const string SPEAKER_TAG = "speaker";
     private const string PORTRAIT_TAG = "portrait";
+    private const string PAUSE_TAG = "pause";
 
 
     protected override void Awake()
@@ -102,17 +107,21 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         currentChoiceIndex = choiceIndex;
     }
 
-    private void EnterDialogue(string knotName, bool allowSkip)
+    private void EnterDialogue(string knotName, bool allowSkip, bool isCutscene)
     {
         if (dialougePlaying)
         {
             return;
         }
+
         Debug.Log("Play dialogue " + knotName);
         dialougePlaying = true;
         _allowSkip = allowSkip;
-        GameEventsManager.Instance.DialogueEvents.DialogueStarted();
+
+        GameEventsManager.Instance.DialogueEvents.DialogueStarted(isCutscene);
         InputManager.Instance.UIMode();
+        UIManager.Instance.HideCanvas();
+
         if (!knotName.Equals(""))
         {
             story.ChoosePathString(knotName);
@@ -182,7 +191,6 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
             string tagKey = splitTag[0].Trim();
             string tagValue = splitTag[1].Trim();
-            Debug.Log(tagKey);
             switch (tagKey)
             {
                 case SPEAKER_TAG:
@@ -192,11 +200,35 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
                     Sprite portrait = PortraitList[tagValue];
                     GameEventsManager.Instance.DialogueEvents.PortraitChanged(portrait);
                     break;
+                case PAUSE_TAG:
+                    StartCoroutine(PauseDialogue());
+                    break;
                 default:
                     break;
             }
-
         }
+    }
+
+    IEnumerator PauseDialogue()
+    {
+        _resumeRequested = false;
+        Debug.Log("Dialogue Paused");
+        UIManager.Instance.HideDialoguePanel();
+
+        GameEventsManager.Instance.DialogueEvents.onDialogueResume += HandleResume;
+
+        yield return new WaitUntil(() => _resumeRequested);
+
+        Debug.Log("Dialogue Resume");
+        UIManager.Instance.ShowDialoguePanel();
+        GameEventsManager.Instance.DialogueEvents.onDialogueResume -= HandleResume;
+
+        ContinueOrExitStory();
+    }
+
+    private void HandleResume()
+    {
+        _resumeRequested = true;
     }
 
     private void ExitDialogue()
@@ -205,9 +237,11 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
         dialougePlaying = false;
 
-        GameEventsManager.Instance.DialogueEvents.DialogueFinsihed();
         InputManager.Instance.PlayerMode();
+        UIManager.Instance.ShowCanvas();
+        GameEventsManager.Instance.DialogueEvents.DialogueFinsihed();
 
+        GameEventsManager.Instance.StatsEvents.ChangePlayerMorale();
         inkDialogueVariables.StopListening(story);
 
         story.ResetState();

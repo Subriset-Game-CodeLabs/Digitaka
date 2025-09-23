@@ -12,6 +12,8 @@ public class InkExternalFunctions
 
         story.BindExternalFunction("OpenShop", () => OpenShop());
         story.BindExternalFunction("ChangeMorale", (int amount) => ChangeMorale(amount));
+
+        story.BindExternalFunction("PlayCutscene", (string cutsceneId) => PlayCutscene(cutsceneId));
     }
 
     public void Unbind(Story story)
@@ -21,6 +23,7 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("FinishQuest");
         story.UnbindExternalFunction("OpenShop");
         story.UnbindExternalFunction("ChangeMorale");
+        story.UnbindExternalFunction("PlayCutscene");
     }
 
 
@@ -47,5 +50,10 @@ public class InkExternalFunctions
     private void ChangeMorale(int amount)
     {
         PlayerStats.Instance.ChangeMoralePoint(amount);
+    }
+
+    private void PlayCutscene(string cutsceneId)
+    {
+        GameEventsManager.Instance.CutsceneEvents.PlayCutscene(cutsceneId);
     }
 }

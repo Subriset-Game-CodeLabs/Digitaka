@@ -10,5 +10,7 @@ public class ItemConsumableSO : ItemBaseSO
 public enum StatEffect
 {
     Health,
-    Mana
+    Mana,
+    UltimateManaCost,
+    Damage
 }

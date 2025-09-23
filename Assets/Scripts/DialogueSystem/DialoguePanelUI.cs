@@ -11,6 +11,8 @@ public class DialoguePanelUI : MonoBehaviour
     [SerializeField]
     private GameObject contentParent;
     [SerializeField]
+    private Image blackPanel;
+    [SerializeField]
     private TextMeshProUGUI dialogueText;
     [SerializeField]
     private TextMeshProUGUI speakerText;
@@ -57,15 +59,19 @@ public class DialoguePanelUI : MonoBehaviour
         portraitSprite.sprite = sprite;
     }
 
-    private void DialgoueStarted()
+    private void DialgoueStarted(bool isCutscene)
     {
         contentParent.SetActive(true);
+        if (isCutscene)
+        {
+            blackPanel.enabled = false;
+        }
     }
 
     private void DialogueFinishied()
     {
+        blackPanel.enabled = true;
         contentParent.SetActive(false);
-
         ResetPanel();
     }
 

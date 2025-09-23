@@ -4,6 +4,7 @@ using UIController;
 using UnityEditor.MPE;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 public class TimelineSignalSetting : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class TimelineSignalSetting : MonoBehaviour
     private bool _isTutorial = false;
     [SerializeField]
     private bool _isOnTutorialScene = false;
+
+    private bool _isFinished = false;
+
     //tutorial variable
     private int _attackPressToComplete = 3;
     private int _attackPressed = 0;
@@ -32,7 +36,9 @@ public class TimelineSignalSetting : MonoBehaviour
         InputManager.Instance.PlayerInput.Ultimate.OnDown += UltimatePressed;
         GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer += HealthPressed;
         GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer += ManaPressed;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
 
+        director.stopped += OnDirectorStopped;
     }
 
     void OnDisable()
@@ -43,6 +49,14 @@ public class TimelineSignalSetting : MonoBehaviour
         InputManager.Instance.PlayerInput.Ultimate.OnDown -= UltimatePressed;
         GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer -= HealthPressed;
         GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer -= ManaPressed;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
+
+        director.stopped -= OnDirectorStopped;
+    }
+
+    private void OnDirectorStopped(PlayableDirector dir)
+    {
+        _isFinished = true;
     }
 
     // Khusus buat scene tutorial
@@ -61,7 +75,7 @@ public class TimelineSignalSetting : MonoBehaviour
         {
             _isAttackTutorialComplete = true;
             ActiveUIMode();
-            ToogleUI();
+            HideUI();
             PlayDialogueNoSkip("Tutorial2");
             _currentTutorial = 2;
         }
@@ -77,7 +91,7 @@ public class TimelineSignalSetting : MonoBehaviour
         {
             _isDashTutorialComplete = true;
             ActiveUIMode();
-            ToogleUI();
+            HideUI();
             PlayDialogueNoSkip("Tutorial3");
             _currentTutorial = 3;
         }
@@ -109,7 +123,7 @@ public class TimelineSignalSetting : MonoBehaviour
         if (_isHealthTutorialComplete && _isManaTutorialComplete)
         {
             ActiveUIMode();
-            ToogleUI();
+            HideUI();
             _isTutorial = false;
             director.Resume();
         }
@@ -125,7 +139,7 @@ public class TimelineSignalSetting : MonoBehaviour
         if (_isHealthTutorialComplete && _isManaTutorialComplete)
         {
             ActiveUIMode();
-            ToogleUI();
+            HideUI();
             _isTutorial = false;
             director.Resume();
         }
@@ -138,25 +152,43 @@ public class TimelineSignalSetting : MonoBehaviour
         GameManager.Instance.StartGame();
     }
 
+    public void OnFinishQuest(string questId)
+    {
+        if (questId == "SelamatkanLelakiTua")
+        {
+            director.Resume();
+        }
+    }
 
     public void DialogueFinishied()
     {
+
         if (_isTutorial)
         {
             if (_currentTutorial == 4)
             {
                 return;
             }
-            ToogleUI();
+            HideUI();
             return;
         }
-        ActiveUIMode();
-        director.Resume();
+        if (!_isFinished)
+        {
+            Debug.Log("Continue Cutscene");
+            ActiveUIMode();
+            HideUI();
+            director.Resume();
+        }
     }
 
-    public void ToogleUI()
+    public void HideUI()
     {
         UIManager.Instance.HideCanvas();
+    }
+
+    public void ShowUI()
+    {
+        UIManager.Instance.ShowCanvas();
     }
 
     public void ActiveUIMode()
@@ -171,12 +203,24 @@ public class TimelineSignalSetting : MonoBehaviour
 
     public void PlayDialogueSkip(string _knotName)
     {
-        GameEventsManager.Instance.DialogueEvents.EnterDialogue(_knotName);
+        GameEventsManager.Instance.DialogueEvents.EnterDialogue(_knotName, isCutscene: true);
     }
 
     public void PlayDialogueNoSkip(string _knotName)
     {
-        GameEventsManager.Instance.DialogueEvents.EnterDialogue(_knotName, false);
+        GameEventsManager.Instance.DialogueEvents.EnterDialogue(_knotName, false, true);
+    }
+
+    public void MutePlayer()
+    {
+        TimelineAsset timelineAsset = director.playableAsset as TimelineAsset;
+        foreach (var track in timelineAsset.GetOutputTracks())
+        {
+            if (track.name == "Character Track")
+            {
+                director.SetGenericBinding(track, null);
+            }
+        }
     }
 
     public void PauseDirector()

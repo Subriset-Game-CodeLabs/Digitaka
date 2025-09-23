@@ -15,15 +15,15 @@ MonoBehaviour:
   <characterName>k__BackingField: Aji Saka
   <maxHealth>k__BackingField: 3
   <health>k__BackingField: 3
-  <damage>k__BackingField: 0.5
+  <damage>k__BackingField: 2
   <maxMana>k__BackingField: 3
-  <mana>k__BackingField: 3
-  <healPotion>k__BackingField: 5
+  <mana>k__BackingField: 2
+  <healPotion>k__BackingField: 6
   <manaPotion>k__BackingField: 5
-  <coin>k__BackingField: 5
+  <coin>k__BackingField: 30
   UltimateDamage: 2
   UltimateManaCost: 1
-  MoralePoint: 0
+  MoralePoint: 50
   <DashDuration>k__BackingField: 0.2
   <DashSpeed>k__BackingField: 8
   <DashCooldown>k__BackingField: 2

@@ -6,11 +6,11 @@ namespace Events
     public class StatsEvents
     {
         public event Action OnChangeHealthPlayer;
-        public void ChangeHealthPlayer( )
+        public void ChangeHealthPlayer()
         {
             OnChangeHealthPlayer?.Invoke();
         }
-        
+
         public event Action<EnemyStats> OnChangeHealthEnemy;
         public void ChangeHealthEnemy(EnemyStats stats)
         {
@@ -36,6 +36,12 @@ namespace Events
         public void ChangePlayerCoin()
         {
             OnChangePlayerCoin?.Invoke();
+        }
+
+        public event Action OnChangePlayermorale;
+        public void ChangePlayerMorale()
+        {
+            OnChangePlayermorale?.Invoke();
         }
     }
 }

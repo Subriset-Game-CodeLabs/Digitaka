@@ -24,12 +24,14 @@ namespace UIController
         [SerializeField] private GameObject _mobileUIPanel;
         [SerializeField] private GameObject _statsPanel;
         [SerializeField] private GameObject _coinPanel;
+        [SerializeField] private GameObject _moralePanel;
+        [SerializeField] private GameObject _dialoguePanel;
+        [SerializeField] private GameObject _shopPanel;
         [SerializeField] private bool isPaused = false;
         private PlayerStats _playerStats;
         private bool _mapPanelActive;
         private Transform _mapTiles;
-        private bool _canvasActive = true;
-        
+
         [Header("Mobile UI")]
         [SerializeField] private CooldownUI _dashCooldownUIMobile;
         [SerializeField] private CooldownUI _ultimateCooldownUIMobile;
@@ -59,22 +61,44 @@ namespace UIController
             //InitializeTutorial();
         }
 
+        public void HideDialoguePanel()
+        {
+            _dialoguePanel.SetActive(false);
+        }
+
+        public void ShowDialoguePanel()
+        {
+            _dialoguePanel.SetActive(true);
+        }
+
+        public void ShowShopPanel()
+        {
+            _shopPanel.SetActive(true);
+            _coinPanel.SetActive(true);
+            _moralePanel.SetActive(true);
+        }
+
+        public void HideShopPanel()
+        {
+            _shopPanel.SetActive(false);
+            _coinPanel.SetActive(false);
+            _moralePanel.SetActive(false);
+        }
+
         public void HideCanvas()
         {
-            if (_canvasActive)
-            {
-                _mobileUIPanel.SetActive(false);
-                _statsPanel.SetActive(false);
-                _coinPanel.SetActive(false);
-                _canvasActive = false;
-            }
-            else
-            {
-                _mobileUIPanel.SetActive(true);
-                _statsPanel.SetActive(true);
-                _coinPanel.SetActive(true);
-                _canvasActive = true;
-            }
+            _mobileUIPanel.SetActive(false);
+            _statsPanel.SetActive(false);
+            _coinPanel.SetActive(false);
+            _moralePanel.SetActive(false);
+        }
+
+        public void ShowCanvas()
+        {
+            _mobileUIPanel.SetActive(true);
+            _statsPanel.SetActive(true);
+            _coinPanel.SetActive(true);
+            _moralePanel.SetActive(true);
         }
 
         private void InitializeTutorial()
@@ -116,7 +140,7 @@ namespace UIController
             InputManager.Instance.UIMode();
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
                 return;
-            
+
             _mapTiles = _mapPanel.transform.Find("MapBackground/MapTiles");
             Button button = _mapPanel.transform.Find("MapBackground/CloseBtn").GetComponent<Button>();
             button.onClick.AddListener(() =>
@@ -164,7 +188,8 @@ namespace UIController
             if (_healthPotionCooldownUI != null)
             {
                 _healthPotionCooldownUI.StartCooldown(_playerStats.healthPotionCooldown);
-                _healthPotionCooldownUIMobile.StartCooldown(_playerStats.healthPotionCooldown);}
+                _healthPotionCooldownUIMobile.StartCooldown(_playerStats.healthPotionCooldown);
+            }
         }
         public void StartCooldownManaPotion()
         {
@@ -190,7 +215,7 @@ namespace UIController
                 InputManager.Instance.UIMode();
             }
         }
-        
+
         public void HideTutorialPanel()
         {
             if (_tutorialPanel != null)
@@ -207,8 +232,8 @@ namespace UIController
                 _defeatedPanel.SetActive(true);
                 InputManager.Instance.UIMode();
             }
-        } 
-    
+        }
+
         public void Pause()
         {
             if (isPaused)
@@ -231,6 +256,7 @@ namespace UIController
         {
             SceneManager.Instance.ChangeScene("MainMenu");
             PlayerStats.Instance.ResetStats();
+            ShopManager.Instance.ResetItem();
             _defeatedPanel.SetActive(false);
             TeleportManager.Instance.ResetCheckpoint();
         }

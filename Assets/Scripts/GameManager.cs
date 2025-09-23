@@ -40,6 +40,7 @@ public class GameManager: PersistentSingleton<GameManager>
         var HUD = Instantiate(_uiHUDPrefab);
         UIManager uiManager = HUD.GetComponent<UIManager>();
         PlayerStats.Instance.ResetStats();
+        ShopManager.Instance.ResetItem();
         InputManager.Instance.PlayerMode();
     }
     public void QuitGame()

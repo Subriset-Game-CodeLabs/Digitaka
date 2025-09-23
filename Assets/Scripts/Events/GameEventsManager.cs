@@ -7,6 +7,7 @@ public class GameEventsManager: PersistentSingleton<GameEventsManager>
     public DialogueEvents DialogueEvents { get; private set; }
     public ShopEvents ShopEvents { get; private set; }
     public PlayerActionsEvents PlayerActionsEvents { get; private set; }
+    public CutsceneEvents CutsceneEvents { get; private set; }
     protected override void Awake()
     {
         base.Awake();
@@ -15,5 +16,6 @@ public class GameEventsManager: PersistentSingleton<GameEventsManager>
         ShopEvents = new ShopEvents();
         StatsEvents = new StatsEvents();
         PlayerActionsEvents = new PlayerActionsEvents();
+        CutsceneEvents = new CutsceneEvents();
     }
 }

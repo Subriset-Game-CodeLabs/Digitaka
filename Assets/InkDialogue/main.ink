@@ -4,20 +4,23 @@ EXTERNAL AdvanceQuest(questId)
 EXTERNAL FinishQuest(questId)
 EXTERNAL OpenShop()
 EXTERNAL ChangeMorale(amount)
+EXTERNAL PlayCutscene(cutsceneId)
 
 // quest ids (questid + "Id" for variable name)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"
 VAR MissingBrotherId = "MissingBrother"
 VAR SideQuest2Id = "SideQuest2"
 VAR KillEnemyId = "KillEnemy"
+VAR LawanPerampokMenujuDesaId = "LawanPerampokMenujuDesa"
 
 // quest states (questid + "State" for variable name)
 VAR VisitPlaceQuestState = "REQUIREMENTS_NOT_MET"
 VAR MissingBrotherState = "REQUIREMENTS_NOT_MET"
 VAR KillEnemyState = "REQUIREMENTS_NOT_MET"
+VAR LawanPerampokMenujuDesaState = "REQUIREMENTS_NOT_MET"
 
 INCLUDE visit_place_quest_npc.ink
-INCLUDE merchant_npt.ink
+INCLUDE merchant_npc.ink
 
 // side quest
 INCLUDE side_quest1.ink
@@ -26,6 +29,7 @@ INCLUDE side_quest3.ink
 
 // Main Story
 INCLUDE chapter1.ink
+INCLUDE chapter2.ink
 
 
 === testspeaker ===

@@ -171,7 +171,7 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.22400273
-  m_Height: 1.3005059
+  m_Height: 1.33
   m_Direction: 1
   m_Center: {x: -0.036916867, y: 0.7202529, z: 0}
 --- !u!114 &-5532342677130512065
@@ -296,7 +296,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1044417118, guid: ab0cd8afccbc7ef4a8bf8e9310c1edcf, type: 3}
+  m_Sprite: {fileID: 1323353792, guid: 2401eff2c7079e34cbbc2143d85f01b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

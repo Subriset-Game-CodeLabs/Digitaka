@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class DialogueEvents
 {
-    public event Action<string, bool> onEnterDialogue;
-    public event Action onDialogueStarted;
+    public event Action<string, bool, bool> onEnterDialogue;
+    public event Action<bool> onDialogueStarted;
     public event Action onDialogueFinishied;
     public event Action<string> onSpeakerChanged;
     public event Action<Sprite> onPotraitChanged;
@@ -14,20 +14,26 @@ public class DialogueEvents
     public event Action<int> onUpdateChoiceIndex;
     public event Action<string, Ink.Runtime.Object> onUpdateInkDialogueVariables;
     public event Action<bool> onLineTypingAnimation;
+    public event Action onDialogueResume;
 
-    public void EnterDialogue(string knotName, bool allowSkip = true)
+    public void EnterDialogue(string knotName, bool allowSkip = true, bool isCutscene = false)
     {
-        onEnterDialogue?.Invoke(knotName, allowSkip);
+        onEnterDialogue?.Invoke(knotName, allowSkip, isCutscene);
     }
 
-    public void DialogueStarted()
+    public void DialogueStarted(bool isCutscene = false)
     {
-        onDialogueStarted?.Invoke();
+        onDialogueStarted?.Invoke(isCutscene);
     }
 
     public void DialogueFinsihed()
     {
         onDialogueFinishied?.Invoke();
+    }
+
+    public void DialogueResumed()
+    {
+        onDialogueResume?.Invoke();
     }
 
     public void DisplayDialogue(string dialogueLine, List<Choice> dialogueChoices, bool instant = false)

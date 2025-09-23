@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 public class KillEnemyQuestStep : QuestStep
 {
     private int _enemyKilled = 0;
+    [SerializeField]
     private int _killedEnemyToComplete = 2;
     private List<EnemyStats> _enemyStats = new List<EnemyStats>();
     

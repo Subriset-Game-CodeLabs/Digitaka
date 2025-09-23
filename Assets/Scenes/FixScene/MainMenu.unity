@@ -456,6 +456,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3960756815150043208, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
+      propertyPath: shopItems.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960756815150043208, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
+      propertyPath: 'shopItems.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 34551b1d8c19e53428a6b6b2bbcfea3c, type: 2}
+    - target: {fileID: 3960756815150043208, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
+      propertyPath: 'shopItems.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: bb1aa04dd2157914fa08ae52fb844f49, type: 2}
     - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -495,6 +507,10 @@ PrefabInstance:
     - target: {fileID: 7168232325219708887, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8043091325044895989, guid: 0326057adba74f94a8ba1c790faac795, type: 3}
+      propertyPath: _currentChapter
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

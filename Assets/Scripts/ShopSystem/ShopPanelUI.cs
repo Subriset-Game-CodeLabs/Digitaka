@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using Input;
 using TMPro;
+using TwoDotFiveDimension;
+using UIController;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -47,24 +50,26 @@ public class ShopPanelUI : MonoBehaviour
     private GameObject _discountEffect;
 
     private ItemBaseSO _selectedItem;
+    private Button _selectedButton;
 
     void Start()
     {
         _buyButton.onClick.AddListener(() =>
         {
-            InputManager.Instance.UIMode();
             GameEventsManager.Instance.ShopEvents.BuyItem(_selectedItem);
         });
 
         _closeButton.onClick.AddListener(() =>
         {
-            contentParent.SetActive(false);
-            InputManager.Instance.PlayerMode();
+            UIManager.Instance.HideShopPanel();
+            _informationPanel.SetActive(false);
+            GameEventsManager.Instance.DialogueEvents.DialogueResumed();
         });
 
         _informationCloseButton.onClick.AddListener(() =>
         {
             _informationPanel.SetActive(false);
+            _selectedButton.Select();
         });
 
         _discountEffect.SetActive(false);
@@ -88,8 +93,17 @@ public class ShopPanelUI : MonoBehaviour
         GameEventsManager.Instance.ShopEvents.OnBuyItemSuccess -= BuyitemSucces;
     }
 
-    public void UpdateChoiceItem(ItemBaseSO selectedItem)
+    public void UpdateChoiceItem(ItemBaseSO selectedItem, Button selectedButton)
     {
+        if (selectedItem.moraleToUnlock > PlayerStats.Instance.moralePoint)
+        {
+            _informationPanel.SetActive(true);
+            _informationTextTitle.text = "GAGAL";
+            _informationTextDesc.text =
+                $"Kamu perlu {selectedItem.moraleToUnlock} moral untuk membuka item ini";
+            return;
+        }
+        _selectedButton = selectedButton;
         _selectedItem = selectedItem;
         _itemNameText.text = selectedItem.ItemName;
         _itemDescText.text = selectedItem.ItemDescription;
@@ -109,7 +123,7 @@ public class ShopPanelUI : MonoBehaviour
 
     public void InitializeShop(List<ItemBaseSO> items)
     {
-        contentParent.SetActive(true);
+        UIManager.Instance.ShowShopPanel();
         ClearParent();
         bool first = true;
         foreach (ItemBaseSO item in items)
@@ -120,7 +134,8 @@ public class ShopPanelUI : MonoBehaviour
             shopItemUI.SetItemSprite(item.ItemSprite);
             if (first)
             {
-                shopItemUI.SelectButton();
+                _selectedButton = shopItemUI.GetButton();
+                _selectedButton.Select();
                 first = false;
             }
         }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 namespace Events
 {
@@ -11,7 +12,7 @@ namespace Events
         public event Action OnShopOpen;
         public event Action OnShopClose;
         public event Action<List<ItemBaseSO>> OnInitializeShop;
-        public event Action<ItemBaseSO> OnUpdateChoiceItem;
+        public event Action<ItemBaseSO, Button> OnUpdateChoiceItem;
 
         public void BuyItem(ItemBaseSO item)
         {
@@ -43,9 +44,9 @@ namespace Events
             OnInitializeShop?.Invoke(items);
         }
 
-        public void UpdateChoiceItem(ItemBaseSO item)
+        public void UpdateChoiceItem(ItemBaseSO item, Button button)
         {
-            OnUpdateChoiceItem?.Invoke(item);
+            OnUpdateChoiceItem?.Invoke(item, button);
         }
     }
 }

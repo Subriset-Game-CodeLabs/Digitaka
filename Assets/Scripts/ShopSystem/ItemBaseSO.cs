@@ -8,9 +8,11 @@ public class ItemBaseSO : ScriptableObject
     public int ItemPrice;
     public int ItemDiscountPrice = 0;
     public string ItemDescription;
+    public int moraleToUnlock;
 }
 
 public enum ItemType
 {
     Consumable,
+    Equipment
 }

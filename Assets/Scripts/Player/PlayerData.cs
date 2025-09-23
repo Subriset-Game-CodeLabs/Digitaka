@@ -34,12 +34,14 @@ namespace TwoDotFiveDimension
             manaPotion = 5;
             coin = 5;
             MoralePoint = 0;
+            damage = 0.5f;
+            UltimateManaCost = 2;
             
-            GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
-            GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
-            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
-            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
-            GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
+//             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
+            // GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
+//            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
+//            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
+//           GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
             
         }
     }
