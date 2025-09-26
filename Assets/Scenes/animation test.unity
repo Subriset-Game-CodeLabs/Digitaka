@@ -293,6 +293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Type 2
       objectReference: {fileID: 0}
+    - target: {fileID: 9188126850371176851, guid: a427a0db6fe7e6c40a80fe000d2e53eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -410,6 +414,10 @@ PrefabInstance:
     - target: {fileID: 9188126850371176851, guid: 5d694187853290d46b541dc6daf98a3b, type: 3}
       propertyPath: m_Name
       value: Enemy Type 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9188126850371176851, guid: 5d694187853290d46b541dc6daf98a3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -604,6 +612,10 @@ PrefabInstance:
     - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
       propertyPath: m_Name
       value: Enemy Type 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -844,6 +856,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Old Man
       objectReference: {fileID: 0}
+    - target: {fileID: 6074152846864942744, guid: a9c3ebcbef551d146b5917e9ebf6caa4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -859,15 +875,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4178131899597817085, guid: ceff2e5be7978614d8b45023a92cd0c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.66
+      value: 6.32
       objectReference: {fileID: 0}
     - target: {fileID: 4178131899597817085, guid: ceff2e5be7978614d8b45023a92cd0c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1
+      value: -0.55
       objectReference: {fileID: 0}
     - target: {fileID: 4178131899597817085, guid: ceff2e5be7978614d8b45023a92cd0c7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.2025423
+      value: -0.31
       objectReference: {fileID: 0}
     - target: {fileID: 4178131899597817085, guid: ceff2e5be7978614d8b45023a92cd0c7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -900,6 +916,10 @@ PrefabInstance:
     - target: {fileID: 9199331217675683774, guid: ceff2e5be7978614d8b45023a92cd0c7, type: 3}
       propertyPath: m_Name
       value: Prabu Dewata Cengkar
+      objectReference: {fileID: 0}
+    - target: {fileID: 9199331217675683774, guid: ceff2e5be7978614d8b45023a92cd0c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -987,6 +1007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dora
       objectReference: {fileID: 0}
+    - target: {fileID: 2815141860691916950, guid: b93e65fae9a2c4744a325ddcf585425f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1003,6 +1027,10 @@ PrefabInstance:
     - target: {fileID: 7877011422882753295, guid: 14c7e1c8b74828c418d5b21bac4119d5, type: 3}
       propertyPath: m_Name
       value: Sembada
+      objectReference: {fileID: 0}
+    - target: {fileID: 7877011422882753295, guid: 14c7e1c8b74828c418d5b21bac4119d5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8648218564405867312, guid: 14c7e1c8b74828c418d5b21bac4119d5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1122,6 +1150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nyai Sengkeran
       objectReference: {fileID: 0}
+    - target: {fileID: 8590138043260299407, guid: 1925264cec07a604c95427fc4785f737, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8940681688737611254, guid: 1925264cec07a604c95427fc4785f737, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.218
@@ -1215,9 +1247,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2974253512047071596, guid: a33ec412eb646d74bb78927d14738c52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4886523031536864585, guid: a33ec412eb646d74bb78927d14738c52, type: 3}
       propertyPath: m_Name
       value: Aji Saka
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886523031536864585, guid: a33ec412eb646d74bb78927d14738c52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966781239748093564, guid: a33ec412eb646d74bb78927d14738c52, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1234,11 +1278,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1810102885849618748, guid: 386f01a06a78aba489b3ff85fdb99124, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.84
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 1810102885849618748, guid: 386f01a06a78aba489b3ff85fdb99124, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.09
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: 1810102885849618748, guid: 386f01a06a78aba489b3ff85fdb99124, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1352,15 +1396,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5565758529114650619, guid: 8809bb19e1af3414aacce9a8005d8181, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30.32
+      value: 20.25
       objectReference: {fileID: 0}
     - target: {fileID: 5565758529114650619, guid: 8809bb19e1af3414aacce9a8005d8181, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.25
+      value: 0.91
       objectReference: {fileID: 0}
     - target: {fileID: 5565758529114650619, guid: 8809bb19e1af3414aacce9a8005d8181, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.6478987
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 5565758529114650619, guid: 8809bb19e1af3414aacce9a8005d8181, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1393,6 +1437,10 @@ PrefabInstance:
     - target: {fileID: 5675377270007662908, guid: 8809bb19e1af3414aacce9a8005d8181, type: 3}
       propertyPath: m_Name
       value: Patih Jugul Muda
+      objectReference: {fileID: 0}
+    - target: {fileID: 5675377270007662908, guid: 8809bb19e1af3414aacce9a8005d8181, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
