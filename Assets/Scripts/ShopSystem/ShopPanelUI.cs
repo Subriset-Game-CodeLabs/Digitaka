@@ -95,7 +95,7 @@ public class ShopPanelUI : MonoBehaviour
 
     public void UpdateChoiceItem(ItemBaseSO selectedItem, Button selectedButton)
     {
-        if (selectedItem.moraleToUnlock > PlayerStats.Instance.moralePoint)
+        if (selectedItem.moraleToUnlock > PlayerStats.Instance.moralePoint && selectedItem.moraleToUnlock != 0)
         {
             _informationPanel.SetActive(true);
             _informationTextTitle.text = "GAGAL";

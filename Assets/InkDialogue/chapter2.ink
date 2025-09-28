@@ -41,25 +41,25 @@ Terima kasih banyak Tuan! Jika begitu, pergilah ke desa terdekat. Cari seorang w
 -> END
 
 = canStart
-Tuan muda! Tolonglah! Jalan menuju desa dikuasai gerombolan perampok. Mereka merampas dan menakuti orang-orang. #speaker:Nyai Sengkeran #portrait: npc
+Tuan muda! Tolonglah! Jalan menuju desa dikuasai gerombolan perampok. Mereka merampas dan menakuti orang-orang. #speaker:Nyai Sengkeran #portrait: nyai
 Tenanglah. Aku akan menyingkirkan mereka. Tidak seorang pun berhak menindas orang lain. #speaker:Aji Saka #portrait:ajisaka 
 ~ StartQuest("LawanPerampokMenujuDesa")
 - -> END
 
 = inProgress
-Tuan muda! Tolonglah! #speaker:Nyai Sengkeran #portrait: npc
+Tuan muda! Tolonglah! #speaker:Nyai Sengkeran #portrait: nyai
 -> END
 
 = canFinish
  ~ FinishQuest("LawanPerampokMenujuDesa")
-Terima kasih, tuan muda. Berkatmu jalan kembali aman. #speaker:Nyai Sengkeran #portrait: npc
+Terima kasih, tuan muda. Berkatmu jalan kembali aman. #speaker:Nyai Sengkeran #portrait: nyai
 Tapi... sebelumnya, aku belum pernah melihat wajah kalian di sekitar sini. Kalian tampak asing.
 Apakah ada yang bisa kubantu, atau sebenarnya apa tujuan kalian datang ke wilayah Medang Kamulan?
 
 Aku adalah Aji Saka, dan ini abdi setiaku, Dora. Kami mendapat arahan dari seorang lelaki tua yang melarikan diri dari kerajaan. #speaker:Aji Saka #portrait:ajisaka 
 Ia memintaku untuk mencari seorang wanita bernama Nyai Sengkeran yang dapat menolong kami menuju Medang Kamulan.
 
-Jika begitu... rupanya benar kata orang itu. Aku memang Nyai Sengkeran. Kalian datang di saat yang tepat. #speaker:Nyai Sengkeran #portrait: npc
+Jika begitu... rupanya benar kata orang itu. Aku memang Nyai Sengkeran. Kalian datang di saat yang tepat. #speaker:Nyai Sengkeran #portrait: nyai
 Ikutlah bersamaku, aku akan membawamu ke desa. Dari sana, kita bisa merencanakan langkah menuju istana.
  ~ PlayCutscene("CutsceneNyaiSengkaren")
 - -> END

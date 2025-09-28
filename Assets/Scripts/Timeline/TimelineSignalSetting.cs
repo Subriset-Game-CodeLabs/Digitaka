@@ -1,7 +1,5 @@
-using System.Runtime.InteropServices;
 using Input;
 using UIController;
-using UnityEditor.MPE;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
@@ -38,6 +36,8 @@ public class TimelineSignalSetting : MonoBehaviour
         GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer += ManaPressed;
         GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
 
+        GameEventsManager.Instance.QuestEvents.OnAdvanceQuest += OnAdvanceQuest;
+
         director.stopped += OnDirectorStopped;
     }
 
@@ -50,6 +50,7 @@ public class TimelineSignalSetting : MonoBehaviour
         GameEventsManager.Instance.StatsEvents.OnChangeHealthPlayer -= HealthPressed;
         GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer -= ManaPressed;
         GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
+        GameEventsManager.Instance.QuestEvents.OnAdvanceQuest -= OnAdvanceQuest;
 
         director.stopped -= OnDirectorStopped;
     }
@@ -58,6 +59,7 @@ public class TimelineSignalSetting : MonoBehaviour
     {
         _isFinished = true;
     }
+
 
     // Khusus buat scene tutorial
     void AttackPressed()
@@ -154,7 +156,15 @@ public class TimelineSignalSetting : MonoBehaviour
 
     public void OnFinishQuest(string questId)
     {
-        if (questId == "SelamatkanLelakiTua")
+        if (questId == "SelamatkanLelakiTua" || questId == "SelamatkanWargaDariPrajurit" || questId == "MasukKeKerajaan" || questId == "LawanDewataCengkar")
+        {
+            director.Resume();
+        }
+    }
+
+    public void OnAdvanceQuest(string questId)
+    {
+        if (questId == "MasukKeKerajaan")
         {
             director.Resume();
         }
@@ -162,6 +172,11 @@ public class TimelineSignalSetting : MonoBehaviour
 
     public void DialogueFinishied()
     {
+        //sementara kayaknya buat scene B5
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "B5")
+        {
+            return;
+        }
 
         if (_isTutorial)
         {
@@ -169,7 +184,8 @@ public class TimelineSignalSetting : MonoBehaviour
             {
                 return;
             }
-            HideUI();
+            // HideUI();
+            director.Resume();
             return;
         }
         if (!_isFinished)

@@ -152,6 +152,15 @@ namespace TwoDotFiveDimension
             }
             if (!_isRolling)
             {
+                if (_movement.magnitude < 0.2f)
+                {
+                    _movement = Vector2.zero;
+                }
+                else
+                {
+                    _movement = _movement.normalized;
+                }
+
                 _animator.SetInteger(AnimState, 1);
                 var moveDirection = new Vector3(_movement.x *_playerSpeed, _rigidbody.linearVelocity.y,_movement.y * _playerSpeed);
                 _rigidbody.linearVelocity = moveDirection; 

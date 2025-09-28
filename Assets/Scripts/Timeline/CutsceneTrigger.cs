@@ -76,6 +76,7 @@ public class CutsceneTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             PlayCutscene();
+            gameObject.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

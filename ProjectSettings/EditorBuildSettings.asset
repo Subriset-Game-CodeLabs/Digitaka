@@ -9,18 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/FixScene/MainMenu.unity
     guid: 1f54f1c11175cd64ca7ff395736ccfc7
   - enabled: 1
-    path: Assets/Scenes/FixScene/GameLoop/GameLoop1.unity
-    guid: cae701ad746b55c409a5d7b8893bad86
-  - enabled: 1
-    path: Assets/Scenes/FixScene/GameLoop/GameLoop2.unity
-    guid: 3c142769d707d4a4193ecda3252e9399
-  - enabled: 1
-    path: Assets/Scenes/FixScene/GameLoop/GameLoop3.unity
-    guid: dc41aba44edadf04f9d55117af1d3b87
-  - enabled: 1
-    path: Assets/Scenes/FixScene/GameLoop/GameLoop4.unity
-    guid: ace0b0f80ad4d924cb5c8d6148c75ab1
-  - enabled: 1
     path: Assets/Scenes/FixScene/MainCanvas.unity
     guid: 53ceada4fe80db84a8e5ca0aa39ba29d
   - enabled: 1
@@ -48,10 +36,10 @@ EditorBuildSettings:
     path: Assets/Scenes/FixScene/ChapterSelector.unity
     guid: 67e4fdc7641f36a49aed06fa695c62f8
   - enabled: 1
-    path: Assets/Scenes/Cutscene/Cutscene_Prologue.unity
+    path: Assets/Scenes/FixScene/Cutscene/Cutscene_Prologue.unity
     guid: bb31816ee6d611649bf2e651997914d1
   - enabled: 1
-    path: Assets/Scenes/Cutscene/Cutscene_GunungKendeng.unity
+    path: Assets/Scenes/FixScene/Cutscene/Cutscene_GunungKendeng.unity
     guid: 6e43d1454694c8945b505f10b531a1c1
   - enabled: 1
     path: Assets/Scenes/FixScene/v2/Chapter 2/B1.unity
@@ -74,6 +62,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FixScene/v2/Chapter 2/B6.unity
     guid: b14a3271998e8d14facc9e4808c2a9e1
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C1.unity
+    guid: 016c8dfbcb0da584b902413f974a9d46
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C2.unity
+    guid: 3053a5b54d5bdc9499e497019231ef56
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C3.unity
+    guid: dcc9d89ed88c7c54596276a644e5b270
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C4.unity
+    guid: 2c195f76ce204df409b8c544cde54d93
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C5.unity
+    guid: aeae53b7cb62ef24392dba807d9288aa
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C6.unity
+    guid: 99cc54b993d58454ab20f0ce39e5aabc
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C7.unity
+    guid: 12b2135a5dd054d468821ac4dcbc39bd
+  - enabled: 1
+    path: Assets/Scenes/FixScene/v2/Chapter 3/C8.unity
+    guid: 81ff2d842254ef94680da278f75cc397
+  - enabled: 1
+    path: Assets/Scenes/FixScene/Cutscene/CutsceneWargaDesa.unity
+    guid: ba35f586eb518e54b860a87f3766b42a
+  - enabled: 1
+    path: Assets/Scenes/FixScene/Cutscene/CutsceneHanacaraka.unity
+    guid: 6a8fcb0833845a048904232225841674
+  - enabled: 1
+    path: Assets/Scenes/FixScene/Cutscene/CutsceneDoraDanSembada.unity
+    guid: c6c9affe0c633fa4995e58d211f13f38
+  - enabled: 1
+    path: Assets/Scenes/FixScene/Cutscene/CutscenePerintahAmbilKeris.unity
+    guid: 03f8840b40441a948bc29631acafa7f8
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 99f9c9493070a9d4c979a8fec7c5a8d3, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

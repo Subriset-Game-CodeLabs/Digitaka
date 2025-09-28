@@ -5,6 +5,7 @@ EXTERNAL FinishQuest(questId)
 EXTERNAL OpenShop()
 EXTERNAL ChangeMorale(amount)
 EXTERNAL PlayCutscene(cutsceneId)
+EXTERNAL TeleportToScene(targetScene)
 
 // quest ids (questid + "Id" for variable name)
 VAR VisitPlaceQuestId = "VisitPlaceQuest"
@@ -30,6 +31,7 @@ INCLUDE side_quest3.ink
 // Main Story
 INCLUDE chapter1.ink
 INCLUDE chapter2.ink
+INCLUDE chapter3.ink
 
 
 === testspeaker ===
@@ -39,5 +41,6 @@ What happend to this village?
 My village is being controlled by the evil king #speaker:NPC  #portrait:npc
 he demand sacrifice everyday 
 WHAT!!! #speaker:Aji Saka #portrait:ajisaka
-
 - -> END
+
+

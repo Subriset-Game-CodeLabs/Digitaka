@@ -187,7 +187,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: Weapon.Active
     m_Mirror: 0
-  m_BlendParameter: Weapon.Active
+  m_BlendParameter: SpeedMagnitude
   m_BlendParameterY: Blend
   m_MinThreshold: -2
   m_MaxThreshold: 3

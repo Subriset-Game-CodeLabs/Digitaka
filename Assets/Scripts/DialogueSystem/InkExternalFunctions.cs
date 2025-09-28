@@ -14,6 +14,10 @@ public class InkExternalFunctions
         story.BindExternalFunction("ChangeMorale", (int amount) => ChangeMorale(amount));
 
         story.BindExternalFunction("PlayCutscene", (string cutsceneId) => PlayCutscene(cutsceneId));
+        story.BindExternalFunction(
+            "TeleportToScene",
+            (string targetScene) => TeleportToScene(targetScene)
+        );
     }
 
     public void Unbind(Story story)
@@ -24,6 +28,7 @@ public class InkExternalFunctions
         story.UnbindExternalFunction("OpenShop");
         story.UnbindExternalFunction("ChangeMorale");
         story.UnbindExternalFunction("PlayCutscene");
+        story.UnbindExternalFunction("TeleportToScene");
     }
 
 
@@ -55,5 +60,10 @@ public class InkExternalFunctions
     private void PlayCutscene(string cutsceneId)
     {
         GameEventsManager.Instance.CutsceneEvents.PlayCutscene(cutsceneId);
+    }
+
+    private void TeleportToScene(string targetScene)
+    {
+        TeleportManager.Instance.TeleportToScene(targetScene, targetScene);
     }
 }
