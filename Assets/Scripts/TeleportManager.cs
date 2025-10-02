@@ -4,6 +4,7 @@ using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using Input;
 
 public class TeleportManager : PersistentSingleton<TeleportManager>
 {
@@ -85,6 +86,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
                 _currentSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
                 SpawnCharacterAtTeleportPoint(teleportPoint);
                 Debug.Log($"Player spawned at {teleportPoint.name}");
+                InputManager.Instance.PlayerMode();
                 break;
             }
         }

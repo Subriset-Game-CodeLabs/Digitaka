@@ -5846,14 +5846,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1910752001934329516, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: edf52f816b424ad4e87dbfa4b5f4a918, type: 3}
     - target: {fileID: 4982415046317976099, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
       propertyPath: m_Name
       value: NPCShop
+      objectReference: {fileID: 0}
+    - target: {fileID: 5142652870891368581, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_Radius
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 7508140291987887015, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
       propertyPath: _questInfoForPoint
       value: 
       objectReference: {fileID: 11400000, guid: 082927dc11add5743b2e777ffa759996, type: 2}
+    - target: {fileID: 8490748479339541581, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.391
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17522,6 +17534,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1952590338669754449, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2929481065578093899, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.94
@@ -17568,7 +17584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4480859155074801314, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
       propertyPath: _targetScene
-      value: A1New
+      value: Cutscene_Prologue
       objectReference: {fileID: 0}
     - target: {fileID: 4480859155074801314, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
       propertyPath: _starterPoint

@@ -4385,7 +4385,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -4705,6 +4705,8 @@ GameObject:
   m_Component:
   - component: {fileID: 498195209}
   - component: {fileID: 498195208}
+  - component: {fileID: 498195210}
+  - component: {fileID: 498195211}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -4853,6 +4855,8 @@ PlayableDirector:
     value: {fileID: 166042644}
   - key: {fileID: 711082643076085432, guid: f8864175a2141874cb6b6ced7dbebce2, type: 2}
     value: {fileID: 444832510}
+  - key: {fileID: 3828754391595854611, guid: f8864175a2141874cb6b6ced7dbebce2, type: 2}
+    value: {fileID: 498195210}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &498195209
@@ -4870,6 +4874,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1617795672}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498195210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498195207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 620d018d330cd644ca5c4f54fb096a77, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 498195211}
+          m_TargetAssemblyTypeName: TimelineSignalSetting, Assembly-CSharp
+          m_MethodName: TeleportToScene
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: C1
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &498195211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498195207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7551d86b47ad7a747aec313a0d0e2910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  director: {fileID: 498195208}
+  _isTutorial: 0
+  _isOnTutorialScene: 0
 --- !u!1001 &527966053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7763,7 +7812,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2929481065578093899, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.15
+      value: 60.54
       objectReference: {fileID: 0}
     - target: {fileID: 2929481065578093899, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
       propertyPath: m_LocalPosition.y

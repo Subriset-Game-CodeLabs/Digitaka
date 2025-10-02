@@ -9,8 +9,10 @@ namespace Input
         private FiniteStateMachine<ActionMap> _actionMapStates;
         private PlayerActionMap _player;
         private UIActionMap _ui;
+        private ShopActionMap _shop;
         public PlayerActionMap PlayerInput => _player;
         public UIActionMap UIInput => _ui;
+        public ShopActionMap ShopInput => _shop;
 
         private SchemeType _currentControlScheme;
         public SchemeType CurrentControlScheme => _currentControlScheme;
@@ -19,7 +21,7 @@ namespace Input
         {
             base.Awake();
             InitializedManager();
-            InitializePlayerInput();
+            // InitializePlayerInput();
         }
 
         private void InitializedManager()
@@ -27,38 +29,46 @@ namespace Input
             _inputActions = new InputActions();
             _player = new PlayerActionMap(_inputActions);
             _ui = new UIActionMap(_inputActions);
+            _shop = new ShopActionMap(_inputActions);
             _actionMapStates = new FiniteStateMachine<ActionMap>(_ui);
         }
 
         public void PlayerMode()
         {
             _actionMapStates.ChangeState(_player);
+            Debug.Log("State change to playermode");
         }
         public void UIMode()
         {
             _actionMapStates.ChangeState(_ui);
-        }
-        
-        private void InitializePlayerInput()
-        {
-            PlayerInput playerInput = gameObject.AddComponent<PlayerInput>();
-            playerInput.actions = _inputActions.asset;
-            playerInput.defaultControlScheme = "Keyboard&Mouse";
-            playerInput.onControlsChanged += OnControlsChanged;
+            Debug.Log("State change to uiMode");
         }
 
-        private void OnControlsChanged(PlayerInput input)
+        public void ShopMode()
         {
-            Debug.Log("Control scheme changed to: " + input.currentControlScheme);
-            var scheme = input.currentControlScheme;
-            _currentControlScheme = scheme == "Gamepad"? SchemeType.Gamepad : SchemeType.Keyboard;
+            _actionMapStates.ChangeState(_shop);
         }
+        
+        // private void InitializePlayerInput()
+        // {
+        //     PlayerInput playerInput = gameObject.AddComponent<PlayerInput>();
+        //     playerInput.actions = _inputActions.asset;
+        //     playerInput.defaultControlScheme = "Keyboard&Mouse";
+        //     playerInput.onControlsChanged += OnControlsChanged;
+        // }
+
+        // private void OnControlsChanged(PlayerInput input)
+        // {
+        //     Debug.Log("Control scheme changed to: " + input.currentControlScheme);
+        //     var scheme = input.currentControlScheme;
+        //     _currentControlScheme = scheme == "Gamepad"? SchemeType.Gamepad : SchemeType.Keyboard;
+        // }
 
         public enum SchemeType
         {
             Keyboard,
             Gamepad,
             TouchScreen
-    }
+        }
     }
 }

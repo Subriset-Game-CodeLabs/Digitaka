@@ -93,6 +93,10 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         {
             return;
         }
+        if (story.currentChoices.Count > 0)
+        {
+            return;
+        }
 
         ContinueOrExitStory();
     }
@@ -105,6 +109,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
     private void UpdateChoiceIndex(int choiceIndex)
     {
         currentChoiceIndex = choiceIndex;
+        ContinueOrExitStory();
     }
 
     private void EnterDialogue(string knotName, bool allowSkip, bool isCutscene)
@@ -233,7 +238,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
     private void ExitDialogue()
     {
-        Debug.Log("Exiting Dialogue");
+        Debug.Log("Exiting Dialogue start");
 
         dialougePlaying = false;
 
@@ -245,6 +250,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
         inkDialogueVariables.StopListening(story);
 
         story.ResetState();
+        Debug.Log("Exiting Dialogue Finish");
     }
 
     private bool IsLineBlank(string dialogueLine)

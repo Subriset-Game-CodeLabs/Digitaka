@@ -22,6 +22,9 @@ namespace UIController
         [SerializeField] private GameObject _completeQuestPanel;
         [SerializeField] private GameObject _mapPanel;
         [SerializeField] private GameObject _mobileUIPanel;
+        [SerializeField] private GameObject _questPanel;
+        [SerializeField] private GameObject _attackButton;
+        [SerializeField] private GameObject _interactButton;
         [SerializeField] private GameObject _statsPanel;
         [SerializeField] private GameObject _coinPanel;
         [SerializeField] private GameObject _moralePanel;
@@ -91,6 +94,7 @@ namespace UIController
             _statsPanel.SetActive(false);
             _coinPanel.SetActive(false);
             _moralePanel.SetActive(false);
+            _questPanel.SetActive(false);
         }
 
         public void ShowCanvas()
@@ -99,6 +103,7 @@ namespace UIController
             _statsPanel.SetActive(true);
             _coinPanel.SetActive(true);
             _moralePanel.SetActive(true);
+            _questPanel.SetActive(true);
         }
 
         private void InitializeTutorial()
@@ -112,6 +117,17 @@ namespace UIController
                 HideTutorialPanel();
             }
         }
+
+        public void ShowInteractButton()
+        {
+            _interactButton.SetActive(true);
+        }
+
+        public void HideInteractButton()
+        {
+            _interactButton.SetActive(false);
+        }
+
         void OnEnable()
         {
             InputManager.Instance.PlayerInput.Pause.OnDown += Pause;

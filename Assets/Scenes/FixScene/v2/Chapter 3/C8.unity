@@ -4168,18 +4168,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1191112471768558137, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 41d4ef9b79193594daedd9a864f0560f, type: 2}
-    - target: {fileID: 1631269601909191593, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_Graph
-      value: 
-      objectReference: {fileID: 3563130319819229185, guid: 08422a2aa1cf9e34e80f81fae11161ea, type: 2}
-    - target: {fileID: 1810102885849618748, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_LocalScale.x
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 1810102885849618748, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.92
@@ -4220,57 +4208,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2494557608285663163, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_Height
-      value: 3.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2494557608285663163, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_Radius
-      value: 0.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 2494557608285663163, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_Center.y
-      value: 1.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2978997234714833966, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 2978997234714833966, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 5145364570756927534, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1642900988, guid: 60537e07525926641b1a37f42979715c, type: 3}
-    - target: {fileID: 6607783240512172113, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8641772960352399097, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
+    - target: {fileID: 3131190154408917270, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
       propertyPath: m_LocalScale.x
-      value: -2.09
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8641772960352399097, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.81
+    - target: {fileID: 3131190154408917270, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8641772960352399097, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.58
+    - target: {fileID: 3131190154408917270, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8641772960352399097, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
+    - target: {fileID: 3131190154408917270, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9188126850371176851, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
       propertyPath: m_Name
       value: Boss Dewata Cengkar
-      objectReference: {fileID: 0}
-    - target: {fileID: 9188126850371176851, guid: 881883b52b4bce14eb44d4616218e459, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

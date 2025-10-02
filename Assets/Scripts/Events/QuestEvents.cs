@@ -7,7 +7,7 @@ namespace Events
     {
         public event Action<string> OnStartQuest;
         public void StartQuest(string id)
-        { 
+        {
             OnStartQuest?.Invoke(id);
         }
 
@@ -29,8 +29,8 @@ namespace Events
             OnQuestStateChange?.Invoke(quest);
             QuestUpdate();
         }
-        
-        public event Action OnQuestUpdate; 
+
+        public event Action OnQuestUpdate;
         private void QuestUpdate()
         {
             OnQuestUpdate?.Invoke();
@@ -39,6 +39,12 @@ namespace Events
         public void QuestStepStateChange(string id, int stepIndex, QuestStepState questStepState)
         {
             OnQuestStepStateChange?.Invoke(id, stepIndex, questStepState);
+        }
+
+        public event Action<string, string> OnQuestInfoChange;
+        public void QuestInfoChange(string questDisplay, string text)
+        {
+            OnQuestInfoChange?.Invoke(questDisplay, text);
         }
     }
 }

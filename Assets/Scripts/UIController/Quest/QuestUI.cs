@@ -10,23 +10,34 @@ namespace UIController
         [SerializeField] private GameObject _questItemPrefab;
         [SerializeField] private GameObject _questListParent;
         [SerializeField] private TextMeshProUGUI _questStatusText;
+        [SerializeField] private TextMeshProUGUI _questTitleText;
         private Dictionary<string, QuestItem> _idToItemMap = new();
 
         private void OnEnable()
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStateChange += QuestStateChange;
+            GameEventsManager.Instance.QuestEvents.OnQuestInfoChange += QuestInfoChange;
 
         }
         private void OnDisable()
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStateChange -= QuestStateChange;
+            GameEventsManager.Instance.QuestEvents.OnQuestInfoChange -= QuestInfoChange;
+        }
+
+
+        private void QuestInfoChange(string questDisplay, string text)
+        {
+            Debug.Log("Change quest info");
+            _questTitleText.text = questDisplay;
+            _questStatusText.text = text;
         }
 
         private void QuestStateChange(Quest quest)
         {
-            Debug.Log(quest.info.displayName);
-            Debug.Log(quest.GetFullStatusText());
-            _questStatusText.text = quest.GetFullStatusText();
+            // Debug.Log(quest.info.displayName);
+            // Debug.Log(quest.GetFullStatusText());
+            // _questStatusText.text = quest.GetFullStatusText();
             // QuestItem questItem = CreateQuestIfNotExist(quest); 
             // questItem.SetState(quest.state);
         } 

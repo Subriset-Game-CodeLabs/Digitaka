@@ -17,7 +17,7 @@ MonoBehaviour:
   <health>k__BackingField: 3
   <damage>k__BackingField: 0.5
   <maxMana>k__BackingField: 3
-  <mana>k__BackingField: 3
+  <mana>k__BackingField: 1
   <healPotion>k__BackingField: 5
   <manaPotion>k__BackingField: 5
   <coin>k__BackingField: 5

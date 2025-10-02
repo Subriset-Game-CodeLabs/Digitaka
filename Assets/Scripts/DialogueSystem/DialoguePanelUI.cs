@@ -89,7 +89,6 @@ public class DialoguePanelUI : MonoBehaviour
             GameEventsManager.Instance.DialogueEvents.LineTypingAnimation(false);
 
         }
-        Debug.Log(instant);
         if (!instant)
         {
             displayLineCoroutine = StartCoroutine(DisplayLine(dialogueLine));
@@ -122,7 +121,7 @@ public class DialoguePanelUI : MonoBehaviour
 
             if (inkChoiceIndex == 0)
             {
-                choiceButton.SelectButton();
+                // choiceButton.SelectButton();
                 // GameEventsManager.Instance.dialogueEvents.UpdateChoiceIndex(0);
             }
 

@@ -2379,6 +2379,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Type 3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6684,6 +6688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Type 3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8308,6 +8316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Type 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8565,7 +8577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8408263078336591565, guid: 2ffd3dc655479414fbb9fd4cd5c4fe22, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9098,6 +9110,10 @@ PrefabInstance:
     - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
       propertyPath: m_Name
       value: Enemy Type 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12987,6 +13003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Type 3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7357480428459848096, guid: 0dc4d83cfccc5e241bad73005a9b9a96, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13119,7 +13139,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 313ad444f1e3d354d818b07c19f146f3, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: a9357895995fea344be6cc6527d1c245, type: 2}
   m_BuildHeightMesh: 0
 --- !u!154 &1636217825
 TerrainCollider:

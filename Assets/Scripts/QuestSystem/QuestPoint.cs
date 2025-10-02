@@ -80,7 +80,7 @@ namespace QuestSystem
             if (quest.info.id.Equals(_questId))
             {
                 _currentQuestState = quest.state;
-                _questIcon.SetState(_currentQuestState, _startPoint, _finishPoint);
+                //_questIcon.SetState(_currentQuestState, _startPoint, _finishPoint);
             }
         }
 

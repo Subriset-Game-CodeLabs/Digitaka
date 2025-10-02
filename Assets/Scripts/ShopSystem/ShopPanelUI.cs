@@ -63,6 +63,7 @@ public class ShopPanelUI : MonoBehaviour
         {
             UIManager.Instance.HideShopPanel();
             _informationPanel.SetActive(false);
+            InputManager.Instance.UIMode();
             GameEventsManager.Instance.DialogueEvents.DialogueResumed();
         });
 
@@ -139,7 +140,7 @@ public class ShopPanelUI : MonoBehaviour
                 first = false;
             }
         }
-        InputManager.Instance.UIMode();
+        InputManager.Instance.ShopMode();
     }
 
     public void BuyItemFailed(ItemBaseSO item)

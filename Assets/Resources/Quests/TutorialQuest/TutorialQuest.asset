@@ -17,6 +17,5 @@ MonoBehaviour:
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 9053344307416453741, guid: df92726d6c827ae4e93de66cc326a44a, type: 3}
-  - {fileID: 9053344307416453741, guid: df92726d6c827ae4e93de66cc326a44a, type: 3}
   <goldReward>k__BackingField: 0
   <experienceReward>k__BackingField: 0

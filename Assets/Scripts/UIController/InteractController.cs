@@ -24,7 +24,7 @@ namespace UIController
                 if (MarkerInteract != null)
                 {
                     MarkerInteract.SetActive(true);
-
+                    UIManager.Instance.ShowInteractButton();
                     markerTween?.Kill();
                     MarkerInteract.transform.localScale = MarkerInteract.transform.localScale;
                     markerTween = MarkerInteract.transform
@@ -44,6 +44,7 @@ namespace UIController
                     markerTween?.Kill();
                     MarkerInteract.transform.localScale = MarkerInteract.transform.localScale;
                     MarkerInteract.SetActive(false);
+                    UIManager.Instance.HideInteractButton();
                 }
             }
         }

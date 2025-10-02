@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Input
 {
-    public abstract class ActionMap: IState
+    public abstract class ActionMap : IState
     {
         protected InputActions InputActions;
         public abstract bool HasPollable { get; }
@@ -48,7 +48,7 @@ namespace Input
         {
         }
     }
-    
+
     public class PlayerActionMap : ActionMap
     {
         private InputValue<Vector2> _movement;
@@ -103,4 +103,26 @@ namespace Input
         }
     }
     
+    public class ShopActionMap : ActionMap
+    {
+        public ShopActionMap(InputActions action) : base(action)
+        {
+
+        }
+
+        public override bool HasPollable => false;
+
+        public override void OnEnter()
+        {
+            InputActions.Shop.Enable();
+        }
+
+        public override void OnExit()
+        {
+            InputActions.Shop.Disable();
+        }
+        public override void OnUpdate()
+        {
+        }
+    }
 }

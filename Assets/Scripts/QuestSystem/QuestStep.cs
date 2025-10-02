@@ -9,8 +9,8 @@ namespace QuestSystem
         private int _stepIndex;
         public void InitializeQuestStep(string questId, int stepIndex, string questStepState)
         {
-           _questId = questId;
-           _stepIndex = stepIndex;
+            _questId = questId;
+            _stepIndex = stepIndex;
             if (questStepState != null && string.IsNullOrEmpty(questStepState))
             {
                 SetQuestStepState(questStepState);
@@ -29,6 +29,15 @@ namespace QuestSystem
             if (!_isFinished)
             {
                 _isFinished = true;
+                if (_questId == null)
+                    Debug.LogError("GameEventsManager.Instance is NULL!");
+
+                else if (GameEventsManager.Instance.QuestEvents == null)
+                    Debug.LogError("QuestEvents is NULL!");
+
+                else
+                    Debug.Log("Calling QuestInfoChange...");
+
                 GameEventsManager.Instance.QuestEvents.AdvanceQuest(_questId);
                 Destroy(gameObject);
             }
