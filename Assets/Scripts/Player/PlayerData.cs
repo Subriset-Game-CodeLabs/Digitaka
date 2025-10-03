@@ -4,28 +4,28 @@ using UnityEngine.Serialization;
 namespace TwoDotFiveDimension
 {
     [CreateAssetMenu(fileName = "PlayerStatsData", menuName = "Data/PlayerStatsData")]
-    public class PlayerData: StatsData
+    public class PlayerData : StatsData
     {
-        [field:SerializeField] public float maxMana { get; set; } = 3;
-        [field:SerializeField] public float mana { get; set; }
-        [field:SerializeField] public int healPotion { get; set; }
-        [field:SerializeField] public int manaPotion { get; set; } = 1;
-        [field:SerializeField] public int coin { get; set; } = 1;
-        [field:SerializeField] public int UltimateDamage = 2;
-        [field:SerializeField] public int UltimateManaCost = 2;
+        [field: SerializeField] public float maxMana { get; set; } = 3;
+        [field: SerializeField] public float mana { get; set; }
+        [field: SerializeField] public int healPotion { get; set; }
+        [field: SerializeField] public int manaPotion { get; set; } = 1;
+        [field: SerializeField] public int coin { get; set; } = 1;
+        [field: SerializeField] public int UltimateDamage = 2;
+        [field: SerializeField] public int UltimateManaCost = 2;
         [field: SerializeField] public int MoralePoint = 0;
-        
+
         [Header("Dash Settings")]
-        [field:SerializeField] public float DashDuration  { get; set; }
-        [field:SerializeField] public int DashSpeed  { get; set; }
-        [field:SerializeField] public float DashCooldown  { get; set; } = 1f;
-       
+        [field: SerializeField] public float DashDuration { get; set; }
+        [field: SerializeField] public int DashSpeed { get; set; }
+        [field: SerializeField] public float DashCooldown { get; set; } = 1f;
+
         [Header("Ultimate Settings")]
-        [field:SerializeField] public float UltimateCooldown  { get; set; } = 5f;
-        
+        [field: SerializeField] public float UltimateCooldown { get; set; } = 5f;
+
         [Header("Potion Settings")]
-        [field:SerializeField] public float HealthPotionCooldown  { get; set; } = 2f;
-        [field:SerializeField] public float ManaPotionCooldown  { get; set; } = 2f;
+        [field: SerializeField] public float HealthPotionCooldown { get; set; } = 2f;
+        [field: SerializeField] public float ManaPotionCooldown { get; set; } = 2f;
         public override void ResetStats()
         {
             health = maxHealth;
@@ -36,13 +36,13 @@ namespace TwoDotFiveDimension
             MoralePoint = 0;
             damage = 0.5f;
             UltimateManaCost = 2;
-            
-//             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
-            // GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
-//            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
-//            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
-//           GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
-            
+
+            GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
+            GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
+            GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
+            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
+            GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
+
         }
     }
 }

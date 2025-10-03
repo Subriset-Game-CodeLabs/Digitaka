@@ -12,16 +12,18 @@ Tuan, apakah kamu baik-baik saja? Bagaimana dirimu bisa ada di tengah hutan send
 Aku berasal dari Kerajaan Medang Kamulan... Aku dan warga lainnya kabur karena Prabu Dewata Cengkar, Raja kami. #speaker:Lelaki Tua #portrait:npc
 Ia kejam... ia meminta tumbal manusia untuk disantap. Tolong kami tuan, kami sudah lama diterror oleh Dirinya. 
 Apa? Seorang raja... memakan manusia? Sungguh jahat. #speaker:dora #portrait:dora
+*[Menerima Permintaan tolong]
+    Jika memang demikian, aku tak bisa tinggal diam. Menolong rakyat yang menderita adalah kewajiban seorang ksatria. #speaker:Aji Saka #portrait:ajisaka
+    Aku akan melakukan sebisanya untuk menghentikan kebiadaban itu.
+    ->LelakiTuaTerimakasih
+    
 *[Menolak Membantu]
     Maaf... tapi itu bukan kewajibanku. Engkau lebih baik mencari orang lain yang bisa menolong. #speaker:Aji Saka #portrait:ajisaka
     Tuan, bukankah kita harus menolong siapa pun yang membutuhkan? #speaker:dora #portrait:dora
     Jika kita berpaling, berapa banyak orang yang akan menjadi korban?
     Baiklah... aku akan membantumu. Tunjukkan jalan, dan aku akan menghadapi Prabu Dewata Cengkar. #speaker:Aji Saka #portrait:ajisaka
     ->LelakiTuaTerimakasih
-*[Menerima Permintaan tolong]
-    Jika memang demikian, aku tak bisa tinggal diam. Menolong rakyat yang menderita adalah kewajiban seorang ksatria. #speaker:Aji Saka #portrait:ajisaka
-    Aku akan melakukan sebisanya untuk menghentikan kebiadaban itu.
-    ->LelakiTuaTerimakasih
+
 
 === LelakiTuaTerimakasih ===
 Terima kasih banyak Tuan! Jika begitu, pergilah ke desa terdekat. Cari seorang wanita bernama NYAI SENGKERAN. Dia akan membantumupergi menuju kerajaan. #speaker:Lelaki Tua #portrait:npc

@@ -113,6 +113,7 @@ public class TutorialQuestStep : QuestStep
         {
             GameEventsManager.Instance.QuestEvents.FinishQuest("TutorialQuest");
              GameEventsManager.Instance.QuestEvents.QuestInfoChange("","");
+            Destroy(gameObject);
         }
     }
 
@@ -131,7 +132,8 @@ public class TutorialQuestStep : QuestStep
         if (_healthPotionUsed >= 1 && _manaPotionUsed >= 1)
         {
             GameEventsManager.Instance.QuestEvents.FinishQuest("TutorialQuest");
-            GameEventsManager.Instance.QuestEvents.QuestInfoChange("","");
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange("", "");
+            Destroy(gameObject);
         }
     }
 

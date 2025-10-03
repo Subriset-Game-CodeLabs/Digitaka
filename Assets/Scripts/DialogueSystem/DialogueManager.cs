@@ -248,6 +248,7 @@ public class DialogueManager : PersistentSingleton<DialogueManager>
 
         GameEventsManager.Instance.StatsEvents.ChangePlayerMorale();
         inkDialogueVariables.StopListening(story);
+        UIManager.Instance.HideInteractButton();
 
         story.ResetState();
         Debug.Log("Exiting Dialogue Finish");

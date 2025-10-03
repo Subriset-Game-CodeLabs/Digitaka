@@ -42,6 +42,7 @@ public class GameManager: PersistentSingleton<GameManager>
         PlayerStats.Instance.ResetStats();
         ShopManager.Instance.ResetItem();
         InputManager.Instance.PlayerMode();
+        CutsceneManager.Instance.ResetCutscene();
     }
     public void QuitGame()
     {

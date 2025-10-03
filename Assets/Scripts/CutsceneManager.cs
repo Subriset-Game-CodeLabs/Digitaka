@@ -8,4 +8,9 @@ public class CutsceneManager : PersistentSingleton<CutsceneManager>
 
     public bool HasPlayed(string cutsceneId) => _playedCutscenes.Contains(cutsceneId);
     public void MarkAsPlayed(string cutsceneId) => _playedCutscenes.Add(cutsceneId);
+
+    public void ResetCutscene()
+    {
+        _playedCutscenes.Clear();
+    }
 }

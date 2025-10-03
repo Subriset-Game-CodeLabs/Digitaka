@@ -45,6 +45,7 @@ namespace UIController.Stats
         {
             if (_coinText != null)
             {
+                Debug.Log("Update coin text");
                 _coinText.text = _playerStats.coin.ToString();
             }
             else
