@@ -5959,7 +5959,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.097355686, y: -2.766765e-16, z: 2.7064599e-17, w: 0.9952497}
-  m_LocalPosition: {x: 52.91, y: 1.4846171, z: 22.24}
+  m_LocalPosition: {x: 61.75, y: 2.53, z: 19.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -29821,7 +29821,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1676915801
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37988,6 +37988,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 6a29e42773ee2a74c8f40c97fb634341, type: 2}
     - {fileID: 11400000, guid: 2ab89405e68b4fe4db0b08432c68b937, type: 2}
     - {fileID: 11400000, guid: 620d018d330cd644ca5c4f54fb096a77, type: 2}
+    - {fileID: 11400000, guid: 6eb22dfb13c49074481b3a3ce94edfd1, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -38085,6 +38086,20 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: CutsceneWargaDesa
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2109676743}
+          m_TargetAssemblyTypeName: TimelineSignalSetting, Assembly-CSharp
+          m_MethodName: HideUI
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &2109676743

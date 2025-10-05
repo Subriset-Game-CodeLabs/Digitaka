@@ -1538,7 +1538,7 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 0}
+    TrackingTarget: {fileID: 1002178942}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
@@ -1570,7 +1570,7 @@ Transform:
   m_GameObject: {fileID: 258805204}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12337152, y: -5.9134824e-24, z: 3.5935923e-25, w: 0.9923606}
-  m_LocalPosition: {x: 24.46, y: 3.88987, z: 0.86000013}
+  m_LocalPosition: {x: 22.59, y: 3.88987, z: -0.5999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1842,8 +1842,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14302267, y: 0.000000018229493, z: -0.0000000026343123, w: 0.98971945}
-  m_LocalPosition: {x: 60.11, y: 2.7, z: 2.23}
+  m_LocalRotation: {x: 0.16050126, y: 0.00000002131906, z: -0.0000000034666796, w: 0.98703563}
+  m_LocalPosition: {x: -3.9105773, y: 2.7198708, z: 1.2171092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
