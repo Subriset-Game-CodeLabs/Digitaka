@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace QuestSystem
 {
@@ -16,6 +17,25 @@ namespace QuestSystem
                 SetQuestStepState(questStepState);
             }
         }
+
+        protected virtual void OnEnable()
+        {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+
+        }
+
+        protected virtual void OnDisable()
+        {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
+                Destroy(gameObject);
+        }
+
         protected void FinishQuestStep()
         {
             if (!_isFinished)

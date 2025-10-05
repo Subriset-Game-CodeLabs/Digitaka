@@ -210,9 +210,9 @@ namespace TwoDotFiveDimension
             ultimateCost += amount;
         }
 
-        public void ResetStats()
+        public void ResetStats(bool resetAll)
         {
-            _playerData.ResetStats();
+            _playerData.ResetStats(resetAll);
         }
     }
 }

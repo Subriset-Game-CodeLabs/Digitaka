@@ -271,7 +271,7 @@ namespace UIController
         public void MainMenuGame()
         {
             SceneManager.Instance.ChangeScene("MainMenu");
-            PlayerStats.Instance.ResetStats();
+            PlayerStats.Instance.ResetStats(true);
             ShopManager.Instance.ResetItem();
             _defeatedPanel.SetActive(false);
             TeleportManager.Instance.ResetCheckpoint();

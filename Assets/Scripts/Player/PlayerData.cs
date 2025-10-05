@@ -26,16 +26,20 @@ namespace TwoDotFiveDimension
         [Header("Potion Settings")]
         [field: SerializeField] public float HealthPotionCooldown { get; set; } = 2f;
         [field: SerializeField] public float ManaPotionCooldown { get; set; } = 2f;
-        public override void ResetStats()
+        public override void ResetStats(bool resetAll)
         {
             health = maxHealth;
             mana = maxMana;
             healPotion = 5;
             manaPotion = 5;
-            coin = 5;
-            MoralePoint = 0;
-            damage = 0.5f;
-            UltimateManaCost = 2;
+
+            if (resetAll)
+            {
+                coin = 5;
+                MoralePoint = 0;
+                damage = 1f;
+                UltimateManaCost = 2;
+            }
 
             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
             GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
@@ -44,5 +48,6 @@ namespace TwoDotFiveDimension
             GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
 
         }
+
     }
 }

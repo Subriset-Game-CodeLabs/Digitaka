@@ -1,10 +1,11 @@
 using System;
 using System.Collections;
-using Unity.Cinemachine; 
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using Input;
+using TwoDotFiveDimension;
 
 public class TeleportManager : PersistentSingleton<TeleportManager>
 {
@@ -17,33 +18,33 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
     [SerializeField] private GameObject _slideTransitionPrefab; // Prefab dengan UI Canvas dan Image
     [SerializeField] private float _slideAnimationDuration = 0.5f;
     [SerializeField] private Ease _slideEaseType = Ease.InOutQuad;
-    
+
     private TeleportPoint[] _teleportPoints;
     private GameManager _gameManager;
     private CinemachineCamera _cinemachineCamera;
     private GameObject _slideTransition;
     private RectTransform _slidePanel;
     private bool _isTransitioning = false;
-    
+
     public void InitializeTeleport(string startingScene)
     {
         _currentSceneName = startingScene;
         CreateSlideTransition();
         enabled = true;
     }
-    
+
     private void CreateSlideTransition()
     {
         if (_slideTransitionPrefab != null)
         {
             _slideTransition = Instantiate(_slideTransitionPrefab);
             _slidePanel = _slideTransition.transform.GetChild(0).GetComponent<RectTransform>();
-            
+
             DontDestroyOnLoad(_slideTransition);
             Debug.Log(_slidePanel.name);
             Debug.Log(_slidePanel.anchoredPosition);
             _slidePanel.anchoredPosition = new Vector2(-Screen.width, 0);
-            
+
             Canvas canvas = _slideTransition.GetComponent<Canvas>();
             if (canvas != null)
             {
@@ -56,7 +57,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
         _gameManager = GameManager.Instance;
         UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
     }
-    
+
     private void OnDisable()
     {
         UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
@@ -72,6 +73,11 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
         else
         {
             InitializePlayer();
+        }
+
+        if (scene.name == "A1New" || scene.name == "B1" || scene.name == "C1")
+        {
+            PlayerStats.Instance.ResetStats(false);
         }
     }
 
@@ -94,14 +100,15 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
     private IEnumerator SlideOutAfterLoad()
     {
         yield return new WaitForSeconds(0.1f);
-        
+
         InitializePlayer();
-        
+
         if (_slidePanel != null)
         {
             _slidePanel.DOAnchorPosX(Screen.width, _slideAnimationDuration)
                 .SetEase(_slideEaseType)
-                .OnComplete(() => {
+                .OnComplete(() =>
+                {
                     // Reset posisi untuk transisi berikutnya
                     _slidePanel.anchoredPosition = new Vector2(-Screen.width, 0);
                     _isTransitioning = false;
@@ -115,7 +122,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
             Debug.LogError("Teleport point is null.");
             return;
         }
-        
+
         var character = _gameManager.SpawnMainCharacter(teleportPoint.transform);
         SetTargetCinemachine(character);
     }
@@ -131,29 +138,29 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
         if (_cinemachineCamera == null)
         {
             _cinemachineCamera = Instantiate(_cinemachineCameraPrefab).GetComponent<CinemachineCamera>();
-            _cinemachineCamera.Follow = target.transform;  
+            _cinemachineCamera.Follow = target.transform;
             Debug.Log(_cinemachineCamera.Follow);
         }
     }
 
     public void TeleportToScene(string sceneName, string pointName)
     {
-        
-        if (_isTransitioning) return; 
+
+        if (_isTransitioning) return;
         StartCoroutine(TeleportWithSlideAnimation(sceneName, pointName));
-        
+
     }
     private IEnumerator TeleportWithSlideAnimation(string sceneName, string pointName)
     {
         _isTransitioning = true;
-        
+
         // Slide in animation (dari kiri ke tengah)
         if (_slidePanel != null)
         {
             _slidePanel.DOAnchorPosX(0, _slideAnimationDuration).SetEase(_slideEaseType);
             yield return new WaitForSeconds(_slideAnimationDuration);
         }
-        
+
         _cinemachineCamera = null;
         Debug.Log($"Teleporting to scene: {sceneName} at point: {pointName}");
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);

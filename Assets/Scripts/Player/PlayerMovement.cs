@@ -31,6 +31,7 @@ namespace TwoDotFiveDimension
         private PlayerStats _playerStats;
         private UIManager _uiManager;
         private AudioManager _audioManager;
+        private SimpleJoystick _joystick;
         
         private static readonly int AnimState = Animator.StringToHash("AnimState");
         private static readonly int GroundedState = Animator.StringToHash("Grounded");
@@ -45,6 +46,7 @@ namespace TwoDotFiveDimension
             _playerStats = PlayerStats.Instance;
             _uiManager = UIManager.Instance;
             _audioManager = AudioManager.Instance;
+            _joystick = SimpleJoystick.Instance;
             
             InitializeSensor();
         }
@@ -55,7 +57,8 @@ namespace TwoDotFiveDimension
         }
         private void Update()
         {
-            _movement = InputManager.Instance.PlayerInput.Movement.Get();
+            // _movement = InputManager.Instance.PlayerInput.Movement.Get();
+            _movement = _joystick.GetInput();
             Move();
         }
 

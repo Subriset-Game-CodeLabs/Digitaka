@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using QuestSystem;
 using TMPro;
+using UnityEditor.SearchService;
+using UnityEngine.SceneManagement;
+
 namespace UIController
 {
-    public class QuestUI:MonoBehaviour
+    public class QuestUI : MonoBehaviour
     {
         [SerializeField] private GameObject _questItemPrefab;
         [SerializeField] private GameObject _questListParent;
@@ -17,12 +20,24 @@ namespace UIController
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStateChange += QuestStateChange;
             GameEventsManager.Instance.QuestEvents.OnQuestInfoChange += QuestInfoChange;
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+
 
         }
         private void OnDisable()
         {
             GameEventsManager.Instance.QuestEvents.OnQuestStateChange -= QuestStateChange;
             GameEventsManager.Instance.QuestEvents.OnQuestInfoChange -= QuestInfoChange;
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+        private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
+        {
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                _questTitleText.text = "";
+                _questStatusText.text = "";
+            }
         }
 
 
@@ -40,7 +55,7 @@ namespace UIController
             // _questStatusText.text = quest.GetFullStatusText();
             // QuestItem questItem = CreateQuestIfNotExist(quest); 
             // questItem.SetState(quest.state);
-        } 
+        }
         private QuestItem CreateQuestIfNotExist(Quest quest)
         {
             QuestItem questItem;
@@ -52,10 +67,10 @@ namespace UIController
         {
             GameObject newItem = Instantiate(_questItemPrefab, _questListParent.transform);
             QuestItem questItem = newItem.GetComponent<QuestItem>();
-            questItem.Initialize(quest.info.displayName); 
+            questItem.Initialize(quest.info.displayName);
             _idToItemMap[quest.info.id] = questItem;
             return questItem;
         }
     }
 }
-   
+

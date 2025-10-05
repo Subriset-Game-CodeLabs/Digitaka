@@ -6,7 +6,7 @@ namespace Enemy
     public class EnemyData: StatsData
     {
         [field: SerializeField] public int dropCoin { get; set; } = 5;
-        public override void ResetStats()
+        public override void ResetStats(bool resetAll)
         {
             maxHealth = 3;
             health = 3;

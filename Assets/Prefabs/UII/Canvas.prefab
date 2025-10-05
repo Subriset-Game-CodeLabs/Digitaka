@@ -5408,6 +5408,7 @@ GameObject:
   - component: {fileID: 678313113448512133}
   - component: {fileID: 3364045524570952720}
   - component: {fileID: 7133474819546255941}
+  - component: {fileID: 7205670562217263950}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5560,6 +5561,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _qtyHealthPotion: {fileID: 3946940500551587658}
   _qtyManaPotion: {fileID: 5903702632110433008}
+--- !u!114 &7205670562217263950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7557274030453106260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a5385af71ab3d40a573453646d641b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystickBackground: {fileID: 5107634803226705296}
+  joystickHandle: {fileID: 8864404948316470144}
+  handleRange: 50
 --- !u!1 &7561024213411756428
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,6 +6964,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5728909726815693406, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5728909726815693406, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
       propertyPath: m_ControlPath
       value: <Gamepad>/leftStick
       objectReference: {fileID: 0}
@@ -7051,6 +7071,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5881713087858280406, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
   m_PrefabInstance: {fileID: 1369774980174088332}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &5107634803226705296 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6188963883366053148, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
+  m_PrefabInstance: {fileID: 1369774980174088332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5802503415885446285 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4865234547969176577, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
@@ -7076,6 +7101,11 @@ MonoBehaviour:
 --- !u!224 &6824490517403264275 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5599978615751667103, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
+  m_PrefabInstance: {fileID: 1369774980174088332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &8864404948316470144 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7495918615177245452, guid: e2f6f210dbafb23478f955fafc17d259, type: 3}
   m_PrefabInstance: {fileID: 1369774980174088332}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &8916199899079841897 stripped

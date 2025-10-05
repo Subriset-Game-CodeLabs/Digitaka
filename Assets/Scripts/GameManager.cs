@@ -39,7 +39,7 @@ public class GameManager: PersistentSingleton<GameManager>
         TeleportManager.Instance.InitializeTeleport(_chapterScene);
         var HUD = Instantiate(_uiHUDPrefab);
         UIManager uiManager = HUD.GetComponent<UIManager>();
-        PlayerStats.Instance.ResetStats();
+        PlayerStats.Instance.ResetStats(true);
         ShopManager.Instance.ResetItem();
         InputManager.Instance.PlayerMode();
         CutsceneManager.Instance.ResetCutscene();

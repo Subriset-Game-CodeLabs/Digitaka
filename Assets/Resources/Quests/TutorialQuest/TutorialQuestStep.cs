@@ -18,8 +18,9 @@ public class TutorialQuestStep : QuestStep
                 $"Tekan tombol serang {_attaackPressed} / {_attackPresstoComplete} kali"
             );
     }
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         InputManager.Instance.PlayerInput.Attack.OnDown += AttackPressed;
         InputManager.Instance.PlayerInput.Jump.OnDown += DashPressed;
         InputManager.Instance.PlayerInput.Ultimate.OnDown += UltimatePressed;
@@ -27,8 +28,9 @@ public class TutorialQuestStep : QuestStep
         GameEventsManager.Instance.StatsEvents.OnChangeManaPlayer += ManaPressed;
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         InputManager.Instance.PlayerInput.Attack.OnDown -= AttackPressed;
         InputManager.Instance.PlayerInput.Jump.OnDown -= DashPressed;
         InputManager.Instance.PlayerInput.Ultimate.OnDown -= UltimatePressed;

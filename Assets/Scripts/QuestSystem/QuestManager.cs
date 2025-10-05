@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using TwoDotFiveDimension;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace QuestSystem
 {
@@ -16,7 +17,7 @@ namespace QuestSystem
 
         public void InitializeQuest()
         {
-            if(_alreadyInitialized) return;
+            if (_alreadyInitialized) return;
             _questMap = CreateQuestMap();
             foreach (Quest quest in _questMap.Values)
             {
@@ -38,6 +39,8 @@ namespace QuestSystem
             GameEventsManager.Instance.QuestEvents.OnFinishQuest += FinishQuest;
             GameEventsManager.Instance.QuestEvents.OnQuestStepStateChange += QuestStepStateChange;
             GameEventsManager.Instance.QuestEvents.OnQuestUpdate += UpdateQuest;
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+
         }
 
         private void OnDisable()
@@ -47,6 +50,17 @@ namespace QuestSystem
             GameEventsManager.Instance.QuestEvents.OnFinishQuest -= FinishQuest;
             GameEventsManager.Instance.QuestEvents.OnQuestStepStateChange -= QuestStepStateChange;
             GameEventsManager.Instance.QuestEvents.OnQuestUpdate -= UpdateQuest;
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
+            {
+                _questMap.Clear();
+                _alreadyInitialized = false;
+            }
         }
         private void UpdateQuest()
         {
@@ -59,7 +73,7 @@ namespace QuestSystem
                 }
             }
         }
-        private void StartQuest(string id) 
+        private void StartQuest(string id)
         {
             Quest quest = GetQuestById(id);
             quest.InstantiateCurrentQuestStep(this.transform);
@@ -88,7 +102,7 @@ namespace QuestSystem
         private void ChangeQuestState(string id, QuestState state)
         {
             Quest quest = GetQuestById(id);
-            quest.ChangeState(state); 
+            quest.ChangeState(state);
             GameEventsManager.Instance.QuestEvents.QuestStateChange(quest);
         }
 
@@ -157,7 +171,7 @@ namespace QuestSystem
             return quest;
         }
 
-   
+
     }
 }
 
