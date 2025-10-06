@@ -10,7 +10,12 @@ public class MasukKeKerajaanQuestStep1 : QuestStep
     [SerializeField]
     private int _killedEnemyToComplete = 1;
     private List<EnemyStats> _enemyStats = new List<EnemyStats>();
-    
+
+    void Start()
+    {
+        UpdateState();
+    }
+
     void OnEnable()
     {
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
@@ -33,10 +38,18 @@ public class MasukKeKerajaanQuestStep1 : QuestStep
         if (_enemyKilled >= _killedEnemyToComplete)
         {
             GameEventsManager.Instance.QuestEvents.FinishQuest("MasukKeKerajaan");
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju Ke Keraton",
+                $"- Masuk ke ruang takhta"
+            );
         }
     }
     private void UpdateState()
     {
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju Ke Keraton",
+                $"- Lawan Patih Jugul Muda"
+            );
         string status = "Bunuh Patih";
         ChangeState("", status);
     }

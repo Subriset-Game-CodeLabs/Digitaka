@@ -30,7 +30,7 @@ namespace QuestSystem
 
         }
 
-        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        protected virtual void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
                 Destroy(gameObject);

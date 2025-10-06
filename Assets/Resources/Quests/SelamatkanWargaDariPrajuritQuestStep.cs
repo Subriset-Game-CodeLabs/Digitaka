@@ -3,6 +3,7 @@ using System.Linq;
 using Enemy;
 using QuestSystem;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelamatkanWargaDariPrajuritQuestStep : QuestStep
 {
@@ -16,16 +17,18 @@ public class SelamatkanWargaDariPrajuritQuestStep : QuestStep
         _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
         UpdateState();
     }
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
-
+        // GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
-
+        // GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
     }
 
 
@@ -39,11 +42,19 @@ public class SelamatkanWargaDariPrajuritQuestStep : QuestStep
         }
         if(_enemyKilled >= _killedEnemyToComplete)
         {
-            GameEventsManager.Instance.QuestEvents.FinishQuest("SelamatkanWargaDariPrajurit");
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju Ke Keraton",
+                $"- Bicara ke Nyai Sengkeran Untuk Melanjutkan Perjalanan"
+            );
+            FinishQuestStepAndDestroy();
         }
     }
     private void UpdateState()
     {
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Selamatkan Warga Desa",
+                $"- Lawan prajurit {_enemyKilled} / {_killedEnemyToComplete}"
+            );
         string status = $"Killed {_enemyKilled} / {_killedEnemyToComplete} enemies";
         ChangeState("", status);
     }

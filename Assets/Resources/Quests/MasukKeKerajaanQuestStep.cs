@@ -44,6 +44,10 @@ public class MasukKeKerajaanQuestStep : QuestStep
     }
     private void UpdateState()
     {
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju Ke Keraton",
+                $"- Lawan prajurit penjaga gerbang {_enemyKilled} / {_killedEnemyToComplete}"
+            );
         string status = $"Killed {_enemyKilled} / {_killedEnemyToComplete} enemies";
         ChangeState("", status);
     }

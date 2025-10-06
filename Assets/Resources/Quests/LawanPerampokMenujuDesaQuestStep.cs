@@ -12,24 +12,42 @@ public class LawanPerampokMenujuDesaQuestStep : QuestStep
     private int _killedEnemyToComplete = 2;
     private List<EnemyStats> _enemyStats = new List<EnemyStats>();
 
-    void OnEnable()
+    void Start()
     {
+        UpdateState();
+    }
+
+    protected override void OnEnable()
+    {
+        base.OnEnable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
         UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
         UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    protected override void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        base.OnSceneLoaded(scene, mode);
         if (scene.name == "B6")
         {
             _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
             UpdateState();
+        }
+    }
+
+    void OnFinishQuest(string id)
+    {
+        if (id == "LawanPerampokMenujuDesa")
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -43,12 +61,20 @@ public class LawanPerampokMenujuDesaQuestStep : QuestStep
         }
         if (_enemyKilled >= _killedEnemyToComplete)
         {
-            FinishQuestStepAndDestroy();
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju ke desa",
+                $"- Kembali ke wanita tua"
+            );
         }
     }
 
     private void UpdateState()
     {
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju ke desa",
+                $"- Lawan perampok yang menghadang desa {_enemyKilled} / {_killedEnemyToComplete}"
+            );
+
         string status = $"Killed {_enemyKilled} / {_killedEnemyToComplete} enemies";
         ChangeState("", status);
     }

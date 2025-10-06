@@ -9,6 +9,11 @@ public class LawanDewataCengkarQuestStep : QuestStep
     private int _enemyKilled = 0;
     private int _killedEnemyToComplete = 1;
 
+    void Start()
+    {
+        UpdateState();
+    }
+
     void OnEnable()
     {
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
@@ -35,7 +40,11 @@ public class LawanDewataCengkarQuestStep : QuestStep
     }
     private void UpdateState()
     {
-        string status = "Bunuh Prabu Dewata Cengkar";
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju Ke Keraton",
+                $"- Lawan Prabu Dewata Cengkar"
+            );
+        string status = "Bunuh";
         ChangeState("", status);
     }
 

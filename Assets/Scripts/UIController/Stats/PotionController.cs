@@ -33,10 +33,18 @@ namespace UIController.Stats
         
         private void UpdateHealthPotion()
         {
+            if (_playerStats is null)
+            {
+                return;
+            }
             _qtyHealthPotion.text = "x " +_playerStats.healPotion;
         }
         private void UpdateManaPotion()
         {
+            if (_playerStats is null)
+            {
+                return;
+            }
             _qtyManaPotion.text = "x " +_playerStats.manaPotion;
 
         }

@@ -13,7 +13,7 @@ public class KillEnemyQuestStep : QuestStep
     [SerializeField]
     private int _killedEnemyToComplete = 2;
     private List<EnemyStats> _enemyStats = new List<EnemyStats>();
-    
+
     private void Start()
     {
         _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
@@ -22,15 +22,26 @@ public class KillEnemyQuestStep : QuestStep
     void OnEnable()
     {
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
-
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
     }
 
     void OnDisable()
     {
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
 
     }
 
+    void OnFinishQuest(string questId)
+    {
+        if (questId == "KillEnemy")
+        {
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "R",
+                $""
+            );
+        }
+    }
 
     void OnEnemyDeath(EnemyStats stats)
     {
@@ -40,15 +51,22 @@ public class KillEnemyQuestStep : QuestStep
             _enemyKilled++;
             UpdateState();
         }
-        if(_enemyKilled >= _killedEnemyToComplete)
+        if (_enemyKilled >= _killedEnemyToComplete)
         {
-            FinishQuestStepAndDestroy();
-
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Side Quest: Bantu Jaka",
+                $"Bicara ke jaka"
+            );
+            FinishQuestStep();
         }
-           
+
     }
     private void UpdateState()
     {
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+        "Side Quest: Bantu Jaka",
+        $"Lawan musuh di depan {_enemyKilled} / 3"
+    );
         // string state = _enemyKilled.ToString();
         string status = $"Killed {_enemyKilled} / {_killedEnemyToComplete} enemies";
         ChangeState("", status);

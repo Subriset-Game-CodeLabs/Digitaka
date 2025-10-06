@@ -44,8 +44,8 @@ namespace TwoDotFiveDimension
             GameEventsManager.Instance.StatsEvents.ChangeHealthPlayer();
             GameEventsManager.Instance.StatsEvents.ChangeManaPlayer();
             GameEventsManager.Instance.StatsEvents.ChangePlayerCoin();
-            GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
-            GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
+            // GameEventsManager.Instance.PlayerActionsEvents.HealthPotionUsed();
+            // GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
 
         }
 

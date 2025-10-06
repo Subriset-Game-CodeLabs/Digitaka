@@ -43,6 +43,10 @@ namespace UIController.Stats
 
         public void UpdateCoinText()
         {
+            if (_playerStats is null)
+            {
+                return;
+            }
             if (_coinText != null)
             {
                 Debug.Log("Update coin text");
@@ -68,7 +72,10 @@ namespace UIController.Stats
 
         public void UpdateHealthStats()
         {
-            Debug.Log(_playerStats);
+            if (_playerStats is null)
+            {
+                return;
+            }
             var currentHealth = _playerStats.currentHealth;
             var maxHealth = _playerStats.maxHealth;
             if (_healthItems.Count <= maxHealth)
@@ -101,6 +108,10 @@ namespace UIController.Stats
 
         public void UpdateManaStats()
         {
+            if (_playerStats is null)
+            {
+                return;
+            }
             var currentMana = _playerStats.currentMana;
             var maxMana = _playerStats.maxMana;
             if (_manaItems.Count <= maxMana)

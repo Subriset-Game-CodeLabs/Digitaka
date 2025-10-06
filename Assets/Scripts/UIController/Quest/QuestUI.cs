@@ -14,6 +14,7 @@ namespace UIController
         [SerializeField] private GameObject _questListParent;
         [SerializeField] private TextMeshProUGUI _questStatusText;
         [SerializeField] private TextMeshProUGUI _questTitleText;
+        [SerializeField] private TextMeshProUGUI _sideQuestStatusText;
         private Dictionary<string, QuestItem> _idToItemMap = new();
 
         private void OnEnable()
@@ -44,6 +45,17 @@ namespace UIController
         private void QuestInfoChange(string questDisplay, string text)
         {
             Debug.Log("Change quest info");
+            if (questDisplay.StartsWith("S"))
+            {
+                _sideQuestStatusText.text = questDisplay + "\n" + text;
+                return;
+            }
+            if (questDisplay.StartsWith("R"))
+            {
+                _sideQuestStatusText.text = "";
+                return;
+            }
+
             _questTitleText.text = questDisplay;
             _questStatusText.text = text;
         }

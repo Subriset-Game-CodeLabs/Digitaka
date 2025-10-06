@@ -154,7 +154,7 @@ public class TimelineSignalSetting : MonoBehaviour
 
     public void OnFinishQuest(string questId)
     {
-        if (questId == "SelamatkanLelakiTua" || questId == "SelamatkanWargaDariPrajurit" || questId == "MasukKeKerajaan" || questId == "LawanDewataCengkar")
+        if (questId == "MasukKeKerajaan" || questId == "LawanDewataCengkar")
         {
             director.Resume();
         }
@@ -168,7 +168,7 @@ public class TimelineSignalSetting : MonoBehaviour
 
     public void OnAdvanceQuest(string questId)
     {
-        if (questId == "MasukKeKerajaan")
+        if (questId == "MasukKeKerajaan" || questId == "SelamatkanLelakiTua" || questId == "SelamatkanWargaDariPrajurit")
         {
             director.Resume();
         }

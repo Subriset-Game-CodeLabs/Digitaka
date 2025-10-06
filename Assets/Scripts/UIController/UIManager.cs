@@ -201,7 +201,8 @@ namespace UIController
         }
         public void StartCooldownHealthPotion()
         {
-            if (_healthPotionCooldownUI != null)
+            
+            if (_healthPotionCooldownUI != null && _playerStats != null)
             {
                 _healthPotionCooldownUI.StartCooldown(_playerStats.healthPotionCooldown);
                 _healthPotionCooldownUIMobile.StartCooldown(_playerStats.healthPotionCooldown);
@@ -209,7 +210,7 @@ namespace UIController
         }
         public void StartCooldownManaPotion()
         {
-            if (_manaPotionCooldownUI != null)
+            if (_manaPotionCooldownUI != null && _playerStats != null)
             {
                 _manaPotionCooldownUI.StartCooldown(_playerStats.manaPotionCooldown);
                 _manaPotionCooldownUIMobile.StartCooldown(_playerStats.manaPotionCooldown);

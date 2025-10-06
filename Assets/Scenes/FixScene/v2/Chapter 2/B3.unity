@@ -1886,6 +1886,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3298895044981045097, guid: fe3f8a77be62165468c6b2b5fe0eb4f1, type: 3}
   m_PrefabInstance: {fileID: 201834160}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &204187612
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.855886
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.772
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.868
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 787314473624714705, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982415046317976099, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
+      propertyPath: m_Name
+      value: NPCShop
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3c0e7dc38bb2cf48bf2e1be09858498, type: 3}
 --- !u!1001 &209167441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21166,3 +21223,4 @@ SceneRoots:
   - {fileID: 1122304568}
   - {fileID: 571579961}
   - {fileID: 1529343838}
+  - {fileID: 204187612}

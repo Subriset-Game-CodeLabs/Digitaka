@@ -13,7 +13,7 @@ public class SelamatkanKLelakiTuaQuestStep : QuestStep
     [SerializeField]
     private int _killedEnemyToComplete = 2;
     private List<EnemyStats> _enemyStats = new List<EnemyStats>();
-    
+
     private void Start()
     {
         _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
@@ -22,13 +22,27 @@ public class SelamatkanKLelakiTuaQuestStep : QuestStep
     void OnEnable()
     {
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
 
     }
 
     void OnDisable()
     {
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
+        GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
 
+    }
+
+    void OnFinishQuest(string id)
+    {
+        if (id == "SelamatkanLelakiTua")
+        {
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Menuju ke desa",
+                $"- Lanjutkan perjalanan dan cari Nyai Sengkaren"
+            );
+            Destroy(gameObject);
+        }
     }
 
 
@@ -39,14 +53,23 @@ public class SelamatkanKLelakiTuaQuestStep : QuestStep
         {
             _enemyKilled++;
             UpdateState();
+
         }
-        if(_enemyKilled >= _killedEnemyToComplete)
+        if (_enemyKilled >= _killedEnemyToComplete)
         {
-            GameEventsManager.Instance.QuestEvents.FinishQuest("SelamatkanLelakiTua");
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Selamatkan Kakek Tua",
+                $"- Bicara ke Kakek Tua"
+            );
+            FinishQuestStep();
         }
     }
     private void UpdateState()
     {
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+                "Main Quest: Selamatkan Kakek Tua",
+                $"Lawan musuh di depan {_enemyKilled} / 3"
+            );
         string status = $"Killed {_enemyKilled} / {_killedEnemyToComplete} enemies";
         ChangeState("", status);
     }
