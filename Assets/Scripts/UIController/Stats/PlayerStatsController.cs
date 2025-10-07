@@ -49,7 +49,6 @@ namespace UIController.Stats
             }
             if (_coinText != null)
             {
-                Debug.Log("Update coin text");
                 _coinText.text = _playerStats.coin.ToString();
             }
             else
@@ -90,7 +89,6 @@ namespace UIController.Stats
             for (int i = 0; i < _healthItems.Count; i++)
             {
                 float heartValue = currentHealth - i;
-                Debug.Log(heartValue);
                 if (heartValue >= 1f)
                 {
                     _healthItems[i].SetFill();

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using QuestSystem;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
 
 namespace UIController
@@ -44,7 +43,6 @@ namespace UIController
 
         private void QuestInfoChange(string questDisplay, string text)
         {
-            Debug.Log("Change quest info");
             if (questDisplay.StartsWith("S"))
             {
                 _sideQuestStatusText.text = questDisplay + "\n" + text;

@@ -131,7 +131,6 @@ namespace QuestSystem
 
         private void ClaimRewards(Quest quest)
         {
-            Debug.Log("Rewards claimed for quest: " + quest.info.id);
             Debug.Log($"Quest {quest.info.id} completed! Rewards: Gold - {quest.info.goldReward}");
             PlayerStats.Instance.AddCoin(quest.info.goldReward);
         }

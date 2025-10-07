@@ -14,7 +14,7 @@ public class ChapterManager: MonoBehaviour
     }
     private void Initialize()
     {
-        var currentChapter = GameManager.Instance.GetCurrentChapter;
+        var currentChapter = GameManager.Instance.GetUnlockChapter;
         Debug.Log(currentChapter);
         for (int i = 0; i < _chapterControllers.Length; i++)
         {

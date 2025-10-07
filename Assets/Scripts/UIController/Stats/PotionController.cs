@@ -37,7 +37,7 @@ namespace UIController.Stats
             {
                 return;
             }
-            _qtyHealthPotion.text = "x " +_playerStats.healPotion;
+            _qtyHealthPotion.text = "" +_playerStats.healPotion;
         }
         private void UpdateManaPotion()
         {
@@ -45,7 +45,7 @@ namespace UIController.Stats
             {
                 return;
             }
-            _qtyManaPotion.text = "x " +_playerStats.manaPotion;
+            _qtyManaPotion.text = "" +_playerStats.manaPotion;
 
         }
     }

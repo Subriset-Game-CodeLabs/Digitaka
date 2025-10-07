@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ChapterController:MonoBehaviour
 {
+    [SerializeField] private int _chapterIndex;
     [SerializeField] private GameObject _lockChapter;
     [SerializeField] private string _chapterScene;
     private Button _buttonChapter;
@@ -16,6 +17,7 @@ public class ChapterController:MonoBehaviour
         {
             SceneManager.Instance.ChangeScene(_chapterScene);
             GameManager.Instance.SetChapterScene(_chapterScene);
+            GameManager.Instance.SetCurrentChapter(_chapterIndex);
             GameManager.Instance.StartGame();
         });
     }

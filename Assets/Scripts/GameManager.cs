@@ -13,19 +13,25 @@ public class GameManager: PersistentSingleton<GameManager>
     public string CurrentMap { get; private set; }
     public bool TutorialCompleted { get; private set; } = false;
     public bool IsGamePaused { get; private set; } = false;
-    [SerializeField] private int _currentChapter= 2;
+    [SerializeField] private int _currentChapter= 1;
+    [SerializeField] private int _unlockChapter= 3;
     [SerializeField] private string _chapterScene;
     
     public int GetCurrentChapter => _currentChapter;
+    public int GetUnlockChapter => _unlockChapter;
     public string GetChapterScene => _chapterScene;
     public void CompleteChapter()
     {
-        _currentChapter++;
+        _unlockChapter++;
     }
     
     public void SetChapterScene(string sceneName)
     {
         _chapterScene = sceneName;
+    }
+    public void SetCurrentChapter(int chapter)
+    {
+        _currentChapter = chapter;
     }
 
     public void CompleteTutorial()

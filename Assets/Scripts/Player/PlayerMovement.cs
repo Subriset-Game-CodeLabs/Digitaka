@@ -124,7 +124,6 @@ namespace TwoDotFiveDimension
             _lastManaPotionTime = Time.time;
             _playerStats.UseManaPotion(1);
             GameEventsManager.Instance.PlayerActionsEvents.ManaPotionUsed();
-            Debug.Log("Used Mana Potion");
         }
         private void UltimateAbility()
         {
@@ -135,7 +134,6 @@ namespace TwoDotFiveDimension
             _playerStats.UseMana(_playerStats.ultimateCost);
             _comboCharacter.Ultimate();
             GameEventsManager.Instance.PlayerActionsEvents.UltimatePerformed();
-            Debug.Log("Ultimate used! Damage: " + _playerStats.ultimateDamage);
         }
         
         

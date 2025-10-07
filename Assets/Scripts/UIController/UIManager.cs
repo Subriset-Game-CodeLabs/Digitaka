@@ -1,6 +1,7 @@
 using System;
 using Audio;
 using Input;
+using MapSystem;
 using TMPro;
 using TwoDotFiveDimension;
 using UIController.Stats;
@@ -20,20 +21,17 @@ namespace UIController
         [SerializeField] private GameObject _tutorialPanel;
         [SerializeField] private GameObject _defeatedPanel;
         [SerializeField] private GameObject _completeQuestPanel;
-        [SerializeField] private GameObject _mapPanel;
+        [SerializeField] private MapUIController _mapUIController;
         [SerializeField] private GameObject _mobileUIPanel;
         [SerializeField] private GameObject _questPanel;
         [SerializeField] private GameObject _attackButton;
         [SerializeField] private GameObject _interactButton;
         [SerializeField] private GameObject _statsPanel;
-        [SerializeField] private GameObject _coinPanel;
-        [SerializeField] private GameObject _moralePanel;
+        [SerializeField] private GameObject _rightPanel;
         [SerializeField] private GameObject _dialoguePanel;
         [SerializeField] private GameObject _shopPanel;
         [SerializeField] private bool isPaused = false;
         private PlayerStats _playerStats;
-        private bool _mapPanelActive;
-        private Transform _mapTiles;
 
         [Header("Mobile UI")]
         [SerializeField] private CooldownUI _dashCooldownUIMobile;
@@ -77,23 +75,20 @@ namespace UIController
         public void ShowShopPanel()
         {
             _shopPanel.SetActive(true);
-            _coinPanel.SetActive(true);
-            _moralePanel.SetActive(true);
+            _rightPanel.SetActive(true);
         }
 
         public void HideShopPanel()
         {
             _shopPanel.SetActive(false);
-            _coinPanel.SetActive(false);
-            _moralePanel.SetActive(false);
+            _rightPanel.SetActive(false);
         }
 
         public void HideCanvas()
         {
             _mobileUIPanel.SetActive(false);
             _statsPanel.SetActive(false);
-            _coinPanel.SetActive(false);
-            _moralePanel.SetActive(false);
+            _rightPanel.SetActive(false);
             _questPanel.SetActive(false);
         }
 
@@ -101,8 +96,7 @@ namespace UIController
         {
             _mobileUIPanel.SetActive(true);
             _statsPanel.SetActive(true);
-            _coinPanel.SetActive(true);
-            _moralePanel.SetActive(true);
+            _rightPanel.SetActive(true);
             _questPanel.SetActive(true);
         }
 
@@ -150,46 +144,15 @@ namespace UIController
             InputManager.Instance.PlayerInput.OpenMap.OnDown -= ShowMap;
 
         }
-
+ 
         public void ShowMap()
         {
-            InputManager.Instance.UIMode();
             if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
                 return;
-
-            _mapTiles = _mapPanel.transform.Find("MapBackground/MapTiles");
-            Button button = _mapPanel.transform.Find("MapBackground/CloseBtn").GetComponent<Button>();
-            button.onClick.AddListener(() =>
-            {
-                _mapPanel.gameObject.SetActive(false);
-                _mapPanelActive = false;
-                InputManager.Instance.PlayerMode();
-            });
-
-            if (_mapPanelActive)
-            {
-                _mapPanel.gameObject.SetActive(false);
-                _mapPanelActive = false;
-            }
-            else
-            {
-                _mapPanel.gameObject.SetActive(true);
-                _mapPanelActive = true;
-                foreach (Transform item in _mapTiles)
-                {
-                    MapTile mapTile = item.gameObject.GetComponent<MapTile>();
-                    // Debug.Log("checking map name : "  + mapTile.MapName);
-                    // Debug.Log("Current Scene : " + SceneManager.GetActiveScene().name);
-                    if (mapTile.MapName == UnityEngine.SceneManagement.SceneManager.GetActiveScene().name)
-                    {
-                        mapTile.ActivePointer();
-                    }
-                    else
-                    {
-                        mapTile.DeactivePointer();
-                    }
-                }
-            }
+            if (_mapUIController == null)
+                return;
+            _mapUIController.ShowMapChapter(GameManager.Instance.GetCurrentChapter);
+            
         }
         public void StartCooldownUltimate()
         {
