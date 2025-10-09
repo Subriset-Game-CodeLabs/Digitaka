@@ -12,6 +12,7 @@ namespace TwoDotFiveDimension
         public GroundComboState GroundComboState { get; private set; }
         public GroundFinisherState GroundFinisher { get; private set; }
         public IdleCombatState IdleCombatState { get; private set; }
+        public GroundUltimateState GroundUltimateState { get; private set; } 
         [field: SerializeField] public Animator Animator { get; private set; }
         [field: SerializeField] public Collider Hitbox { get; private set; }
         [field: SerializeField] public GameObject Hiteffect { get; private set; }
@@ -23,10 +24,11 @@ namespace TwoDotFiveDimension
         void Start()
         {
             IdleCombatState = new IdleCombatState();
-            GroundEntryState = new GroundEntryState(this);
-            GroundComboState = new GroundComboState(this);
-            GroundFinisher = new GroundFinisherState(this);
-            FiniteStateMachine = new FiniteStateMachine<IStateCombat>(IdleCombatState);
+            GroundEntryState = new GroundEntryState();
+            GroundComboState = new GroundComboState();
+            GroundFinisher = new GroundFinisherState();
+            GroundUltimateState = new GroundUltimateState();
+            FiniteStateMachine = new FiniteStateMachine<IStateCombat>(this, IdleCombatState);
             _playerMovement = GetComponent<PlayerMovement>();
             _playerStats = PlayerStats.Instance;
         }
@@ -43,7 +45,8 @@ namespace TwoDotFiveDimension
 
         private void Update()
         {
-            FiniteStateMachine.OnUpdate();;
+            FiniteStateMachine.OnUpdate();
+            CheckComboCancellation();
         }
 
         private void LateUpdate()
@@ -60,11 +63,11 @@ namespace TwoDotFiveDimension
         {
             Debug.Log("Attack Fired");
             if (FiniteStateMachine.GetCurrentState == IdleCombatState && 
-                _playerMovement.IsGrounded && 
+                _playerMovement.IsGrounded &&
                 _playerMovement.Movement == Vector2.zero
                 )
             {
-                FiniteStateMachine.ChangeState(new GroundEntryState(this));
+                FiniteStateMachine.ChangeState(GroundEntryState);
             }
         }
 
@@ -74,9 +77,30 @@ namespace TwoDotFiveDimension
                )
             {
                 Debug.Log("Ultimate Fired");
-                FiniteStateMachine.ChangeState(new GroundUltimateState(this));
+                FiniteStateMachine.ChangeState(GroundUltimateState);
                 CinemachineShake.Instance.ShakeCamera(2,0.5f);
             }
         }
+        // Method baru untuk check apakah combo harus di-cancel
+        private void CheckComboCancellation()
+        {
+            // Cek apakah sedang dalam state attack (bukan idle atau ultimate)
+            var currentState = FiniteStateMachine.GetCurrentState;
+            bool isInComboState = currentState == GroundEntryState || 
+                                  currentState == GroundComboState || 
+                                  currentState == GroundFinisher;
+            
+            // Jika sedang combo dan player mulai bergerak, cancel combo
+            if (isInComboState && _playerMovement.Movement.magnitude > 0.1f)
+            {
+                CancelCombo();
+            }
+        }
+        public void CancelCombo()
+        {
+            FiniteStateMachine.ChangeState(IdleCombatState);
+            IsAttacking = false;
+        }
+
     }
 }

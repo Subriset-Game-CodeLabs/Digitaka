@@ -5,10 +5,10 @@ namespace TwoDotFiveDimension
 {
     public class GroundEntryState : MeleeBaseState
     {
-        public GroundEntryState(ComboCharacter comboCharacter):base(comboCharacter){}
-        public override void OnEnter()
+        // public GroundEntryState(ComboCharacter comboCharacter):base(comboCharacter){}
+        public override void OnEnter(ComboCharacter comboCharacter)
         {
-            base.OnEnter();
+            base.OnEnter(comboCharacter);
             AttackIndex = 1;
             Duration = 0.5f;
             Animator.SetTrigger("Attack" + AttackIndex);
@@ -16,19 +16,19 @@ namespace TwoDotFiveDimension
             Debug.Log("Player Attack " + AttackIndex+" Fired");
         }
 
-        public override void OnUpdate()
+        public override void OnUpdate(ComboCharacter comboCharacter)
         {
-            base.OnUpdate();
+            base.OnUpdate(comboCharacter);
             if (fixedtime > Duration)
             {
                 Debug.Log(ShouldCombo);
                 if (ShouldCombo)
                 {
-                    ComboCharacter.FiniteStateMachine.ChangeState(ComboCharacter.GroundComboState);
+                    comboCharacter.FiniteStateMachine.ChangeState(comboCharacter.GroundComboState);
                 }
                 else
                 {
-                    ComboCharacter.FiniteStateMachine.ChangeState(ComboCharacter.IdleCombatState);
+                    comboCharacter.FiniteStateMachine.ChangeState(comboCharacter.IdleCombatState);
                 }
             }
         }

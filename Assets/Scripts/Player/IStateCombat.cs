@@ -7,20 +7,26 @@ namespace TwoDotFiveDimension
         protected float time { get; set; }
         protected float fixedtime { get; set; }
         protected float latetime { get; set; }
-        
-        public  abstract void OnEnter();
-        public abstract void OnExit();
-        public virtual void OnUpdate()
+        public virtual void OnEnter(ComboCharacter owner)
+        {
+            // Reset timer setiap kali masuk state baru
+            time = 0f;
+            fixedtime = 0f;
+        }
+
+        public virtual void OnExit(ComboCharacter owner) { }
+
+        public virtual void OnUpdate(ComboCharacter owner)
         {
             time += Time.deltaTime;
         }
-        public virtual void OnFixedUpdate()
+
+        public virtual void OnFixedUpdate(ComboCharacter owner)
         {
-            fixedtime += Time.deltaTime;
+            // Menggunakan Time.fixedDeltaTime untuk akurasi di FixedUpdate
+            fixedtime += Time.fixedDeltaTime;
         }
-        public virtual void OnLateUpdate()
-        {
-            latetime += Time.deltaTime;
-        }
+
+        public virtual void OnLateUpdate(ComboCharacter owner) { }
     }
 }

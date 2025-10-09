@@ -6,10 +6,14 @@ namespace TwoDotFiveDimension
 {
     public class IdleCombatState : IStateCombat
     {
-        public override void OnEnter()
+        // public IdleCombatState(ComboCharacter comboCharacter):base(comboCharacter){}
+
+        public override void OnEnter(ComboCharacter ComboCharacter)
         {
+            base.OnEnter(ComboCharacter);
+            ComboCharacter.IsAttacking = false;
         }
-        public override void OnExit()
+        public  void OnExit()
         {
         }
     }

@@ -36,7 +36,7 @@ namespace TwoDotFiveDimension
         private static readonly int AnimState = Animator.StringToHash("AnimState");
         private static readonly int GroundedState = Animator.StringToHash("Grounded");
         private static readonly int JumpState = Animator.StringToHash("Jump");
-
+        public Rigidbody RigidbodyComponent => _rigidbody;
         public bool IsGrounded => _isGrounded;
         public Vector2 Movement => _movement;
         private void Start()

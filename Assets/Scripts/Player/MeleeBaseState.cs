@@ -8,7 +8,6 @@ namespace TwoDotFiveDimension
 {
     public abstract class MeleeBaseState: IStateCombat
     {
-        protected ComboCharacter ComboCharacter;
         public float Duration;
         protected Animator Animator;
         protected bool ShouldCombo;
@@ -21,20 +20,17 @@ namespace TwoDotFiveDimension
         private CameraShake _cameraShake;
         protected float _attackDamage;
 
-        public MeleeBaseState(ComboCharacter comboCharacter)
+        public override void OnEnter(ComboCharacter comboCharacter)
         {
-            ComboCharacter = comboCharacter;
-        }
-        public override void OnEnter()
-        {
+            base.OnEnter(comboCharacter);
             time = fixedtime = latetime = 0f;
             ShouldCombo = false;
-            ComboCharacter.IsAttacking = true;
-            Animator = ComboCharacter.Animator;
+            comboCharacter.IsAttacking = true;
+            Animator = comboCharacter.Animator;
             _collidersDamaged = new List<Collider>();
             _cameraShake = CameraShake.Instance;
-            HitCollider = ComboCharacter.Hitbox;
-            _hitEffectPrefab = ComboCharacter.Hiteffect;
+            HitCollider = comboCharacter.Hitbox;
+            _hitEffectPrefab = comboCharacter.Hiteffect;
             _attackDamage = PlayerStats.Instance.damage;
             InputManager.Instance.PlayerInput.Attack.OnDown += OnShouldCombo;
         }
@@ -47,17 +43,17 @@ namespace TwoDotFiveDimension
             }
         }
 
-        public override void OnUpdate()
+        public override void OnUpdate(ComboCharacter comboCharacter)
         {
-            base.OnUpdate();
+            base.OnUpdate(comboCharacter);
             _attackPressedTimer -= Time.deltaTime;
             if (Animator.GetFloat("Weapon.Active") > 0f)
             {
-                Attack();
+                Attack(comboCharacter);
             }
         }
 
-        private void Attack()
+        private void Attack(ComboCharacter comboCharacter)
         {
             // Create Overlap Box in 3D
             Collider[] collidersToDamage = Physics.OverlapBox(
@@ -77,9 +73,9 @@ namespace TwoDotFiveDimension
                     if (hitEnemy && hitEnemy.IsAlive)
                     {
                         _cameraShake.Shake(0.2f, 0.05f);
-                        Vector3  attackDir = (hitEnemy.transform.position - ComboCharacter.transform.position);
+                        Vector3  attackDir = (hitEnemy.transform.position - comboCharacter.transform.position);
                         DamagePopup.Create(
-                            ComboCharacter.PrefabDamagePopup.transform,
+                            comboCharacter.PrefabDamagePopup.transform,
                             hitEnemy.gameObject.transform.position, 
                             attackDir,
                             _attackDamage, 
@@ -94,10 +90,11 @@ namespace TwoDotFiveDimension
             }
         }
      
-        public override void OnExit()
+        public override void OnExit(ComboCharacter comboCharacter)
         {
+            base.OnExit(comboCharacter);
             InputManager.Instance.PlayerInput.Attack.OnDown -= OnShouldCombo;
-            ComboCharacter.IsAttacking = false;
+            comboCharacter.IsAttacking = false;
         }
 
     }
