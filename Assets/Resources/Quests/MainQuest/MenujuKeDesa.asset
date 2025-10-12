@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: MenujuKeDesa
   <displayName>k__BackingField: 
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 1175116536765329832, guid: 123264e539946b94d952905a13391a6a, type: 3}

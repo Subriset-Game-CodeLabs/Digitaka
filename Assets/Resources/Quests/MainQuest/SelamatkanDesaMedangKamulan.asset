@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: SelamatkanDesaMedangKamulan
   <displayName>k__BackingField: 
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 6848602504553624681, guid: 1b5a14c3e032b1346a95ae2553954dcc, type: 3}

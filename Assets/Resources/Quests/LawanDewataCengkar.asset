@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: LawanDewataCengkar
   <displayName>k__BackingField: Lawan Dewata Cengkar
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 7268652829837245471, guid: ae8448825290280428647d3c0ec43323, type: 3}

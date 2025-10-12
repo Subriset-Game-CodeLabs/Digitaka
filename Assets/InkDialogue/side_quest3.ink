@@ -39,7 +39,8 @@ Aku tidak bisa lewat!
 - -> END
 
 = finished
-Terima kasih sudah membantuku. Semoga kebaikanmu dibalas. #speaker: Jaka #portrait:npc
+Terima kasih sudah membantuku.#speaker: Jaka #portrait:npc 
+Semoga kebaikanmu dibalas. 
 -> END
 
 - -> END

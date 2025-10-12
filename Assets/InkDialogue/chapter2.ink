@@ -14,7 +14,6 @@ Ia kejam... ia meminta tumbal manusia untuk disantap. Tolong kami tuan, kami sud
 Apa? Seorang raja... memakan manusia? Sungguh jahat. #speaker:dora #portrait:dora
 *[Menerima Permintaan tolong]
     ~ ChangeMorale(20)
-    ~ FinishQuest("SelamatkanLelakiTua")
     Jika memang demikian, aku tak bisa tinggal diam. Menolong rakyat yang menderita adalah kewajiban seorang ksatria. #speaker:Aji Saka #portrait:ajisaka
     Aku akan melakukan sebisanya untuk menghentikan kebiadaban itu.
     ->LelakiTuaTerimakasih
@@ -29,6 +28,7 @@ Apa? Seorang raja... memakan manusia? Sungguh jahat. #speaker:dora #portrait:dor
 
 
 === LelakiTuaTerimakasih ===
+~ FinishQuest("SelamatkanLelakiTua")
 Terima kasih banyak Tuan! Jika begitu, pergilah ke desa terdekat. Cari seorang wanita bernama NYAI SENGKERAN. Dia akan membantumu pergi menuju kerajaan. #speaker:Lelaki Tua #portrait:npc
 - ->END
 

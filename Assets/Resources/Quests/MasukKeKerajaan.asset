@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: MasukKeKerajaan
   <displayName>k__BackingField: Masuk ke Kerajaan
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 1231310517468836081, guid: bc90d370c044a5247954e0938b66fd82, type: 3}

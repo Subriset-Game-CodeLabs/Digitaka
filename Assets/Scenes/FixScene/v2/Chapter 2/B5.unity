@@ -4378,7 +4378,7 @@ MonoBehaviour:
     Sebuah titik awal perjuangan mereka untuk menghadapi kekejaman Prabu Dewata Cengkar
     pun dimulai.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4444,7 +4444,7 @@ MonoBehaviour:
   m_margin: {x: -802.9681, y: -229.64587, z: -744.01587, w: -294.87067}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &444832509
@@ -5687,7 +5687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &632053516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12803,15 +12803,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2035688507541278962, guid: fca230b95bcbee0468d82fc859b4811a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0298
+      value: -0.012
       objectReference: {fileID: 0}
     - target: {fileID: 2035688507541278962, guid: fca230b95bcbee0468d82fc859b4811a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0125
+      value: 0.455
       objectReference: {fileID: 0}
     - target: {fileID: 2035688507541278962, guid: fca230b95bcbee0468d82fc859b4811a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.091
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2035688507541278962, guid: fca230b95bcbee0468d82fc859b4811a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16616,6 +16616,7 @@ GameObject:
   - component: {fileID: 8834725579196961506}
   - component: {fileID: 7937006408653404419}
   - component: {fileID: 8834725579196961507}
+  - component: {fileID: 8834725579196961508}
   m_Layer: 0
   m_Name: QuestNyaiSengkaren
   m_TagString: Untagged
@@ -17061,6 +17062,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MarkerInteract: {fileID: 1568287666}
   markerScale: 0.25
+--- !u!95 &8834725579196961508
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3341327934718328779}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 225a6d9cbfa8fe745ba96bb8c962a073, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &9144426007356328815
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ItemBaseSO : ScriptableObject
+public class ItemBaseSO : DigitakaData
 {
     public string ItemName;
     public Sprite ItemSprite;

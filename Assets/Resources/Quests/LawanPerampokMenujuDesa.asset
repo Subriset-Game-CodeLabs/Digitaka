@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: LawanPerampokMenujuDesa
   <displayName>k__BackingField: Lawan Perampok Menuju Desa
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 7279537219309678967, guid: d9c60ef75c1acc04fb6fd3ac292263f6, type: 3}

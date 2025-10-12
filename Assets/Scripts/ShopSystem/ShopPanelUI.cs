@@ -50,6 +50,7 @@ public class ShopPanelUI : MonoBehaviour
     private GameObject _discountEffect;
 
     private ItemBaseSO _selectedItem;
+    private ShopItemUI _firstItem;
     private Button _selectedButton;
 
     void Start()
@@ -137,6 +138,7 @@ public class ShopPanelUI : MonoBehaviour
             {
                 _selectedButton = shopItemUI.GetButton();
                 _selectedButton.Select();
+                _firstItem = shopItemUI;
                 first = false;
             }
         }
@@ -155,6 +157,12 @@ public class ShopPanelUI : MonoBehaviour
         _informationPanel.SetActive(true);
         _informationTextTitle.text = "SUCCESS";
         _informationTextDesc.text = "+1 " + item.ItemName;
+
+        if (item.itemType == ItemType.Equipment)
+        {
+            _selectedButton = _firstItem.GetButton();
+            _selectedButton.Select();
+        }
     }
 
     private void ClearParent()

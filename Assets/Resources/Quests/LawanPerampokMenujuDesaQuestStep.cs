@@ -39,7 +39,6 @@ public class LawanPerampokMenujuDesaQuestStep : QuestStep
         if (scene.name == "B6")
         {
             _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
-            UpdateState();
         }
     }
 
@@ -65,6 +64,7 @@ public class LawanPerampokMenujuDesaQuestStep : QuestStep
                 "Main Quest: Menuju ke desa",
                 $"- Kembali ke wanita tua"
             );
+            FinishQuestStep();
         }
     }
 

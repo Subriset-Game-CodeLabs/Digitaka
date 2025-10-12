@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: SelamatkanWargaDariPrajurit
   <displayName>k__BackingField: Selamatkan Warga
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 7999471440794116445, guid: 3e998a4e86d391b4aa5a46db366e5373, type: 3}

@@ -1363,14 +1363,14 @@ MonoBehaviour:
     untuk berlayar dari bumi Majeti untuk berkelana dan menyebar ilmu pengetahuan
     ke negeri tanah Jawa yang kaya raya.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
+  m_sharedMaterial: {fileID: 8894878662730759075, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 335544319
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1724,14 +1724,14 @@ MonoBehaviour:
     yang tinggal di sebuah tempat indah yang bernama Bumi Majeti. \nDia tinggal bersama
     kedua abdinya,<b> KI DORA </b> dan <b>KI SEMBADA. </b>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
+  m_sharedMaterial: {fileID: 8894878662730759075, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 2332033023
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3041,7 +3041,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 255
 --- !u!114 &764108646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4569,7 +4569,7 @@ MonoBehaviour:
   m_text: Lantas dimulailah perjalanan Aji Saka, Dora dan Sembada menuju tanah Jawa.
     Siang dan malam mereka berlayar. Melewati segala medan dan juga mara bahaya.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4635,7 +4635,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: -122.01123, z: 0, w: -141.07541}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1285511383
@@ -7133,14 +7133,14 @@ MonoBehaviour:
     untuk berlayar ke sebuah tanah Asing bernama TANAH JAWA untuk menyebarkan ilmu
     sembari berpetualang.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
+  m_sharedMaterial: {fileID: 8894878662730759075, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 134217727
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -7733,7 +7733,7 @@ MonoBehaviour:
   m_text: Setelah perjalanan panjang dan penuh bahaya, akhirnya mereka melihat daratan
     tujuan mereka, Tanah Jawa.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7799,7 +7799,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: -122.01123, z: 0, w: -141.07541}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1868618721
@@ -8149,7 +8149,7 @@ MonoBehaviour:
   m_text: Mendengar hal tersebut, Dora dan Sembada mengajukan diri untuk menemani
     Aji Saka dalam perjalanan tersebut.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b18be86bd018884d84339974a6dd176, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -8215,7 +8215,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: -122.01123, z: 0, w: -141.07541}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2014087044
@@ -8723,7 +8723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9bb0f0be7e7e5d4dbb5cf174217f67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundType: 1
+  _soundType: 18
 --- !u!82 &2108759201
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8739,7 +8739,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

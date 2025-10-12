@@ -225,6 +225,8 @@ PlayableDirector:
     value: {fileID: 1811537357}
   - key: {fileID: 7061431528195747270, guid: 980db5aeb49102744bc13fd49b3982c4, type: 2}
     value: {fileID: 448477826}
+  - key: {fileID: -6010473471818241774, guid: 980db5aeb49102744bc13fd49b3982c4, type: 2}
+    value: {fileID: 224264797}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1968322
@@ -1231,7 +1233,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 255
 --- !u!114 &224264800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3485,7 +3487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9bb0f0be7e7e5d4dbb5cf174217f67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _soundType: 18
+  _soundType: 1
 --- !u!82 &632053517
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3501,7 +3503,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

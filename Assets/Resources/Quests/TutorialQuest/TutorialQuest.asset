@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: TutorialQuest
   <displayName>k__BackingField: Latihan
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 9053344307416453741, guid: df92726d6c827ae4e93de66cc326a44a, type: 3}

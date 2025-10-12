@@ -160,7 +160,7 @@ namespace QuestSystem
             return idToQuestMap;
         }
 
-        private Quest GetQuestById(string id)
+        public Quest GetQuestById(string id)
         {
             Quest quest = _questMap[id];
             if (quest == null)

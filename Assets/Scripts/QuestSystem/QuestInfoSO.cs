@@ -4,13 +4,14 @@ using UnityEngine;
 namespace QuestSystem
 {
     [CreateAssetMenu(fileName = "NewQuest", menuName = "Quest System/Quest Info")]
-    public class QuestInfoSO: ScriptableObject
+    public class QuestInfoSO: QuestData
     {
         [field:SerializeField] public string id { get; private set; }
         
         [Header("General")]
         [field:SerializeField] public string displayName { get; private  set; }
-
+        [field: SerializeField] public bool showQuestFinishInfo { get; private set; }
+        
         [Header("Requirements")]
         [field:SerializeField] public QuestInfoSO[] questPrerequisites { get; private set; }
 

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: SelamatkanLelakiTua
   <displayName>k__BackingField: Selamatkan Lelaki Tua
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 267299304072290454, guid: b51c24723f4d1a74d8cfab526e7e9cdd, type: 3}

@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <id>k__BackingField: VisitPlaceQuest
   <displayName>k__BackingField: Visit The Place
+  <showQuestFinishInfo>k__BackingField: 0
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 8363259529134139613, guid: 9b8f766c96c6c8b488bd33a25df6fccb, type: 3}

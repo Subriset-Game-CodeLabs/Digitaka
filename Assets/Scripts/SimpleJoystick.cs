@@ -20,7 +20,12 @@ public RectTransform joystickBackground;
 
     private void OnDestroy()
     {
-         UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        ResetJoystick();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

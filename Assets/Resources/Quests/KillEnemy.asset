@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: KillEnemy
   m_EditorClassIdentifier: 
   <id>k__BackingField: KillEnemy
-  <displayName>k__BackingField: Kill Enemy
+  <displayName>k__BackingField: Selamatkan Jaka
+  <showQuestFinishInfo>k__BackingField: 1
   <questPrerequisites>k__BackingField: []
   <questStepPrefabs>k__BackingField:
   - {fileID: 4283484381168432916, guid: 9a94aef601271494f95254bac3340bd0, type: 3}
-  <goldReward>k__BackingField: 5
+  <goldReward>k__BackingField: 10
   <experienceReward>k__BackingField: 0

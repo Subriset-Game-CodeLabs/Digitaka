@@ -19,27 +19,37 @@ public class KillEnemyQuestStep : QuestStep
         _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
         UpdateState();
     }
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
         GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
         GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
+        UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
+    protected override void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        base.OnSceneLoaded(scene, mode);
+        if (scene.name == "B1")
+        {
+            Destroy(gameObject);
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange("R", $"");
+        }
     }
 
     void OnFinishQuest(string questId)
     {
         if (questId == "KillEnemy")
         {
-            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
-                "R",
-                $""
-            );
+            GameEventsManager.Instance.QuestEvents.QuestInfoChange("R", $"");
         }
     }
 
@@ -53,11 +63,13 @@ public class KillEnemyQuestStep : QuestStep
         }
         if (_enemyKilled >= _killedEnemyToComplete)
         {
-            GameEventsManager.Instance.QuestEvents.QuestInfoChange(
-                "Side Quest: Bantu Jaka",
-                $"Bicara ke jaka"
-            );
-            FinishQuestStep();
+            // GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+            //     "Side Quest: Bantu Jaka",
+            //     $"Bicara ke jaka"
+            // );
+            // FinishQuestStep();
+            GameEventsManager.Instance.QuestEvents.FinishQuest("KillEnemy");
+            Destroy(gameObject);
         }
 
     }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class StatsData:ScriptableObject
+public abstract class StatsData:DigitakaData
 {
     [field:SerializeField] public string characterName { get; set; } 
     [field:SerializeField] public float maxHealth { get; set; } = 3;
