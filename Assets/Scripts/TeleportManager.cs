@@ -25,6 +25,7 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
     private GameObject _slideTransition;
     private RectTransform _slidePanel;
     private bool _isTransitioning = false;
+    private String _previousScene;
 
     public void InitializeTeleport(string startingScene)
     {
@@ -65,6 +66,12 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        // ResetStats kalau respawn 
+        if (_previousScene == UnityEngine.SceneManagement.SceneManager.GetActiveScene().name)
+        {
+            PlayerStats.Instance.ResetStats(false);
+        }
+        
         _teleportPoints = FindObjectsByType<TeleportPoint>(FindObjectsSortMode.None);
         if (_isTransitioning)
         {
@@ -145,8 +152,8 @@ public class TeleportManager : PersistentSingleton<TeleportManager>
 
     public void TeleportToScene(string sceneName, string pointName)
     {
-
         if (_isTransitioning) return;
+        _previousScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         StartCoroutine(TeleportWithSlideAnimation(sceneName, pointName));
 
     }

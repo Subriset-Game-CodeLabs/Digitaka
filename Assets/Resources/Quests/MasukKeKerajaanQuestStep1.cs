@@ -16,14 +16,16 @@ public class MasukKeKerajaanQuestStep1 : QuestStep
         UpdateState();
     }
 
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
 
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
     }
 

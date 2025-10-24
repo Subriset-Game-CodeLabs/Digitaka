@@ -20,6 +20,6 @@ MonoBehaviour:
   ItemDescription: Gelang mistik yang memberikan pengetahuan sihir kepada pengguna
     nya
   moraleToUnlock: 50
-  isBought: 1
+  isBought: 0
   statEffect: 2
   amount: -1

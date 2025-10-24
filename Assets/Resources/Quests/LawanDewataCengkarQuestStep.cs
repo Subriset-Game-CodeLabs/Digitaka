@@ -14,15 +14,25 @@ public class LawanDewataCengkarQuestStep : QuestStep
         UpdateState();
     }
 
-    void OnEnable()
+    protected override void OnEnable()
     {
+        base.OnEnable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
-
     }
 
-    void OnDisable()
+    protected override void OnDisable()
     {
+        base.OnDisable();
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
+    }
+
+    protected override void OnQuestDelete()
+    {
+        base.OnQuestDelete();
+        GameEventsManager.Instance.QuestEvents.QuestInfoChange(
+            "Main Quest: Menuju Ke Keraton",
+            $"- Masuk ke ruang takhta"
+        );
     }
 
 

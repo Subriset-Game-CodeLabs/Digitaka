@@ -208,10 +208,17 @@ namespace UIController
         {
             if (_defeatedPanel != null)
             {
+                Time.timeScale = 0;
                 AudioManager.Instance.PlaySound(SoundType.SFX_Lose);
                 _defeatedPanel.SetActive(true);
                 InputManager.Instance.UIMode();
             }
+        }
+
+        public void HideDefeatedPanel()
+        {
+            _defeatedPanel.SetActive(false);
+            InputManager.Instance.PlayerMode();
         }
 
         public void Pause()
@@ -234,11 +241,17 @@ namespace UIController
 
         public void MainMenuGame()
         {
+            Time.timeScale = 1;
             SceneManager.Instance.ChangeScene("MainMenu");
             PlayerStats.Instance.ResetStats(true);
             ShopManager.Instance.ResetItem();
             _defeatedPanel.SetActive(false);
             TeleportManager.Instance.ResetCheckpoint();
+        }
+
+        public void Respawn()
+        {
+            GameManager.Instance.RespawnPlayer();
         }
     }
 }

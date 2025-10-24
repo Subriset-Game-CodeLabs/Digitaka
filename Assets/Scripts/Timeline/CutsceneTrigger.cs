@@ -54,7 +54,7 @@ public class CutsceneTrigger : MonoBehaviour
         else
         {
             _director.Play();
-            CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
+            CutsceneManager.Instance.MarkAsPlayed(_cutsceneId, UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         }
     }
 
@@ -68,7 +68,7 @@ public class CutsceneTrigger : MonoBehaviour
         }
         _binder.BindTracks();
         _director.Play();
-        CutsceneManager.Instance.MarkAsPlayed(_cutsceneId);
+        CutsceneManager.Instance.MarkAsPlayed(_cutsceneId, UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
     }
 
     void OnTriggerEnter(Collider other)

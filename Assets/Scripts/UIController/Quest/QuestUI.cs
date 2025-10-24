@@ -68,6 +68,7 @@ namespace UIController
             {
                 _questTitleText.text = "";
                 _questStatusText.text = "";
+                _sideQuestStatusText.text = "";
             }
         }
 

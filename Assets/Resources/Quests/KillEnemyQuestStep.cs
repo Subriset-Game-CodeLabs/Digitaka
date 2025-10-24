@@ -16,7 +16,6 @@ public class KillEnemyQuestStep : QuestStep
 
     private void Start()
     {
-        _enemyStats = FindObjectsByType<EnemyStats>(FindObjectsSortMode.None).ToList();
         UpdateState();
     }
     protected override void OnEnable()
@@ -25,6 +24,7 @@ public class KillEnemyQuestStep : QuestStep
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath += OnEnemyDeath;
         GameEventsManager.Instance.QuestEvents.OnFinishQuest += OnFinishQuest;
         UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        GameEventsManager.Instance.QuestEvents.OnQuestDelete += OnQuestDelete;
     }
 
     protected override void OnDisable()
@@ -33,6 +33,13 @@ public class KillEnemyQuestStep : QuestStep
         GameEventsManager.Instance.StatsEvents.OnEnemyDeath -= OnEnemyDeath;
         GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
         UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        GameEventsManager.Instance.QuestEvents.OnQuestDelete -= OnQuestDelete;
+    }
+
+    protected override void OnQuestDelete()
+    {
+        _enemyKilled = 0;
+        UpdateState();
     }
 
     protected override void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -55,7 +62,8 @@ public class KillEnemyQuestStep : QuestStep
 
     void OnEnemyDeath(EnemyStats stats)
     {
-        if (!_enemyStats.Contains(stats)) return;
+        // if (!_enemyStats.Contains(stats)) return;
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "A3New") return;
         if (_enemyKilled < _killedEnemyToComplete)
         {
             _enemyKilled++;

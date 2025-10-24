@@ -76,7 +76,7 @@ Tuan Aji Saka berpesan padaku untuk menjaganya...
 dan hanya beliau sendiri yang boleh mengambilnya kembali.
 Aku datang membawa titahnya. Jangan membantah, Sembada! #speaker:Dora #portrait:dora
 Kau tahu aku tak mungkin berdusta tentang perintah Tuan.
-Maafkan aku, Dora. Aku setia pada titah pertama Tuan Aji Saka. 
+Maafkan aku, Dora. Aku setia pada titah pertama Tuan Aji Saka. #speaker:Sembada #portrait:sembada
 Keris ini... tidak akan aku serahkan    kepadamu.
 ->END
 

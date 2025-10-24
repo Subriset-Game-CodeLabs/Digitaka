@@ -50,6 +50,19 @@ public class GameManager: PersistentSingleton<GameManager>
         InputManager.Instance.PlayerMode();
         CutsceneManager.Instance.ResetCutscene();
     }
+
+    public void RespawnPlayer()
+    {
+        Time.timeScale = 1;
+        Debug.Log("Respawn Player");
+        String currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        PlayerStats.Instance.ResetStats(false);
+        TeleportManager.Instance.TeleportToScene(currentScene, currentScene);
+        UIManager.Instance.HideDefeatedPanel();
+        CutsceneManager.Instance.ResetCutscene(currentScene);
+        GameEventsManager.Instance.QuestEvents.QuestDelete();
+    }
+    
     public void QuitGame()
     {
         #if UNITY_EDITOR

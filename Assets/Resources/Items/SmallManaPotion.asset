@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4484e603883ee3944b93cb4287b0f5d4, type: 3}
   m_Name: SmallManaPotion
   m_EditorClassIdentifier: 
-  ItemName: Small Mana Potion
+  ItemName: Jamu Energi
   ItemSprite: {fileID: 49124928, guid: 2bc60a5d2f7390c43a7ddad98a9c1433, type: 3}
   itemType: 0
   ItemPrice: 15
   ItemDiscountPrice: 15
-  ItemDescription: "A faintly glowing vial containing a diluted healing brew. Heals
-    1 Heart of the player\u2019s Mana"
+  ItemDescription: Jamu racikan yang punya khasiat untuk memberikan energi
   moraleToUnlock: 0
   statEffect: 1
   amount: 1

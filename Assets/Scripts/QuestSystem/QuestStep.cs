@@ -21,13 +21,20 @@ namespace QuestSystem
         protected virtual void OnEnable()
         {
             UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+            GameEventsManager.Instance.QuestEvents.OnQuestDelete += OnQuestDelete;
 
         }
 
         protected virtual void OnDisable()
         {
             UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+            GameEventsManager.Instance.QuestEvents.OnQuestDelete -= OnQuestDelete;
 
+        }
+
+        protected virtual void OnQuestDelete()
+        {
+            Destroy(gameObject);
         }
 
         protected virtual void OnSceneLoaded(Scene scene, LoadSceneMode mode)

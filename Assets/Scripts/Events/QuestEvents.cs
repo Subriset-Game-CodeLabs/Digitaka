@@ -29,6 +29,12 @@ namespace Events
             OnQuestStateChange?.Invoke(quest);
             QuestUpdate();
         }
+        
+        public event Action OnQuestDelete;
+        public void QuestDelete()
+        {
+            OnQuestDelete?.Invoke();
+        }
 
         public event Action OnQuestUpdate;
         private void QuestUpdate()

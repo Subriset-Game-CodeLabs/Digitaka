@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59e4a70b-0c00-4360-81d0-171b6532b3ed" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/Cinzel-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/Cinzel-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/Laila-Regular SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/TextMesh Pro/Resources/Fonts &amp; Materials/Laila-Regular SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UII/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UII/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Cutscene/CutsceneMenolongLelakiTua.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Cutscene/CutsceneMenolongLelakiTua.playable" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests/KillEnemyQuestStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Quests/KillEnemyQuestStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests/LawanDewataCengkarQuestStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Quests/LawanDewataCengkarQuestStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests/LawanPerampokMenujuDesaQuestStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Quests/LawanPerampokMenujuDesaQuestStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests/MasukKeKerajaanQuestStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Quests/MasukKeKerajaanQuestStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests/MasukKeKerajaanQuestStep1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Quests/MasukKeKerajaanQuestStep1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Quests/SelamatkanKLelakiTuaQuestStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Quests/SelamatkanKLelakiTuaQuestStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/ChapterSelector.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/ChapterSelector.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A1New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A1New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A2New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A2New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A3New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A3New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A4New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A4New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A6New.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/A6New.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 2/B6.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C6.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C7.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/FixScene/v2/Chapter 3/C8.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CutsceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Events/QuestEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Events/QuestEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem/QuestStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Timeline/CutsceneTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Timeline/CutsceneTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIController/Quest/QuestUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIController/Quest/QuestUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIController/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIController/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Renderer/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Renderer/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Resources/Quests/LawanDewataCengkar.asset" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33zNgbGi7FuosaYS4dcJemHIwgM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity\Hub\Installs\6000.0.32f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Unity\UnityProject\Digitaka -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Unity\UnityProject\Digitaka" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="D:\Unity\Hub\Installs\6000.0.32f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Unity\UnityProject\Digitaka -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Unity\UnityProject\Digitaka" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59e4a70b-0c00-4360-81d0-171b6532b3ed" name="Changes" comment="" />
+      <created>1760316054748</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760316054748</updated>
+      <workItem from="1760316055250" duration="2881000" />
+      <workItem from="1760410562868" duration="10280000" />
+      <workItem from="1760489259813" duration="841000" />
+      <workItem from="1760499628949" duration="4916000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

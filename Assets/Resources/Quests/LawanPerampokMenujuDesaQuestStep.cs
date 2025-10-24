@@ -33,6 +33,13 @@ public class LawanPerampokMenujuDesaQuestStep : QuestStep
         GameEventsManager.Instance.QuestEvents.OnFinishQuest -= OnFinishQuest;
     }
 
+    protected override void OnQuestDelete()
+    {
+        _enemyKilled = 0;
+        UpdateState();
+        
+    }
+
     protected override void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         base.OnSceneLoaded(scene, mode);
@@ -52,7 +59,8 @@ public class LawanPerampokMenujuDesaQuestStep : QuestStep
 
     void OnEnemyDeath(EnemyStats stats)
     {
-        if (!_enemyStats.Contains(stats)) return;
+        // if (!_enemyStats.Contains(stats)) return;
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "B6") return;
         if (_enemyKilled < _killedEnemyToComplete)
         {
             _enemyKilled++;
